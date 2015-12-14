@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C7AA3EC-A44D-4BC5-9990-CF6CCE703ABE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EngineCore</RootNamespace>
+    <AssemblyName>EngineCore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimationMesh.cs" />
+    <Compile Include="BaseComponent.cs" />
+    <Compile Include="BaseMesh.cs" />
+    <Compile Include="BaseObject.cs" />
+    <Compile Include="Base\EngineString.cs" />
+    <Compile Include="Base\Matrix44.cs" />
+    <Compile Include="Base\Vec3.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Engine2Swig\AnimationManager.cs" />
+    <Compile Include="Engine2Swig\AnimationParam.cs" />
+    <Compile Include="Engine2Swig\AutoLoadingProfilerGuard.cs" />
+    <Compile Include="Engine2Swig\AutoLoadingSectionGuard.cs" />
+    <Compile Include="Engine2Swig\AutoProfilerGuard.cs" />
+    <Compile Include="Engine2Swig\CCamera.cs" />
+    <Compile Include="Engine2Swig\CMatrix44.cs" />
+    <Compile Include="Engine2Swig\CollisionInfo.cs" />
+    <Compile Include="Engine2Swig\ComponentInfo.cs" />
+    <Compile Include="Engine2Swig\CVec2.cs" />
+    <Compile Include="Engine2Swig\CVec3.cs" />
+    <Compile Include="Engine2Swig\CVec4.cs" />
+    <Compile Include="Engine2Swig\CXmlElement.cs" />
+    <Compile Include="Engine2Swig\CXmlParam.cs" />
+    <Compile Include="Engine2Swig\CXmlParams.cs" />
+    <Compile Include="Engine2Swig\CXmlVector.cs" />
+    <Compile Include="Engine2Swig\EBloomParam.cs" />
+    <Compile Include="Engine2Swig\eDebugMode.cs" />
+    <Compile Include="Engine2Swig\eDecalType.cs" />
+    <Compile Include="Engine2Swig\EDeviceType.cs" />
+    <Compile Include="Engine2Swig\EDofParam.cs" />
+    <Compile Include="Engine2Swig\eLogAttr.cs" />
+    <Compile Include="Engine2Swig\eMeshCreation.cs" />
+    <Compile Include="Engine2Swig\EMotionBlurParam.cs" />
+    <Compile Include="Engine2Swig\Engine2.cs" />
+    <Compile Include="Engine2Swig\Engine2PINVOKE.cs" />
+    <Compile Include="Engine2Swig\Engine2String.cs" />
+    <Compile Include="Engine2Swig\EngineDecalInfo.cs" />
+    <Compile Include="Engine2Swig\ERenderer.cs" />
+    <Compile Include="Engine2Swig\ERendererError.cs" />
+    <Compile Include="Engine2Swig\eStartGameType.cs" />
+    <Compile Include="Engine2Swig\GameModImport.cs" />
+    <Compile Include="Engine2Swig\I2DRenderObject.cs" />
+    <Compile Include="Engine2Swig\IAnimMeshInfo.cs" />
+    <Compile Include="Engine2Swig\IBaseMeshInfo.cs" />
+    <Compile Include="Engine2Swig\IChangesSubscription.cs" />
+    <Compile Include="Engine2Swig\IConfigFile.cs" />
+    <Compile Include="Engine2Swig\ICore.cs" />
+    <Compile Include="Engine2Swig\IDebugDrawInterface.cs" />
+    <Compile Include="Engine2Swig\IDebugInformationManager.cs" />
+    <Compile Include="Engine2Swig\IDecalInfo.cs" />
+    <Compile Include="Engine2Swig\IDecalManager.cs" />
+    <Compile Include="Engine2Swig\IDecalMeshAccepter.cs" />
+    <Compile Include="Engine2Swig\IDeviceDependendentInfo.cs" />
+    <Compile Include="Engine2Swig\IGameMod.cs" />
+    <Compile Include="Engine2Swig\IGUIRenderObject.cs" />
+    <Compile Include="Engine2Swig\IIndoorMeshInfo.cs" />
+    <Compile Include="Engine2Swig\ILoadingProfilerManager.cs" />
+    <Compile Include="Engine2Swig\ILogListener.cs" />
+    <Compile Include="Engine2Swig\ILogManager.cs" />
+    <Compile Include="Engine2Swig\IMaterialInfo.cs" />
+    <Compile Include="Engine2Swig\IMeshFactory.cs" />
+    <Compile Include="Engine2Swig\IMeshInfo.cs" />
+    <Compile Include="Engine2Swig\IMeshInfoFriend.cs" />
+    <Compile Include="Engine2Swig\INodeModifier.cs" />
+    <Compile Include="Engine2Swig\IPerformanceProfilerManager.cs" />
+    <Compile Include="Engine2Swig\IPortal.cs" />
+    <Compile Include="Engine2Swig\IProfilerListener.cs" />
+    <Compile Include="Engine2Swig\IRainAreaInfo.cs" />
+    <Compile Include="Engine2Swig\IRender.cs" />
+    <Compile Include="Engine2Swig\IScene.cs" />
+    <Compile Include="Engine2Swig\ISceneGraph.cs" />
+    <Compile Include="Engine2Swig\IStatisticsManager.cs" />
+    <Compile Include="Engine2Swig\IVisArea.cs" />
+    <Compile Include="Engine2Swig\IVisAreaTree.cs" />
+    <Compile Include="Engine2Swig\IWindow.cs" />
+    <Compile Include="Engine2Swig\IWindowListener.cs" />
+    <Compile Include="Engine2Swig\IXmlParams.cs" />
+    <Compile Include="Engine2Swig\IXRefInfoMesh.cs" />
+    <Compile Include="Engine2Swig\LightmapInfo.cs" />
+    <Compile Include="Engine2Swig\MeshAnimBakeInfo.cs" />
+    <Compile Include="Engine2Swig\MeshFactory.cs" />
+    <Compile Include="Engine2Swig\MeshMergerInfo.cs" />
+    <Compile Include="Engine2Swig\MeshMergerInfo2.cs" />
+    <Compile Include="Engine2Swig\MeshMergerInstanceInfo.cs" />
+    <Compile Include="Engine2Swig\PreloadInfo.cs" />
+    <Compile Include="Engine2Swig\SAAFormat.cs" />
+    <Compile Include="Engine2Swig\SceneGraphFactory.cs" />
+    <Compile Include="Engine2Swig\SCoreStatistics.cs" />
+    <Compile Include="Engine2Swig\SDispFormat.cs" />
+    <Compile Include="Engine2Swig\SFontStatistics.cs" />
+    <Compile Include="Engine2Swig\SMemTextureInfo.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_a_4__FLOAT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_BOOL.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_BUFPOOL.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CAABBox.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CCamera.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CFLOAT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CFrustum.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CIdentity.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CLight.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CLightArray.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CMatrix44.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_const_str.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CParam.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CPlane.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CQuat.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CQuaternion.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CSegment.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CSmartPtrT_ICullObject_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CSphere.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CVec3.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CXmlElement.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_CXmlParams.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_DLLIMPORT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_DWORD.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eActiveType.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eAsyncState.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eBLEND.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eBLENDOP.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eCMPFUNC.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eCULL.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eDEPTHSTATE.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eMeshType.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__String.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__String_templateT_char_StandardAllocator_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_AnimationParam_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_ComponentInfo_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CParam_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CVec3_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CVec4_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CXmlElement_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CXmlParam_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_Engine2__String_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_StandardAllocator_t_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_IMeshInfo_p_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_MeshAnimBakeInfo__MeshAnimBakeFrameInfo_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_MeshMergerInstanceInfo_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_size_t_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_String_templateT_char_StandardAllocator_t_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_EngineDecalInfo.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eParticleType.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_eRenderType.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_EStatsType.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_ETarget.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_FILE.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_FLOAT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_f_void__void.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_HICON.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_HINSTANCE.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_HRESULT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IAnimatedMeshInfo.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IBaseMeshInfo.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IBaseSkeleton.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IClientDraw.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IControlsManager.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_ICullObject.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IEntitySystem.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IGameRenderObject.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IGUIRenderObject.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IInput.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_ILevelLogData.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_ILight.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IMAGE_FILEFORMAT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IMaterial.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IMaterialLib.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IMeshArray.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IMeshBuilder.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IMeshInfo.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_int.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_int32.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IParticleEmitter.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IPostProcessingEffect.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IRenderToTextureObject.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IScene.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_ISkeleton.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_ISoundLib.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IStats.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IStreamEngine.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IVFSFileManager.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IWeather.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_IWindow.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_LOCKED_RECT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_LPARAM.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_MaxMeshMaterial.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_PostProcessingEffectPtr.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_p_f_p_q_const__char__void.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_RECT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_RENDER2DVERTEX.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_RenderStatistics.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_RenderViewport.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_sHardwareConfig.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_short.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_SIZE.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_SRenderGraph.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_SRenderStatistics.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_String_templateT_char_StandardAllocator_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_String_templateT_char_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_TEXFORMAT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_TEXNUM.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_TShaderCombinations.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_TShaderMask.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_UINT.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_uint32.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_uint32_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_uint64.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_uint8.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_unsigned_int.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_void.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_WIN_HWND.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_WPARAM.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_xml__TiXmlNode.cs" />
+    <Compile Include="Engine2Swig\Visibility.cs" />
+    <Compile Include="Engine2Swig\XRefInfo.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisteredComponents.cs" />
+    <Compile Include="RegisteredObjects.cs" />
+    <Compile Include="Scene.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Engine2Swig\Engine2Swig.vcxproj" />
+    <None Include="Engine2Swig\Engine2Swig.vcxproj.filters" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Engine2Swig\Engine2Swig.vcxproj.user" />
+    <Content Include="Engine2Swig\Engine2_wrap.cxx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
