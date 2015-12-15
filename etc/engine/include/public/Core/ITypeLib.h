@@ -1,0 +1,18 @@
+/////////////////////////////////////////////////////////////////////////////////
+////	File: ITypeLib.h
+////	Description: Type Lib interface
+////	Copyright (c) 2004 Rudybear
+/////////////////////////////////////////////////////////////////////////////////
+//
+//#pragma once
+//
+//#include "public\GameMod\IGameObject.h"
+//
+//class IGameTypeLib
+//{
+//public:
+//	IGameTypeLib(){};
+//	virtual ~IGameTypeLib(){};
+//	
+//	virtual IGameObject * CreateByName(const char * szName) = 0;
+//};
