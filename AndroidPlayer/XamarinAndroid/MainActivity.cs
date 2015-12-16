@@ -20,6 +20,7 @@ namespace XamarinAndroid
 		,HardwareAccelerated=false
 #endif
         )]
+    [MetaData("android.app.lib_name", Value = "Engine2")]
     public class MainActivity : NativeActivity
     {
         //GLView1 view;
@@ -44,6 +45,9 @@ namespace XamarinAndroid
             //view = new GLView1(this);
             //SetContentView(view);
         }
+
+        //[Export]
+        public static String META_DATA_LIB_NAME = "android.app.lib_name";
 
         [Export]
         public void StartEngine()

@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
-    <AndroidNativeLibrary Include="lib\armeabi\libmain.so" />
+    <None Include="lib\armeabi\libEngine2.so" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
