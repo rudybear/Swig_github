@@ -7,6 +7,8 @@ using Android.Widget;
 using Android.OS;
 using Android.Content.PM;
 using EngineCore;
+using Android.Util;
+using Java.Interop;
 
 namespace XamarinAndroid
 {
@@ -18,7 +20,7 @@ namespace XamarinAndroid
 		,HardwareAccelerated=false
 #endif
         )]
-    public class MainActivity : Activity
+    public class MainActivity : NativeActivity
     {
         //GLView1 view;
         static Engine engine = null;
@@ -26,22 +28,35 @@ namespace XamarinAndroid
         {
             base.OnCreate(bundle);
 
-            engine = new Engine();
+            Log.Verbose("Engine2 Android player - java", "OnCreate");
+            //engine = new Engine();
 
-            if (engine.StartEngine("Engine2 Player", "sdcard/Fish/config_mobile.xml?low", this.Handle))
-            {
-                engine.LoadGame();
-                engine.GetScene().Load("scene.bin");
-                engine.RunGame();
-                //IEngineEvents events = (IEngineEvents)engine;
-                //events.OnPreFrameUpdate += new EventHandler(OnPreUpdate);
-            }
+            //if (engine.StartEngine("Engine2 Player", "sdcard/Fish/config_mobile.xml?low", this.Handle))
+            //{
+            //    engine.LoadGame();
+            //    engine.GetScene().Load("scene.bin");
+            //    engine.RunGame();
+            //    //IEngineEvents events = (IEngineEvents)engine;
+            //    //events.OnPreFrameUpdate += new EventHandler(OnPreUpdate);
+            //}
 
             // Create our OpenGL view, and display it
             //view = new GLView1(this);
             //SetContentView(view);
         }
 
+        [Export]
+        public void StartEngine()
+        {
+            Log.Verbose("Engine2 Android player", "Start Engine");
+            engine = new Engine();
+
+            if (engine.StartEngine("Engine2 Player", "sdcard/Fish/config_mobile.xml?low", this.Handle))
+            {
+                Log.Verbose("Engine2 Android player", "Start Engine completed!");
+            }
+
+        }
         protected override void OnPause()
         {
             base.OnPause();

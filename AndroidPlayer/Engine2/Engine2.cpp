@@ -3,43 +3,6 @@
 #define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "Engine2", __VA_ARGS__))
 #define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "Engine2", __VA_ARGS__))
 
-extern "C" {
-	/* This trivial function returns the platform ABI for which this dynamic native library is compiled.*/
-	const char * Engine2::getPlatformABI()
-	{
-	#if defined(__arm__)
-	#if defined(__ARM_ARCH_7A__)
-	#if defined(__ARM_NEON__)
-		#define ABI "armeabi-v7a/NEON"
-	#else
-		#define ABI "armeabi-v7a"
-	#endif
-	#else
-		#define ABI "armeabi"
-	#endif
-	#elif defined(__i386__)
-		#define ABI "x86"
-	#else
-		#define ABI "unknown"
-	#endif
-		LOGI("This dynamic shared library is compiled with ABI: %s", ABI);
-		return "This native library is compiled with ABI: %s" ABI ".";
-	}
-
-	void Engine2()
-	{
-	}
-
-	Engine2::Engine2()
-	{
-	}
-
-	Engine2::~Engine2()
-	{
-	}
-
-
-}
 
 #include <jni.h>
 //#include <errno.h>
@@ -49,7 +12,7 @@ extern "C" {
 
 #include <android/sensor.h>
 #include <android/log.h>
-#include <android_native_app_glue.h>
+#include "android_native_app_glue.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -97,6 +60,12 @@ typedef EGLuint64NV(EGLAPIENTRYP PFNEGLGETSYSTEMTIMEFREQUENCYNVPROC)(void);
 typedef EGLuint64NV(EGLAPIENTRYP PFNEGLGETSYSTEMTIMENVPROC)(void);
 #endif
 
+struct saved_state {
+	float angle;
+	int32_t x;
+	int32_t y;
+};
+
 
 unsigned int m_status;
 
@@ -125,6 +94,7 @@ struct engine {
 	struct saved_state state;
 };
 
+engine *  g_engine = 0;
 
 WIN_HWND getWIN_HWND()
 {
@@ -143,6 +113,7 @@ static int engine_init_display(struct engine* engine) {
 	* Below, we select an EGLConfig with at least 8 bits per color
 	* component compatible with on-screen windows
 	*/
+	LOGI("engine_init_display");
 	const EGLint attribs[] = {
 		EGL_SURFACE_TYPE, EGL_WINDOW_BIT,
 		//EGL_RENDERABLE_TYPE, EGL_OPENGL_ES_BIT,
@@ -220,6 +191,7 @@ static int engine_init_display(struct engine* engine) {
 	//glShadeModel(GL_SMOOTH);
 	glDisable(GL_DEPTH_TEST);
 
+	LOGI("engine_init_display done");
 	return 0;
 }
 
@@ -230,14 +202,50 @@ extern int FM_updateframe(int nFlags);
 */
 
 
+static void startEngine()
+{
+	LOGI("startEngine");
+	if (g_engine && g_engine->app && g_engine->app->activity && g_engine->app->activity->vm)
+	{
+
+		JNIEnv *pEnv = g_engine->app->activity->env;
+		jint res = g_engine->app->activity->vm->AttachCurrentThread(&pEnv, NULL);
+
+		LOGI("startEngine 1");
+		//JNIEnv *pEnv = 0;
+		//jint res = g_engine->app->activity->vm->GetEnv((void**)&pEnv, JNI_VERSION_1_2);
+		//if (res == JNI_EDETACHED)
+		//{
+		//	pEnv = 0;
+		//	res = g_engine->app->activity->vm->AttachCurrentThread(&pEnv, 0);
+		//	if (res == 0) { pEnv = 0; }
+		//}
+		LOGI("startEngine 2");
+		if (res == JNI_OK && pEnv)
+		{
+			LOGI("startEngine 3");
+			jobject activityObject = g_engine->app->activity->clazz;
+			jclass  activityClass = pEnv->GetObjectClass(activityObject);
+
+			jmethodID senEnable = pEnv->GetMethodID(activityClass, "StartEngine", "()V");
+			pEnv->CallVoidMethod(activityObject, senEnable);
+			LOGI("startEngine 4");
+			pEnv->DeleteLocalRef(activityClass);
+
+			g_engine->app->activity->vm->DetachCurrentThread();
+		}
+	}
+}
+
+
 static void engine_draw_frame(struct engine* engine) {
 
-	FM_updateframe(1);
+	//FM_updateframe(1);
 
 	return;
 
-	LOGI("Frametime:%d", getSystemTime());
-	g_pCore->Frame(TRUE);
+	//LOGI("Frametime:%d", getSystemTime());
+	//g_pCore->Frame(TRUE);
 	//if (engine->display == NULL) {
 	//    // No display.
 	//    return;
@@ -300,7 +308,8 @@ static void engine_handle_cmd(struct android_app* app, int32_t cmd) {
 	case APP_CMD_INIT_WINDOW:
 		// The window is being shown, get it ready.
 		if (engine->app->window != NULL) {
-			//                engine_init_display(engine);
+			engine_init_display(engine);
+// INITIALIZE C# code here
 			startEngine();
 			engine_draw_frame(engine);
 			engine->animating = 1;
@@ -364,7 +373,7 @@ void android_main(struct android_app* state) {
 	g_engine = &engine;
 
 	// Make sure glue isn't stripped.
-	app_dummy();
+	//app_dummy();
 
 	memset(&engine, 0, sizeof(engine));
 	state->userData = &engine;

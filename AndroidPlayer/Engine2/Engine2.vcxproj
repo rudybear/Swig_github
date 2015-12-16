@@ -72,10 +72,10 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>ANDROID_NDK;ANDROID;SWIG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\sources\engine\trunk\public_development\etc\engine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\alexey.medvedev\Documents\GitHub\Swig_github\etc\engine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>d:\sources\engine\trunk\public_development\etc\engine\lib\android\armeabi\libEngine.a</AdditionalDependencies>
+      <AdditionalDependencies>..\..\etc\engine\lib\android\armeabi\libEngine.a</AdditionalDependencies>
       <LibraryDependencies>m;jnigraphics;EGL;GLESv2;z;%(LibraryDependencies)</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -93,9 +93,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Engine2Swig\Engine2_wrap.cxx" />
+    <ClCompile Include="android_native_app_glue.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Use</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">CompileAsCpp</CompileAs>
+    </ClCompile>
     <ClCompile Include="Engine2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="android_native_app_glue.h" />
     <ClInclude Include="Engine2.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
