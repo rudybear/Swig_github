@@ -724,10 +724,9 @@ public class IRender : global::System.IDisposable {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_SRenderStatistics GetStatistics(SWIGTYPE_p_uint32 nFlags) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IRender_GetStatistics__SWIG_0(swigCPtr, SWIGTYPE_p_uint32.getCPtr(nFlags));
+  public virtual SWIGTYPE_p_SRenderStatistics GetStatistics(uint nFlags) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IRender_GetStatistics__SWIG_0(swigCPtr, nFlags);
     SWIGTYPE_p_SRenderStatistics ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_SRenderStatistics(cPtr, false);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
@@ -801,9 +800,8 @@ public class IRender : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void AddToBatchCount(SWIGTYPE_p_uint32 arg0) {
-    Engine2PINVOKE.IRender_AddToBatchCount(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void AddToBatchCount(uint arg0) {
+    Engine2PINVOKE.IRender_AddToBatchCount(swigCPtr, arg0);
   }
 
   public virtual void ForceRenderMask(SWIGTYPE_p_TShaderMask mask) {

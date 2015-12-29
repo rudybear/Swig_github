@@ -72,14 +72,13 @@ public class MeshAnimBakeInfo : global::System.IDisposable {
     public MeshAnimBakeFrameInfo() : this(Engine2PINVOKE.new_MeshAnimBakeInfo_MeshAnimBakeFrameInfo(), true) {
     }
   
-    public SWIGTYPE_p_Engine2__String m_strAnimName {
+    public Engine2String m_strAnimName {
       set {
-        Engine2PINVOKE.MeshAnimBakeInfo_MeshAnimBakeFrameInfo_m_strAnimName_set(swigCPtr, SWIGTYPE_p_Engine2__String.getCPtr(value));
-        if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+        Engine2PINVOKE.MeshAnimBakeInfo_MeshAnimBakeFrameInfo_m_strAnimName_set(swigCPtr, Engine2String.getCPtr(value));
       } 
       get {
-        SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.MeshAnimBakeInfo_MeshAnimBakeFrameInfo_m_strAnimName_get(swigCPtr), true);
-        if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+        global::System.IntPtr cPtr = Engine2PINVOKE.MeshAnimBakeInfo_MeshAnimBakeFrameInfo_m_strAnimName_get(swigCPtr);
+        Engine2String ret = (cPtr == global::System.IntPtr.Zero) ? null : new Engine2String(cPtr, false);
         return ret;
       } 
     }
@@ -110,14 +109,13 @@ public class MeshAnimBakeInfo : global::System.IDisposable {
   public MeshAnimBakeInfo() : this(Engine2PINVOKE.new_MeshAnimBakeInfo(), true) {
   }
 
-  public SWIGTYPE_p_Engine2__String m_strSourceMeshName {
+  public Engine2String m_strSourceMeshName {
     set {
-      Engine2PINVOKE.MeshAnimBakeInfo_m_strSourceMeshName_set(swigCPtr, SWIGTYPE_p_Engine2__String.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.MeshAnimBakeInfo_m_strSourceMeshName_set(swigCPtr, Engine2String.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.MeshAnimBakeInfo_m_strSourceMeshName_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = Engine2PINVOKE.MeshAnimBakeInfo_m_strSourceMeshName_get(swigCPtr);
+      Engine2String ret = (cPtr == global::System.IntPtr.Zero) ? null : new Engine2String(cPtr, false);
       return ret;
     } 
   }
@@ -163,14 +161,13 @@ public class MeshAnimBakeInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_Engine2__String m_strFramePrefix {
+  public Engine2String m_strFramePrefix {
     set {
-      Engine2PINVOKE.MeshAnimBakeInfo_m_strFramePrefix_set(swigCPtr, SWIGTYPE_p_Engine2__String.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.MeshAnimBakeInfo_m_strFramePrefix_set(swigCPtr, Engine2String.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.MeshAnimBakeInfo_m_strFramePrefix_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = Engine2PINVOKE.MeshAnimBakeInfo_m_strFramePrefix_get(swigCPtr);
+      Engine2String ret = (cPtr == global::System.IntPtr.Zero) ? null : new Engine2String(cPtr, false);
       return ret;
     } 
   }
@@ -186,14 +183,13 @@ public class MeshAnimBakeInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_Engine2__String m_strResultMeshName {
+  public Engine2String m_strResultMeshName {
     set {
-      Engine2PINVOKE.MeshAnimBakeInfo_m_strResultMeshName_set(swigCPtr, SWIGTYPE_p_Engine2__String.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.MeshAnimBakeInfo_m_strResultMeshName_set(swigCPtr, Engine2String.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.MeshAnimBakeInfo_m_strResultMeshName_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = Engine2PINVOKE.MeshAnimBakeInfo_m_strResultMeshName_get(swigCPtr);
+      Engine2String ret = (cPtr == global::System.IntPtr.Zero) ? null : new Engine2String(cPtr, false);
       return ret;
     } 
   }

@@ -50,14 +50,12 @@ public class MeshMergerInstanceInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_iDiffuseColor {
+  public uint m_iDiffuseColor {
     set {
-      Engine2PINVOKE.MeshMergerInstanceInfo_m_iDiffuseColor_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.MeshMergerInstanceInfo_m_iDiffuseColor_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.MeshMergerInstanceInfo_m_iDiffuseColor_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.MeshMergerInstanceInfo_m_iDiffuseColor_get(swigCPtr);
       return ret;
     } 
   }

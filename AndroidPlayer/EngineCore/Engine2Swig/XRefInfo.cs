@@ -50,26 +50,24 @@ public class XRefInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_Engine2__String m_sName {
+  public Engine2String m_sName {
     set {
-      Engine2PINVOKE.XRefInfo_m_sName_set(swigCPtr, SWIGTYPE_p_Engine2__String.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.XRefInfo_m_sName_set(swigCPtr, Engine2String.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.XRefInfo_m_sName_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = Engine2PINVOKE.XRefInfo_m_sName_get(swigCPtr);
+      Engine2String ret = (cPtr == global::System.IntPtr.Zero) ? null : new Engine2String(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_Engine2__String m_sFileName {
+  public Engine2String m_sFileName {
     set {
-      Engine2PINVOKE.XRefInfo_m_sFileName_set(swigCPtr, SWIGTYPE_p_Engine2__String.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.XRefInfo_m_sFileName_set(swigCPtr, Engine2String.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.XRefInfo_m_sFileName_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = Engine2PINVOKE.XRefInfo_m_sFileName_get(swigCPtr);
+      Engine2String ret = (cPtr == global::System.IntPtr.Zero) ? null : new Engine2String(cPtr, false);
       return ret;
     } 
   }

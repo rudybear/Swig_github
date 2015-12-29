@@ -132,8 +132,16 @@ public class CCamera : global::System.IDisposable {
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
   }
 
+  public void SetProjParams(float fFOV, float fAspect, float fNearPlane, float fFarPlane, float fDeltaX, float fDeltaY) {
+    Engine2PINVOKE.CCamera_SetProjParams__SWIG_0(swigCPtr, fFOV, fAspect, fNearPlane, fFarPlane, fDeltaX, fDeltaY);
+  }
+
+  public void SetProjParams(float fFOV, float fAspect, float fNearPlane, float fFarPlane, float fDeltaX) {
+    Engine2PINVOKE.CCamera_SetProjParams__SWIG_1(swigCPtr, fFOV, fAspect, fNearPlane, fFarPlane, fDeltaX);
+  }
+
   public void SetProjParams(float fFOV, float fAspect, float fNearPlane, float fFarPlane) {
-    Engine2PINVOKE.CCamera_SetProjParams(swigCPtr, fFOV, fAspect, fNearPlane, fFarPlane);
+    Engine2PINVOKE.CCamera_SetProjParams__SWIG_2(swigCPtr, fFOV, fAspect, fNearPlane, fFarPlane);
   }
 
   public void GetProjParams(SWIGTYPE_p_float fFOV, SWIGTYPE_p_float fAspect, SWIGTYPE_p_float fNearPlane, SWIGTYPE_p_float fFarPlane) {

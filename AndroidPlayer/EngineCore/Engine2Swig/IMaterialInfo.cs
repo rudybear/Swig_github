@@ -38,58 +38,51 @@ public class IMaterialInfo : IMeshInfo {
     }
   }
 
-  public virtual SWIGTYPE_p_uint32 GetVisibleMaterialsCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IMaterialInfo_GetVisibleMaterialsCount(swigCPtr), true);
+  public virtual uint GetVisibleMaterialsCount() {
+    uint ret = Engine2PINVOKE.IMaterialInfo_GetVisibleMaterialsCount(swigCPtr);
     return ret;
   }
 
-  public virtual string GetVisibleMaterialName(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.IMaterialInfo_GetVisibleMaterialName(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetVisibleMaterialName(uint arg0) {
+    string ret = Engine2PINVOKE.IMaterialInfo_GetVisibleMaterialName(swigCPtr, arg0);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_IMaterial GetVisibleMaterial(SWIGTYPE_p_uint32 num) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IMaterialInfo_GetVisibleMaterial(swigCPtr, SWIGTYPE_p_uint32.getCPtr(num));
+  public virtual SWIGTYPE_p_IMaterial GetVisibleMaterial(uint num) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IMaterialInfo_GetVisibleMaterial(swigCPtr, num);
     SWIGTYPE_p_IMaterial ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_IMaterial(cPtr, false);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual bool SetVisibleMaterial(SWIGTYPE_p_uint32 num, SWIGTYPE_p_IMaterial arg1) {
-    bool ret = Engine2PINVOKE.IMaterialInfo_SetVisibleMaterial(swigCPtr, SWIGTYPE_p_uint32.getCPtr(num), SWIGTYPE_p_IMaterial.getCPtr(arg1));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual bool SetVisibleMaterial(uint num, SWIGTYPE_p_IMaterial arg1) {
+    bool ret = Engine2PINVOKE.IMaterialInfo_SetVisibleMaterial(swigCPtr, num, SWIGTYPE_p_IMaterial.getCPtr(arg1));
     return ret;
   }
 
-  public virtual bool SetVisibleMaterialByMaterialName(SWIGTYPE_p_uint32 mat, string newMat) {
-    bool ret = Engine2PINVOKE.IMaterialInfo_SetVisibleMaterialByMaterialName(swigCPtr, SWIGTYPE_p_uint32.getCPtr(mat), newMat);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual bool SetVisibleMaterialByMaterialName(uint mat, string newMat) {
+    bool ret = Engine2PINVOKE.IMaterialInfo_SetVisibleMaterialByMaterialName(swigCPtr, mat, newMat);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetVisibleMaterialParamCount(SWIGTYPE_p_uint32 mat) {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IMaterialInfo_GetVisibleMaterialParamCount(swigCPtr, SWIGTYPE_p_uint32.getCPtr(mat)), true);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual uint GetVisibleMaterialParamCount(uint mat) {
+    uint ret = Engine2PINVOKE.IMaterialInfo_GetVisibleMaterialParamCount(swigCPtr, mat);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_CParam GetVisibleMaterialParam(SWIGTYPE_p_uint32 mat, SWIGTYPE_p_uint32 param) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IMaterialInfo_GetVisibleMaterialParam(swigCPtr, SWIGTYPE_p_uint32.getCPtr(mat), SWIGTYPE_p_uint32.getCPtr(param));
+  public virtual SWIGTYPE_p_CParam GetVisibleMaterialParam(uint mat, uint param) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IMaterialInfo_GetVisibleMaterialParam(swigCPtr, mat, param);
     SWIGTYPE_p_CParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CParam(cPtr, false);
+    return ret;
+  }
+
+  public virtual bool AddVisibleMaterialParam(uint mat, SWIGTYPE_p_CParam param) {
+    bool ret = Engine2PINVOKE.IMaterialInfo_AddVisibleMaterialParam(swigCPtr, mat, SWIGTYPE_p_CParam.getCPtr(param));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual bool AddVisibleMaterialParam(SWIGTYPE_p_uint32 mat, SWIGTYPE_p_CParam param) {
-    bool ret = Engine2PINVOKE.IMaterialInfo_AddVisibleMaterialParam(swigCPtr, SWIGTYPE_p_uint32.getCPtr(mat), SWIGTYPE_p_CParam.getCPtr(param));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public virtual bool AddVisibleMaterialParamPtr(SWIGTYPE_p_uint32 mat, SWIGTYPE_p_CParam param) {
-    bool ret = Engine2PINVOKE.IMaterialInfo_AddVisibleMaterialParamPtr(swigCPtr, SWIGTYPE_p_uint32.getCPtr(mat), SWIGTYPE_p_CParam.getCPtr(param));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual bool AddVisibleMaterialParamPtr(uint mat, SWIGTYPE_p_CParam param) {
+    bool ret = Engine2PINVOKE.IMaterialInfo_AddVisibleMaterialParamPtr(swigCPtr, mat, SWIGTYPE_p_CParam.getCPtr(param));
     return ret;
   }
 

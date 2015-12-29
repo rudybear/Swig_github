@@ -39,46 +39,41 @@ public class IDecalManager : global::System.IDisposable {
     }
   }
 
-  public virtual SWIGTYPE_p_uint32 SpawnDecal(EngineDecalInfo arg0) {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IDecalManager_SpawnDecal(swigCPtr, EngineDecalInfo.getCPtr(arg0)), true);
+  public virtual uint SpawnDecal(EngineDecalInfo arg0) {
+    uint ret = Engine2PINVOKE.IDecalManager_SpawnDecal(swigCPtr, EngineDecalInfo.getCPtr(arg0));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual bool MoveDecal(SWIGTYPE_p_uint32 decalID, EngineDecalInfo arg1) {
-    bool ret = Engine2PINVOKE.IDecalManager_MoveDecal(swigCPtr, SWIGTYPE_p_uint32.getCPtr(decalID), EngineDecalInfo.getCPtr(arg1));
+  public virtual bool MoveDecal(uint decalID, EngineDecalInfo arg1) {
+    bool ret = Engine2PINVOKE.IDecalManager_MoveDecal(swigCPtr, decalID, EngineDecalInfo.getCPtr(arg1));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual SWIGTYPE_p_IMaterial GetDecalMaterial(SWIGTYPE_p_uint32 decalID) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IDecalManager_GetDecalMaterial(swigCPtr, SWIGTYPE_p_uint32.getCPtr(decalID));
+  public virtual SWIGTYPE_p_IMaterial GetDecalMaterial(uint decalID) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IDecalManager_GetDecalMaterial(swigCPtr, decalID);
     SWIGTYPE_p_IMaterial ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_IMaterial(cPtr, false);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual IMeshInfo GetDecalMesh(SWIGTYPE_p_uint32 decalID) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IDecalManager_GetDecalMesh(swigCPtr, SWIGTYPE_p_uint32.getCPtr(decalID));
+  public virtual IMeshInfo GetDecalMesh(uint decalID) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IDecalManager_GetDecalMesh(swigCPtr, decalID);
     IMeshInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new IMeshInfo(cPtr, false);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual bool RemoveDecal(SWIGTYPE_p_uint32 id) {
-    bool ret = Engine2PINVOKE.IDecalManager_RemoveDecal(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual bool RemoveDecal(uint id) {
+    bool ret = Engine2PINVOKE.IDecalManager_RemoveDecal(swigCPtr, id);
     return ret;
   }
 
-  public virtual void SetTransparency(SWIGTYPE_p_uint32 id, float fTransparency) {
-    Engine2PINVOKE.IDecalManager_SetTransparency(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), fTransparency);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void SetTransparency(uint id, float fTransparency) {
+    Engine2PINVOKE.IDecalManager_SetTransparency(swigCPtr, id, fTransparency);
   }
 
-  public virtual float GetTransparency(SWIGTYPE_p_uint32 id) {
-    float ret = Engine2PINVOKE.IDecalManager_GetTransparency(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual float GetTransparency(uint id) {
+    float ret = Engine2PINVOKE.IDecalManager_GetTransparency(swigCPtr, id);
     return ret;
   }
 

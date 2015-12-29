@@ -92,14 +92,12 @@ public class AnimationParam : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_nLayer {
+  public uint m_nLayer {
     set {
-      Engine2PINVOKE.AnimationParam_m_nLayer_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.AnimationParam_m_nLayer_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.AnimationParam_m_nLayer_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.AnimationParam_m_nLayer_get(swigCPtr);
       return ret;
     } 
   }

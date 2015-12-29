@@ -119,24 +119,21 @@ public class IMeshInfo : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_uint32 GetRenderFlags() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IMeshInfo_GetRenderFlags(swigCPtr), true);
+  public uint GetRenderFlags() {
+    uint ret = Engine2PINVOKE.IMeshInfo_GetRenderFlags(swigCPtr);
     return ret;
   }
 
-  public void SetRenderFlags(SWIGTYPE_p_uint32 flags) {
-    Engine2PINVOKE.IMeshInfo_SetRenderFlags(swigCPtr, SWIGTYPE_p_uint32.getCPtr(flags));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public void SetRenderFlags(uint flags) {
+    Engine2PINVOKE.IMeshInfo_SetRenderFlags(swigCPtr, flags);
   }
 
-  public void ForceSetRenderFlags(SWIGTYPE_p_uint32 flags) {
-    Engine2PINVOKE.IMeshInfo_ForceSetRenderFlags(swigCPtr, SWIGTYPE_p_uint32.getCPtr(flags));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public void ForceSetRenderFlags(uint flags) {
+    Engine2PINVOKE.IMeshInfo_ForceSetRenderFlags(swigCPtr, flags);
   }
 
-  public void RemoveRenderFlags(SWIGTYPE_p_uint32 flags) {
-    Engine2PINVOKE.IMeshInfo_RemoveRenderFlags(swigCPtr, SWIGTYPE_p_uint32.getCPtr(flags));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public void RemoveRenderFlags(uint flags) {
+    Engine2PINVOKE.IMeshInfo_RemoveRenderFlags(swigCPtr, flags);
   }
 
   public void DrawCustom(SWIGTYPE_p_eRenderType type) {

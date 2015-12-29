@@ -39,61 +39,53 @@ public class SFontStatistics : global::System.IDisposable {
     }
   }
 
-  public SWIGTYPE_p_uint32 m_atlasHeight {
+  public uint m_atlasHeight {
     set {
-      Engine2PINVOKE.SFontStatistics_m_atlasHeight_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.SFontStatistics_m_atlasHeight_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.SFontStatistics_m_atlasHeight_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.SFontStatistics_m_atlasHeight_get(swigCPtr);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_atlasWidth {
+  public uint m_atlasWidth {
     set {
-      Engine2PINVOKE.SFontStatistics_m_atlasWidth_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.SFontStatistics_m_atlasWidth_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.SFontStatistics_m_atlasWidth_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.SFontStatistics_m_atlasWidth_get(swigCPtr);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_textureCount {
+  public uint m_textureCount {
     set {
-      Engine2PINVOKE.SFontStatistics_m_textureCount_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.SFontStatistics_m_textureCount_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.SFontStatistics_m_textureCount_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.SFontStatistics_m_textureCount_get(swigCPtr);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_generationTimeMs {
+  public uint m_generationTimeMs {
     set {
-      Engine2PINVOKE.SFontStatistics_m_generationTimeMs_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.SFontStatistics_m_generationTimeMs_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.SFontStatistics_m_generationTimeMs_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.SFontStatistics_m_generationTimeMs_get(swigCPtr);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_textures {
+  public SWIGTYPE_p_unsigned_int m_textures {
     set {
-      Engine2PINVOKE.SFontStatistics_m_textures_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
+      Engine2PINVOKE.SFontStatistics_m_textures_set(swigCPtr, SWIGTYPE_p_unsigned_int.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = Engine2PINVOKE.SFontStatistics_m_textures_get(swigCPtr);
-      SWIGTYPE_p_uint32 ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_uint32(cPtr, false);
+      SWIGTYPE_p_unsigned_int ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_unsigned_int(cPtr, false);
       return ret;
     } 
   }

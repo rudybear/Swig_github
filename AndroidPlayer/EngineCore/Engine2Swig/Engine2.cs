@@ -219,6 +219,46 @@ public class Engine2 {
     return ret;
   }
 
+  public static int XMLAddInt(CXmlElement pXml, Engine2String szName, int nValue) {
+    int ret = Engine2PINVOKE.XMLAddInt(CXmlElement.getCPtr(pXml), Engine2String.getCPtr(szName), nValue);
+    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static int XMLGetInt(CXmlElement pXml, Engine2String szName, int nDefaultValue, SWIGTYPE_p_int bResult) {
+    int ret = Engine2PINVOKE.XMLGetInt(CXmlElement.getCPtr(pXml), Engine2String.getCPtr(szName), nDefaultValue, SWIGTYPE_p_int.getCPtr(bResult));
+    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static int XMLAddFloat(CXmlElement pXml, Engine2String szName, float fValue) {
+    int ret = Engine2PINVOKE.XMLAddFloat(CXmlElement.getCPtr(pXml), Engine2String.getCPtr(szName), fValue);
+    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static float XMLGetFloat(CXmlElement pXml, Engine2String szName, float fDefaultValue, SWIGTYPE_p_int bResult) {
+    float ret = Engine2PINVOKE.XMLGetFloat(CXmlElement.getCPtr(pXml), Engine2String.getCPtr(szName), fDefaultValue, SWIGTYPE_p_int.getCPtr(bResult));
+    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static int XMLGetBOOL(CXmlElement pXml, Engine2String szName) {
+    int ret = Engine2PINVOKE.XMLGetBOOL(CXmlElement.getCPtr(pXml), Engine2String.getCPtr(szName));
+    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static int GetXmlFileDataFromStream(SWIGTYPE_p_IVFSFileManager pFileManager, CXmlElement pXmlContainer, string szFileName, int bAbsFilePath) {
+    int ret = Engine2PINVOKE.GetXmlFileDataFromStream__SWIG_0(SWIGTYPE_p_IVFSFileManager.getCPtr(pFileManager), CXmlElement.getCPtr(pXmlContainer), szFileName, bAbsFilePath);
+    return ret;
+  }
+
+  public static int GetXmlFileDataFromStream(SWIGTYPE_p_IVFSFileManager pFileManager, CXmlElement pXmlContainer, string szFileName) {
+    int ret = Engine2PINVOKE.GetXmlFileDataFromStream__SWIG_1(SWIGTYPE_p_IVFSFileManager.getCPtr(pFileManager), CXmlElement.getCPtr(pXmlContainer), szFileName);
+    return ret;
+  }
+
   public static readonly int ENGINE2_REV = Engine2PINVOKE.ENGINE2_REV_get();
   public static readonly int LogErrorMask = Engine2PINVOKE.LogErrorMask_get();
   public static readonly int LogNoCaretMask = Engine2PINVOKE.LogNoCaretMask_get();

@@ -49,14 +49,12 @@ public class EngineDecalInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_nDecalID {
+  public uint m_nDecalID {
     set {
-      Engine2PINVOKE.EngineDecalInfo_m_nDecalID_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.EngineDecalInfo_m_nDecalID_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.EngineDecalInfo_m_nDecalID_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.EngineDecalInfo_m_nDecalID_get(swigCPtr);
       return ret;
     } 
   }
@@ -135,14 +133,13 @@ public class EngineDecalInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_Engine2__String m_szMaterialName {
+  public Engine2String m_szMaterialName {
     set {
-      Engine2PINVOKE.EngineDecalInfo_m_szMaterialName_set(swigCPtr, SWIGTYPE_p_Engine2__String.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.EngineDecalInfo_m_szMaterialName_set(swigCPtr, Engine2String.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.EngineDecalInfo_m_szMaterialName_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = Engine2PINVOKE.EngineDecalInfo_m_szMaterialName_get(swigCPtr);
+      Engine2String ret = (cPtr == global::System.IntPtr.Zero) ? null : new Engine2String(cPtr, false);
       return ret;
     } 
   }

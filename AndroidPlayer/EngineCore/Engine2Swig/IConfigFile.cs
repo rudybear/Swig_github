@@ -49,25 +49,23 @@ public class IConfigFile : global::System.IDisposable {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetTexturesPathCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IConfigFile_GetTexturesPathCount(swigCPtr), true);
+  public virtual uint GetTexturesPathCount() {
+    uint ret = Engine2PINVOKE.IConfigFile_GetTexturesPathCount(swigCPtr);
     return ret;
   }
 
-  public virtual string GetTexturesPath(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.IConfigFile_GetTexturesPath(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetTexturesPath(uint arg0) {
+    string ret = Engine2PINVOKE.IConfigFile_GetTexturesPath(swigCPtr, arg0);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetModelsPathCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IConfigFile_GetModelsPathCount(swigCPtr), true);
+  public virtual uint GetModelsPathCount() {
+    uint ret = Engine2PINVOKE.IConfigFile_GetModelsPathCount(swigCPtr);
     return ret;
   }
 
-  public virtual string GetModelsPath(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.IConfigFile_GetModelsPath(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetModelsPath(uint arg0) {
+    string ret = Engine2PINVOKE.IConfigFile_GetModelsPath(swigCPtr, arg0);
     return ret;
   }
 
@@ -76,14 +74,13 @@ public class IConfigFile : global::System.IDisposable {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetEffectsPathCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IConfigFile_GetEffectsPathCount(swigCPtr), true);
+  public virtual uint GetEffectsPathCount() {
+    uint ret = Engine2PINVOKE.IConfigFile_GetEffectsPathCount(swigCPtr);
     return ret;
   }
 
-  public virtual string GetEffectsPath(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.IConfigFile_GetEffectsPath(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetEffectsPath(uint arg0) {
+    string ret = Engine2PINVOKE.IConfigFile_GetEffectsPath(swigCPtr, arg0);
     return ret;
   }
 
@@ -92,14 +89,13 @@ public class IConfigFile : global::System.IDisposable {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetScriptsPathCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IConfigFile_GetScriptsPathCount(swigCPtr), true);
+  public virtual uint GetScriptsPathCount() {
+    uint ret = Engine2PINVOKE.IConfigFile_GetScriptsPathCount(swigCPtr);
     return ret;
   }
 
-  public virtual string GetScriptsPath(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.IConfigFile_GetScriptsPath(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetScriptsPath(uint arg0) {
+    string ret = Engine2PINVOKE.IConfigFile_GetScriptsPath(swigCPtr, arg0);
     return ret;
   }
 
@@ -123,14 +119,13 @@ public class IConfigFile : global::System.IDisposable {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetParticlesPathCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IConfigFile_GetParticlesPathCount(swigCPtr), true);
+  public virtual uint GetParticlesPathCount() {
+    uint ret = Engine2PINVOKE.IConfigFile_GetParticlesPathCount(swigCPtr);
     return ret;
   }
 
-  public virtual string GetParticlesPath(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.IConfigFile_GetParticlesPath(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetParticlesPath(uint arg0) {
+    string ret = Engine2PINVOKE.IConfigFile_GetParticlesPath(swigCPtr, arg0);
     return ret;
   }
 
@@ -158,9 +153,9 @@ public class IConfigFile : global::System.IDisposable {
     Engine2PINVOKE.IConfigFile_SaveConfig(swigCPtr);
   }
 
-  public virtual SWIGTYPE_p_CXmlElement GetConfigXML() {
+  public virtual CXmlElement GetConfigXML() {
     global::System.IntPtr cPtr = Engine2PINVOKE.IConfigFile_GetConfigXML(swigCPtr);
-    SWIGTYPE_p_CXmlElement ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CXmlElement(cPtr, false);
+    CXmlElement ret = (cPtr == global::System.IntPtr.Zero) ? null : new CXmlElement(cPtr, false);
     return ret;
   }
 

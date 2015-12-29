@@ -76,14 +76,12 @@ public class MeshMergerInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_Flags {
+  public uint m_Flags {
     set {
-      Engine2PINVOKE.MeshMergerInfo_m_Flags_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.MeshMergerInfo_m_Flags_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.MeshMergerInfo_m_Flags_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.MeshMergerInfo_m_Flags_get(swigCPtr);
       return ret;
     } 
   }

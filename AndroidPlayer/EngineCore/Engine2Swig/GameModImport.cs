@@ -105,24 +105,24 @@ public class GameModImport : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_CXmlParams pConsole {
+  public CXmlParams pConsole {
     set {
-      Engine2PINVOKE.GameModImport_pConsole_set(swigCPtr, SWIGTYPE_p_CXmlParams.getCPtr(value));
+      Engine2PINVOKE.GameModImport_pConsole_set(swigCPtr, CXmlParams.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = Engine2PINVOKE.GameModImport_pConsole_get(swigCPtr);
-      SWIGTYPE_p_CXmlParams ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CXmlParams(cPtr, false);
+      CXmlParams ret = (cPtr == global::System.IntPtr.Zero) ? null : new CXmlParams(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_CXmlElement pGameConfig {
+  public CXmlElement pGameConfig {
     set {
-      Engine2PINVOKE.GameModImport_pGameConfig_set(swigCPtr, SWIGTYPE_p_CXmlElement.getCPtr(value));
+      Engine2PINVOKE.GameModImport_pGameConfig_set(swigCPtr, CXmlElement.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = Engine2PINVOKE.GameModImport_pGameConfig_get(swigCPtr);
-      SWIGTYPE_p_CXmlElement ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CXmlElement(cPtr, false);
+      CXmlElement ret = (cPtr == global::System.IntPtr.Zero) ? null : new CXmlElement(cPtr, false);
       return ret;
     } 
   }

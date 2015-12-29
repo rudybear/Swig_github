@@ -187,6 +187,300 @@ class Engine2PINVOKE {
   }
 
 
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_npos_get")]
+  public static extern uint Engine2String_npos_get();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_Engine2String__SWIG_0")]
+  public static extern global::System.IntPtr new_Engine2String__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_Engine2String__SWIG_1")]
+  public static extern global::System.IntPtr new_Engine2String__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_Engine2String__SWIG_2")]
+  public static extern global::System.IntPtr new_Engine2String__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_Engine2String__SWIG_3")]
+  public static extern global::System.IntPtr new_Engine2String__SWIG_3(char jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_Engine2String__SWIG_4")]
+  public static extern global::System.IntPtr new_Engine2String__SWIG_4(char jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_Engine2String__SWIG_5")]
+  public static extern global::System.IntPtr new_Engine2String__SWIG_5(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_Engine2String__SWIG_6")]
+  public static extern global::System.IntPtr new_Engine2String__SWIG_6(string jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_Engine2String__SWIG_7")]
+  public static extern global::System.IntPtr new_Engine2String__SWIG_7(string jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_Engine2String")]
+  public static extern void delete_Engine2String(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_length")]
+  public static extern uint Engine2String_length(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_size")]
+  public static extern uint Engine2String_size(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_empty")]
+  public static extern bool Engine2String_empty(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_clear")]
+  public static extern void Engine2String_clear(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_capacity")]
+  public static extern uint Engine2String_capacity(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_reserve__SWIG_0")]
+  public static extern void Engine2String_reserve__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_reserve__SWIG_1")]
+  public static extern void Engine2String_reserve__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_append__SWIG_0")]
+  public static extern global::System.IntPtr Engine2String_append__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_append__SWIG_1")]
+  public static extern global::System.IntPtr Engine2String_append__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_append__SWIG_2")]
+  public static extern global::System.IntPtr Engine2String_append__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3, uint jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_append__SWIG_3")]
+  public static extern global::System.IntPtr Engine2String_append__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_append__SWIG_4")]
+  public static extern global::System.IntPtr Engine2String_append__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, char jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_append__SWIG_5")]
+  public static extern global::System.IntPtr Engine2String_append__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_assign__SWIG_0")]
+  public static extern global::System.IntPtr Engine2String_assign__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_assign__SWIG_1")]
+  public static extern global::System.IntPtr Engine2String_assign__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_assign__SWIG_2")]
+  public static extern global::System.IntPtr Engine2String_assign__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3, uint jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_assign__SWIG_3")]
+  public static extern global::System.IntPtr Engine2String_assign__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_assign__SWIG_4")]
+  public static extern global::System.IntPtr Engine2String_assign__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, char jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_assign__SWIG_5")]
+  public static extern global::System.IntPtr Engine2String_assign__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_at")]
+  public static extern char Engine2String_at(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_begin__SWIG_0")]
+  public static extern string Engine2String_begin__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_end__SWIG_0")]
+  public static extern string Engine2String_end__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_c_str")]
+  public static extern string Engine2String_c_str(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_data")]
+  public static extern string Engine2String_data(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compare__SWIG_0")]
+  public static extern int Engine2String_compare__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compare__SWIG_1")]
+  public static extern int Engine2String_compare__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compare__SWIG_2")]
+  public static extern int Engine2String_compare__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, uint jarg5, uint jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compare__SWIG_3")]
+  public static extern int Engine2String_compare__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compare__SWIG_4")]
+  public static extern int Engine2String_compare__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, string jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareWithPos__SWIG_0")]
+  public static extern int Engine2String_compareWithPos__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, string jarg4, uint jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareWithPos__SWIG_1")]
+  public static extern int Engine2String_compareWithPos__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, string jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareNoCase__SWIG_0")]
+  public static extern int Engine2String_compareNoCase__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareNoCase__SWIG_1")]
+  public static extern int Engine2String_compareNoCase__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareNoCase__SWIG_2")]
+  public static extern int Engine2String_compareNoCase__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, uint jarg5, uint jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareNoCase__SWIG_3")]
+  public static extern int Engine2String_compareNoCase__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareNoCase__SWIG_4")]
+  public static extern int Engine2String_compareNoCase__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, string jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareNoCaseWithPos__SWIG_0")]
+  public static extern int Engine2String_compareNoCaseWithPos__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, string jarg4, uint jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_compareNoCaseWithPos__SWIG_1")]
+  public static extern int Engine2String_compareNoCaseWithPos__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, string jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_copy__SWIG_0")]
+  public static extern uint Engine2String_copy__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3, uint jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_copy__SWIG_1")]
+  public static extern uint Engine2String_copy__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_push_back")]
+  public static extern void Engine2String_push_back(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_resize__SWIG_0")]
+  public static extern void Engine2String_resize__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, char jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_resize__SWIG_1")]
+  public static extern void Engine2String_resize__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_substr__SWIG_0")]
+  public static extern global::System.IntPtr Engine2String_substr__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_substr__SWIG_1")]
+  public static extern global::System.IntPtr Engine2String_substr__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_replace__SWIG_0")]
+  public static extern global::System.IntPtr Engine2String_replace__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2, char jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_replace__SWIG_1")]
+  public static extern global::System.IntPtr Engine2String_replace__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_replace__SWIG_2")]
+  public static extern global::System.IntPtr Engine2String_replace__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, string jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_replace__SWIG_3")]
+  public static extern global::System.IntPtr Engine2String_replace__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, string jarg4, uint jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_replace__SWIG_4")]
+  public static extern global::System.IntPtr Engine2String_replace__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, uint jarg4, char jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_insert__SWIG_0")]
+  public static extern global::System.IntPtr Engine2String_insert__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, char jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_insert__SWIG_1")]
+  public static extern global::System.IntPtr Engine2String_insert__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3, char jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_insert__SWIG_2")]
+  public static extern global::System.IntPtr Engine2String_insert__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_insert__SWIG_3")]
+  public static extern global::System.IntPtr Engine2String_insert__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, string jarg3, uint jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_erase__SWIG_0")]
+  public static extern global::System.IntPtr Engine2String_erase__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_erase__SWIG_1")]
+  public static extern global::System.IntPtr Engine2String_erase__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find__SWIG_0")]
+  public static extern uint Engine2String_find__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find__SWIG_1")]
+  public static extern uint Engine2String_find__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find__SWIG_2")]
+  public static extern uint Engine2String_find__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find__SWIG_3")]
+  public static extern uint Engine2String_find__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_rfind__SWIG_0")]
+  public static extern uint Engine2String_rfind__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_rfind__SWIG_1")]
+  public static extern uint Engine2String_rfind__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_last_of__SWIG_0")]
+  public static extern uint Engine2String_find_last_of__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_last_of__SWIG_1")]
+  public static extern uint Engine2String_find_last_of__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_of__SWIG_0")]
+  public static extern uint Engine2String_find_first_of__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_of__SWIG_1")]
+  public static extern uint Engine2String_find_first_of__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_of__SWIG_2")]
+  public static extern uint Engine2String_find_first_of__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_of__SWIG_3")]
+  public static extern uint Engine2String_find_first_of__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_of__SWIG_4")]
+  public static extern uint Engine2String_find_first_of__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_of__SWIG_5")]
+  public static extern uint Engine2String_find_first_of__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_not_of__SWIG_0")]
+  public static extern uint Engine2String_find_first_not_of__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_not_of__SWIG_1")]
+  public static extern uint Engine2String_find_first_not_of__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_not_of__SWIG_2")]
+  public static extern uint Engine2String_find_first_not_of__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_not_of__SWIG_3")]
+  public static extern uint Engine2String_find_first_not_of__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_not_of__SWIG_4")]
+  public static extern uint Engine2String_find_first_not_of__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3, uint jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_not_of__SWIG_5")]
+  public static extern uint Engine2String_find_first_not_of__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_find_first_not_of__SWIG_6")]
+  public static extern uint Engine2String_find_first_not_of__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_swap")]
+  public static extern void Engine2String_swap(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_FixPathToUnix")]
+  public static extern global::System.IntPtr Engine2String_FixPathToUnix(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_Format")]
+  public static extern global::System.IntPtr Engine2String_Format(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_MakeLower")]
+  public static extern global::System.IntPtr Engine2String_MakeLower(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_MakeLowerLocale")]
+  public static extern global::System.IntPtr Engine2String_MakeLowerLocale(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String_MakeUpper")]
+  public static extern global::System.IntPtr Engine2String_MakeUpper(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String__strlen")]
+  public static extern uint Engine2String__strlen(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String__strchr")]
+  public static extern string Engine2String__strchr(string jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String__strstr")]
+  public static extern string Engine2String__strstr(string jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String__IsValidString")]
+  public static extern bool Engine2String__IsValidString(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_Engine2String__usedMemory")]
+  public static extern int Engine2String__usedMemory(int jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ENGINE2_REV_get")]
   public static extern int ENGINE2_REV_get();
 
@@ -197,10 +491,10 @@ class Engine2PINVOKE {
   public static extern int LogNoCaretMask_get();
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ComponentInfo_m_iParent_set")]
-  public static extern void ComponentInfo_m_iParent_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void ComponentInfo_m_iParent_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ComponentInfo_m_iParent_get")]
-  public static extern global::System.IntPtr ComponentInfo_m_iParent_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint ComponentInfo_m_iParent_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ComponentInfo_m_strName_set")]
   public static extern void ComponentInfo_m_strName_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
@@ -347,13 +641,13 @@ class Engine2PINVOKE {
   public static extern void IDebugInformationManager_RemoveDebugParam(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDebugInformationManager_GetDebugParamNums")]
-  public static extern global::System.IntPtr IDebugInformationManager_GetDebugParamNums(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IDebugInformationManager_GetDebugParamNums(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDebugInformationManager_GetDebugParamSection")]
-  public static extern string IDebugInformationManager_GetDebugParamSection(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IDebugInformationManager_GetDebugParamSection(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDebugInformationManager_GetDebugParam")]
-  public static extern global::System.IntPtr IDebugInformationManager_GetDebugParam(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern global::System.IntPtr IDebugInformationManager_GetDebugParam(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDebugInformationManager_GetDebugParamByName")]
   public static extern global::System.IntPtr IDebugInformationManager_GetDebugParamByName(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
@@ -407,34 +701,34 @@ class Engine2PINVOKE {
   public static extern string IConfigFile_GetPath(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetTexturesPathCount")]
-  public static extern global::System.IntPtr IConfigFile_GetTexturesPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IConfigFile_GetTexturesPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetTexturesPath")]
-  public static extern string IConfigFile_GetTexturesPath(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IConfigFile_GetTexturesPath(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetModelsPathCount")]
-  public static extern global::System.IntPtr IConfigFile_GetModelsPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IConfigFile_GetModelsPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetModelsPath")]
-  public static extern string IConfigFile_GetModelsPath(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IConfigFile_GetModelsPath(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetTerrainPath")]
   public static extern string IConfigFile_GetTerrainPath(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetEffectsPathCount")]
-  public static extern global::System.IntPtr IConfigFile_GetEffectsPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IConfigFile_GetEffectsPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetEffectsPath")]
-  public static extern string IConfigFile_GetEffectsPath(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IConfigFile_GetEffectsPath(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetEffectsWritePath")]
   public static extern string IConfigFile_GetEffectsWritePath(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetScriptsPathCount")]
-  public static extern global::System.IntPtr IConfigFile_GetScriptsPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IConfigFile_GetScriptsPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetScriptsPath")]
-  public static extern string IConfigFile_GetScriptsPath(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IConfigFile_GetScriptsPath(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetSoundPath")]
   public static extern string IConfigFile_GetSoundPath(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -449,10 +743,10 @@ class Engine2PINVOKE {
   public static extern string IConfigFile_GetAnimationFolder(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetParticlesPathCount")]
-  public static extern global::System.IntPtr IConfigFile_GetParticlesPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IConfigFile_GetParticlesPathCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_GetParticlesPath")]
-  public static extern string IConfigFile_GetParticlesPath(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IConfigFile_GetParticlesPath(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IConfigFile_LoadConfigFromFile__SWIG_0")]
   public static extern int IConfigFile_LoadConfigFromFile__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4);
@@ -479,16 +773,16 @@ class Engine2PINVOKE {
   public static extern void ILogManager_RegisterListener(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILogManager_AddToLog")]
-  public static extern void ILogManager_AddToLog(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3);
+  public static extern void ILogManager_AddToLog(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, string jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILogManager_SetLastErrorLogging")]
   public static extern void ILogManager_SetLastErrorLogging(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILogManager_GetLastErrorCount")]
-  public static extern global::System.IntPtr ILogManager_GetLastErrorCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint ILogManager_GetLastErrorCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILogManager_GetLastError")]
-  public static extern string ILogManager_GetLastError(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string ILogManager_GetLastError(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILogManager_ClearLastErrorList")]
   public static extern void ILogManager_ClearLastErrorList(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -1175,10 +1469,10 @@ class Engine2PINVOKE {
   public static extern global::System.IntPtr MeshMergerInfo_m_vNotProcessedMeshes_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_MeshMergerInfo_m_Flags_set")]
-  public static extern void MeshMergerInfo_m_Flags_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void MeshMergerInfo_m_Flags_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_MeshMergerInfo_m_Flags_get")]
-  public static extern global::System.IntPtr MeshMergerInfo_m_Flags_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint MeshMergerInfo_m_Flags_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_MeshMergerInfo")]
   public static extern void delete_MeshMergerInfo(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -1190,10 +1484,10 @@ class Engine2PINVOKE {
   public static extern global::System.IntPtr MeshMergerInstanceInfo_m_Matrix_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_set")]
-  public static extern void MeshMergerInstanceInfo_m_iDiffuseColor_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void MeshMergerInstanceInfo_m_iDiffuseColor_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_get")]
-  public static extern global::System.IntPtr MeshMergerInstanceInfo_m_iDiffuseColor_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint MeshMergerInstanceInfo_m_iDiffuseColor_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_MeshMergerInstanceInfo")]
   public static extern global::System.IntPtr new_MeshMergerInstanceInfo();
@@ -1220,10 +1514,10 @@ class Engine2PINVOKE {
   public static extern global::System.IntPtr MeshMergerInfo2_m_vResultMeshes_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_MeshMergerInfo2_m_Flags2_set")]
-  public static extern void MeshMergerInfo2_m_Flags2_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void MeshMergerInfo2_m_Flags2_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_MeshMergerInfo2_m_Flags2_get")]
-  public static extern global::System.IntPtr MeshMergerInfo2_m_Flags2_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint MeshMergerInfo2_m_Flags2_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_MeshMergerInfo2")]
   public static extern global::System.IntPtr new_MeshMergerInfo2();
@@ -1391,25 +1685,25 @@ class Engine2PINVOKE {
   public static extern void delete_IDecalManager(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDecalManager_SpawnDecal")]
-  public static extern global::System.IntPtr IDecalManager_SpawnDecal(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern uint IDecalManager_SpawnDecal(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDecalManager_MoveDecal")]
-  public static extern bool IDecalManager_MoveDecal(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern bool IDecalManager_MoveDecal(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDecalManager_GetDecalMaterial")]
-  public static extern global::System.IntPtr IDecalManager_GetDecalMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern global::System.IntPtr IDecalManager_GetDecalMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDecalManager_GetDecalMesh")]
-  public static extern global::System.IntPtr IDecalManager_GetDecalMesh(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern global::System.IntPtr IDecalManager_GetDecalMesh(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDecalManager_RemoveDecal")]
-  public static extern bool IDecalManager_RemoveDecal(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern bool IDecalManager_RemoveDecal(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDecalManager_SetTransparency")]
-  public static extern void IDecalManager_SetTransparency(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+  public static extern void IDecalManager_SetTransparency(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, float jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IDecalManager_GetTransparency")]
-  public static extern float IDecalManager_GetTransparency(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IDecalManager_GetTransparency(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_AnimationManager_PreloadAnimation")]
   public static extern bool AnimationManager_PreloadAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
@@ -1433,16 +1727,16 @@ class Engine2PINVOKE {
   public static extern void delete_IDeviceDependendentInfo(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SMemTextureInfo_m_iWidth_set")]
-  public static extern void SMemTextureInfo_m_iWidth_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void SMemTextureInfo_m_iWidth_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SMemTextureInfo_m_iWidth_get")]
-  public static extern global::System.IntPtr SMemTextureInfo_m_iWidth_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint SMemTextureInfo_m_iWidth_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SMemTextureInfo_m_iHeight_set")]
-  public static extern void SMemTextureInfo_m_iHeight_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void SMemTextureInfo_m_iHeight_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SMemTextureInfo_m_iHeight_get")]
-  public static extern global::System.IntPtr SMemTextureInfo_m_iHeight_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint SMemTextureInfo_m_iHeight_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SMemTextureInfo_m_Format_set")]
   public static extern void SMemTextureInfo_m_Format_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -1457,28 +1751,28 @@ class Engine2PINVOKE {
   public static extern void delete_SMemTextureInfo(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_atlasHeight_set")]
-  public static extern void SFontStatistics_m_atlasHeight_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void SFontStatistics_m_atlasHeight_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_atlasHeight_get")]
-  public static extern global::System.IntPtr SFontStatistics_m_atlasHeight_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint SFontStatistics_m_atlasHeight_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_atlasWidth_set")]
-  public static extern void SFontStatistics_m_atlasWidth_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void SFontStatistics_m_atlasWidth_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_atlasWidth_get")]
-  public static extern global::System.IntPtr SFontStatistics_m_atlasWidth_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint SFontStatistics_m_atlasWidth_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_textureCount_set")]
-  public static extern void SFontStatistics_m_textureCount_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void SFontStatistics_m_textureCount_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_textureCount_get")]
-  public static extern global::System.IntPtr SFontStatistics_m_textureCount_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint SFontStatistics_m_textureCount_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_generationTimeMs_set")]
-  public static extern void SFontStatistics_m_generationTimeMs_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void SFontStatistics_m_generationTimeMs_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_generationTimeMs_get")]
-  public static extern global::System.IntPtr SFontStatistics_m_generationTimeMs_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint SFontStatistics_m_generationTimeMs_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_SFontStatistics_m_textures_set")]
   public static extern void SFontStatistics_m_textures_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -1925,7 +2219,7 @@ class Engine2PINVOKE {
   public static extern bool IRender_SaveTextureToFile(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IRender_GetStatistics__SWIG_0")]
-  public static extern global::System.IntPtr IRender_GetStatistics__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern global::System.IntPtr IRender_GetStatistics__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IRender_GetStatistics__SWIG_1")]
   public static extern global::System.IntPtr IRender_GetStatistics__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -1964,7 +2258,7 @@ class Engine2PINVOKE {
   public static extern global::System.IntPtr IRender_GetMaterialLib(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IRender_AddToBatchCount")]
-  public static extern void IRender_AddToBatchCount(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IRender_AddToBatchCount(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IRender_ForceRenderMask")]
   public static extern void IRender_ForceRenderMask(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -2306,10 +2600,10 @@ class Engine2PINVOKE {
   public static extern int EngineDecalInfo_m_eDecalType_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_EngineDecalInfo_m_nDecalID_set")]
-  public static extern void EngineDecalInfo_m_nDecalID_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void EngineDecalInfo_m_nDecalID_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_EngineDecalInfo_m_nDecalID_get")]
-  public static extern global::System.IntPtr EngineDecalInfo_m_nDecalID_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint EngineDecalInfo_m_nDecalID_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_EngineDecalInfo_m_pDecalOwner_set")]
   public static extern void EngineDecalInfo_m_pDecalOwner_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -2498,16 +2792,16 @@ class Engine2PINVOKE {
   public static extern uint IMeshInfo_GetSortInt(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMeshInfo_GetRenderFlags")]
-  public static extern global::System.IntPtr IMeshInfo_GetRenderFlags(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IMeshInfo_GetRenderFlags(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMeshInfo_SetRenderFlags")]
-  public static extern void IMeshInfo_SetRenderFlags(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IMeshInfo_SetRenderFlags(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMeshInfo_ForceSetRenderFlags")]
-  public static extern void IMeshInfo_ForceSetRenderFlags(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IMeshInfo_ForceSetRenderFlags(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMeshInfo_RemoveRenderFlags")]
-  public static extern void IMeshInfo_RemoveRenderFlags(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IMeshInfo_RemoveRenderFlags(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMeshInfo_DrawCustom")]
   public static extern void IMeshInfo_DrawCustom(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -2672,31 +2966,31 @@ class Engine2PINVOKE {
   public static extern void delete_IXRefInfoMesh(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_GetVisibleMaterialsCount")]
-  public static extern global::System.IntPtr IMaterialInfo_GetVisibleMaterialsCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IMaterialInfo_GetVisibleMaterialsCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_GetVisibleMaterialName")]
-  public static extern string IMaterialInfo_GetVisibleMaterialName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IMaterialInfo_GetVisibleMaterialName(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_GetVisibleMaterial")]
-  public static extern global::System.IntPtr IMaterialInfo_GetVisibleMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern global::System.IntPtr IMaterialInfo_GetVisibleMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_SetVisibleMaterial")]
-  public static extern bool IMaterialInfo_SetVisibleMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern bool IMaterialInfo_SetVisibleMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_SetVisibleMaterialByMaterialName")]
-  public static extern bool IMaterialInfo_SetVisibleMaterialByMaterialName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3);
+  public static extern bool IMaterialInfo_SetVisibleMaterialByMaterialName(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, string jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_GetVisibleMaterialParamCount")]
-  public static extern global::System.IntPtr IMaterialInfo_GetVisibleMaterialParamCount(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern uint IMaterialInfo_GetVisibleMaterialParamCount(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_GetVisibleMaterialParam")]
-  public static extern global::System.IntPtr IMaterialInfo_GetVisibleMaterialParam(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern global::System.IntPtr IMaterialInfo_GetVisibleMaterialParam(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_AddVisibleMaterialParam")]
-  public static extern bool IMaterialInfo_AddVisibleMaterialParam(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern bool IMaterialInfo_AddVisibleMaterialParam(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_AddVisibleMaterialParamPtr")]
-  public static extern bool IMaterialInfo_AddVisibleMaterialParamPtr(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern bool IMaterialInfo_AddVisibleMaterialParamPtr(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_IMaterialInfo")]
   public static extern void delete_IMaterialInfo(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -2804,10 +3098,10 @@ class Engine2PINVOKE {
   public static extern int AnimationParam_m_iOnlyAffectedBone_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_AnimationParam_m_nLayer_set")]
-  public static extern void AnimationParam_m_nLayer_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void AnimationParam_m_nLayer_set(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_AnimationParam_m_nLayer_get")]
-  public static extern global::System.IntPtr AnimationParam_m_nLayer_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint AnimationParam_m_nLayer_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_AnimationParam_m_bGameUpdate_set")]
   public static extern void AnimationParam_m_bGameUpdate_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
@@ -2853,6 +3147,30 @@ class Engine2PINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_AnimationParam")]
   public static extern void delete_AnimationParam(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_UVAnimationParam")]
+  public static extern global::System.IntPtr new_UVAnimationParam();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_UVAnimationParam_m_fSpeed_set")]
+  public static extern void UVAnimationParam_m_fSpeed_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_UVAnimationParam_m_fSpeed_get")]
+  public static extern float UVAnimationParam_m_fSpeed_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_UVAnimationParam_m_bGameUpdate_set")]
+  public static extern void UVAnimationParam_m_bGameUpdate_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_UVAnimationParam_m_bGameUpdate_get")]
+  public static extern bool UVAnimationParam_m_bGameUpdate_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_UVAnimationParam_m_bLooped_set")]
+  public static extern void UVAnimationParam_m_bLooped_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_UVAnimationParam_m_bLooped_get")]
+  public static extern bool UVAnimationParam_m_bLooped_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_UVAnimationParam")]
+  public static extern void delete_UVAnimationParam(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_LightmapInfo_m_vecLightmapWorldCoord_set")]
   public static extern void LightmapInfo_m_vecLightmapWorldCoord_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -2942,7 +3260,7 @@ class Engine2PINVOKE {
   public static extern bool IBaseMeshInfo_IsSubmeshMaxMaterialUsed(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetNumLods")]
-  public static extern global::System.IntPtr IBaseMeshInfo_GetNumLods(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IBaseMeshInfo_GetNumLods(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_SetAccessibleLod")]
   public static extern void IBaseMeshInfo_SetAccessibleLod(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -2954,7 +3272,7 @@ class Engine2PINVOKE {
   public static extern void IBaseMeshInfo_SetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetVisibleLod")]
-  public static extern global::System.IntPtr IBaseMeshInfo_GetVisibleLod(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IBaseMeshInfo_GetVisibleLod(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_SetLodDistances")]
   public static extern void IBaseMeshInfo_SetLodDistances(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4);
@@ -2969,19 +3287,19 @@ class Engine2PINVOKE {
   public static extern bool IBaseMeshInfo_TestRayIntersectionSubmesh(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetNumMaterials")]
-  public static extern global::System.IntPtr IBaseMeshInfo_GetNumMaterials(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IBaseMeshInfo_GetNumMaterials(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetVisibleGlobalMaterialNum")]
-  public static extern global::System.IntPtr IBaseMeshInfo_GetVisibleGlobalMaterialNum(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern uint IBaseMeshInfo_GetVisibleGlobalMaterialNum(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetVisibleFromGlobalMaterialNum")]
-  public static extern global::System.IntPtr IBaseMeshInfo_GetVisibleFromGlobalMaterialNum(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern uint IBaseMeshInfo_GetVisibleFromGlobalMaterialNum(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetMaxMaterialsCount")]
-  public static extern global::System.IntPtr IBaseMeshInfo_GetMaxMaterialsCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IBaseMeshInfo_GetMaxMaterialsCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetMaxMaterial")]
-  public static extern global::System.IntPtr IBaseMeshInfo_GetMaxMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern global::System.IntPtr IBaseMeshInfo_GetMaxMaterial(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetSkeleton")]
   public static extern global::System.IntPtr IBaseMeshInfo_GetSkeleton(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -3002,37 +3320,64 @@ class Engine2PINVOKE {
   public static extern void IBaseMeshInfo_UnloadAnimations(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_UnloadAnimation")]
-  public static extern void IBaseMeshInfo_UnloadAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IBaseMeshInfo_UnloadAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_StartAnimation")]
-  public static extern void IBaseMeshInfo_StartAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern void IBaseMeshInfo_StartAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_StopAnimation")]
-  public static extern void IBaseMeshInfo_StopAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IBaseMeshInfo_StopAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetNumAnimations")]
   public static extern int IBaseMeshInfo_GetNumAnimations(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetAnimationName")]
-  public static extern string IBaseMeshInfo_GetAnimationName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IBaseMeshInfo_GetAnimationName(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetAnimationID")]
   public static extern int IBaseMeshInfo_GetAnimationID(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetParams")]
-  public static extern bool IBaseMeshInfo_GetParams(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetParams__SWIG_0")]
+  public static extern bool IBaseMeshInfo_GetParams__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_UpdateParams")]
-  public static extern bool IBaseMeshInfo_UpdateParams(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_UpdateParams__SWIG_0")]
+  public static extern bool IBaseMeshInfo_UpdateParams__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetStartTime")]
-  public static extern float IBaseMeshInfo_GetStartTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IBaseMeshInfo_GetStartTime(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetEndTime")]
-  public static extern float IBaseMeshInfo_GetEndTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IBaseMeshInfo_GetEndTime(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_SetRootBone")]
   public static extern void IBaseMeshInfo_SetRootBone(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_LoadUVAnimation")]
+  public static extern uint IBaseMeshInfo_LoadUVAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_UnloadUVAnimation")]
+  public static extern void IBaseMeshInfo_UnloadUVAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetNumUVAnimations")]
+  public static extern int IBaseMeshInfo_GetNumUVAnimations(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetUVAnimationName")]
+  public static extern string IBaseMeshInfo_GetUVAnimationName(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetUVAnimationID")]
+  public static extern int IBaseMeshInfo_GetUVAnimationID(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_StartUVAnimation")]
+  public static extern void IBaseMeshInfo_StartUVAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_StopUVAnimation")]
+  public static extern void IBaseMeshInfo_StopUVAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetParams__SWIG_1")]
+  public static extern bool IBaseMeshInfo_GetParams__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_UpdateParams__SWIG_1")]
+  public static extern bool IBaseMeshInfo_UpdateParams__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetXRefsCount")]
   public static extern uint IBaseMeshInfo_GetXRefsCount(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -3089,7 +3434,7 @@ class Engine2PINVOKE {
   public static extern int IAnimMeshInfo_LoadAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_UnloadAnimation")]
-  public static extern void IAnimMeshInfo_UnloadAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IAnimMeshInfo_UnloadAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_UnloadAnimations")]
   public static extern void IAnimMeshInfo_UnloadAnimations(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -3098,73 +3443,73 @@ class Engine2PINVOKE {
   public static extern int IAnimMeshInfo_GetNumAnimations(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetAnimationName")]
-  public static extern string IAnimMeshInfo_GetAnimationName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern string IAnimMeshInfo_GetAnimationName(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetAnimationID")]
   public static extern int IAnimMeshInfo_GetAnimationID(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_StartAnimation")]
-  public static extern void IAnimMeshInfo_StartAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern void IAnimMeshInfo_StartAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_DetachBoneFromAnimation")]
-  public static extern void IAnimMeshInfo_DetachBoneFromAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern void IAnimMeshInfo_DetachBoneFromAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_AttachBoneToAnimation")]
-  public static extern void IAnimMeshInfo_AttachBoneToAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern void IAnimMeshInfo_AttachBoneToAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_IsBoneAttachedToAnimation")]
-  public static extern bool IAnimMeshInfo_IsBoneAttachedToAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern bool IAnimMeshInfo_IsBoneAttachedToAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_StopAnimation")]
-  public static extern void IAnimMeshInfo_StopAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IAnimMeshInfo_StopAnimation(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetAnimationSize")]
   public static extern int IAnimMeshInfo_GetAnimationSize(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetParams")]
-  public static extern bool IAnimMeshInfo_GetParams(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern bool IAnimMeshInfo_GetParams(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_UpdateParams")]
-  public static extern bool IAnimMeshInfo_UpdateParams(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern bool IAnimMeshInfo_UpdateParams(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetSkeleton")]
   public static extern global::System.IntPtr IAnimMeshInfo_GetSkeleton(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_Update__SWIG_0")]
-  public static extern bool IAnimMeshInfo_Update__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern bool IAnimMeshInfo_Update__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_Update__SWIG_1")]
   public static extern bool IAnimMeshInfo_Update__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetTimeGameUpdate")]
-  public static extern void IAnimMeshInfo_SetTimeGameUpdate(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+  public static extern void IAnimMeshInfo_SetTimeGameUpdate(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, bool jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetStartTime")]
-  public static extern float IAnimMeshInfo_GetStartTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IAnimMeshInfo_GetStartTime(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetEndTime")]
-  public static extern float IAnimMeshInfo_GetEndTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IAnimMeshInfo_GetEndTime(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetCurrentTrackTime")]
-  public static extern void IAnimMeshInfo_SetCurrentTrackTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+  public static extern void IAnimMeshInfo_SetCurrentTrackTime(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, float jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetCurrentTrackTime")]
-  public static extern float IAnimMeshInfo_GetCurrentTrackTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IAnimMeshInfo_GetCurrentTrackTime(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetCurrentWeight")]
-  public static extern float IAnimMeshInfo_GetCurrentWeight(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IAnimMeshInfo_GetCurrentWeight(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetCurrentWeight")]
-  public static extern void IAnimMeshInfo_SetCurrentWeight(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+  public static extern void IAnimMeshInfo_SetCurrentWeight(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, float jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetGlobalIDFromLocalID")]
-  public static extern global::System.IntPtr IAnimMeshInfo_GetGlobalIDFromLocalID(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern uint IAnimMeshInfo_GetGlobalIDFromLocalID(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetBindPose")]
   public static extern void IAnimMeshInfo_SetBindPose(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_IsAnimationPlay")]
-  public static extern bool IAnimMeshInfo_IsAnimationPlay(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern bool IAnimMeshInfo_IsAnimationPlay(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_IsAnyAnimationPlay")]
   public static extern bool IAnimMeshInfo_IsAnyAnimationPlay(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -3176,7 +3521,7 @@ class Engine2PINVOKE {
   public static extern int IAnimMeshInfo_GetMaxMipLevel(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetNumLods")]
-  public static extern global::System.IntPtr IAnimMeshInfo_GetNumLods(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IAnimMeshInfo_GetNumLods(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetAccessibleLod")]
   public static extern void IAnimMeshInfo_SetAccessibleLod(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
@@ -3188,13 +3533,13 @@ class Engine2PINVOKE {
   public static extern void IAnimMeshInfo_SetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetActiveBonesCount")]
-  public static extern global::System.IntPtr IAnimMeshInfo_GetActiveBonesCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern uint IAnimMeshInfo_GetActiveBonesCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetLodUpdateMult")]
-  public static extern global::System.IntPtr IAnimMeshInfo_GetLodUpdateMult(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern uint IAnimMeshInfo_GetLodUpdateMult(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetLodUpdateMult")]
-  public static extern void IAnimMeshInfo_SetLodUpdateMult(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+  public static extern void IAnimMeshInfo_SetLodUpdateMult(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_TestRayIntersectionSubmesh")]
   public static extern bool IAnimMeshInfo_TestRayIntersectionSubmesh(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6);
@@ -3494,7 +3839,7 @@ class Engine2PINVOKE {
   public static extern global::System.IntPtr new_CVec4__SWIG_1(float jarg1, float jarg2, float jarg3, float jarg4);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_CVec4__SWIG_2")]
-  public static extern global::System.IntPtr new_CVec4__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern global::System.IntPtr new_CVec4__SWIG_2(uint jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_CVec4__SWIG_3")]
   public static extern global::System.IntPtr new_CVec4__SWIG_3(float jarg1);
@@ -3997,8 +4342,14 @@ class Engine2PINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CCamera_SetViewParams3")]
   public static extern void CCamera_SetViewParams3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
 
-  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CCamera_SetProjParams")]
-  public static extern void CCamera_SetProjParams(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CCamera_SetProjParams__SWIG_0")]
+  public static extern void CCamera_SetProjParams__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5, float jarg6, float jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CCamera_SetProjParams__SWIG_1")]
+  public static extern void CCamera_SetProjParams__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5, float jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CCamera_SetProjParams__SWIG_2")]
+  public static extern void CCamera_SetProjParams__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4, float jarg5);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CCamera_GetProjParams")]
   public static extern void CCamera_GetProjParams(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
@@ -4078,6 +4429,210 @@ class Engine2PINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_CCamera")]
   public static extern void delete_CCamera(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_CXmlParam__SWIG_0")]
+  public static extern global::System.IntPtr new_CXmlParam__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_CXmlParam__SWIG_1")]
+  public static extern global::System.IntPtr new_CXmlParam__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_CXmlParam")]
+  public static extern void delete_CXmlParam(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParam_ParamName_set")]
+  public static extern void CXmlParam_ParamName_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParam_ParamName_get")]
+  public static extern global::System.IntPtr CXmlParam_ParamName_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParam_ParamValue_set")]
+  public static extern void CXmlParam_ParamValue_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParam_ParamValue_get")]
+  public static extern global::System.IntPtr CXmlParam_ParamValue_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_IXmlParams")]
+  public static extern void delete_IXmlParams(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IXmlParams_GetParam")]
+  public static extern global::System.IntPtr IXmlParams_GetParam(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IXmlParams_GetNumParams")]
+  public static extern int IXmlParams_GetNumParams(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IXmlParams_GetParamByName")]
+  public static extern global::System.IntPtr IXmlParams_GetParamByName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IXmlParams_GetValueByName")]
+  public static extern string IXmlParams_GetValueByName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IXmlParams_SetParam")]
+  public static extern void IXmlParams_SetParam(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_CXmlParams")]
+  public static extern global::System.IntPtr new_CXmlParams();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_CXmlParams")]
+  public static extern void delete_CXmlParams(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParams_GetParam")]
+  public static extern global::System.IntPtr CXmlParams_GetParam(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParams_GetParamByName")]
+  public static extern global::System.IntPtr CXmlParams_GetParamByName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParams_GetNumParams")]
+  public static extern int CXmlParams_GetNumParams(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParams_GetValueByName")]
+  public static extern string CXmlParams_GetValueByName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParams_SetParam")]
+  public static extern void CXmlParams_SetParam(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParams_m_Contents_set")]
+  public static extern void CXmlParams_m_Contents_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParams_m_Contents_get")]
+  public static extern global::System.IntPtr CXmlParams_m_Contents_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_CXmlVector")]
+  public static extern global::System.IntPtr new_CXmlVector();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_CXmlVector")]
+  public static extern void delete_CXmlVector(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_Serialize")]
+  public static extern int CXmlVector_Serialize(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_SerializeBuffer")]
+  public static extern int CXmlVector_SerializeBuffer(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_Deserialize")]
+  public static extern int CXmlVector_Deserialize(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_FindElementByName__SWIG_0")]
+  public static extern global::System.IntPtr CXmlVector_FindElementByName__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_FindElementByNameConst")]
+  public static extern global::System.IntPtr CXmlVector_FindElementByNameConst(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_AddElement")]
+  public static extern global::System.IntPtr CXmlVector_AddElement(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_SwapElements")]
+  public static extern void CXmlVector_SwapElements(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_RemoveElement")]
+  public static extern void CXmlVector_RemoveElement(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_m_Contents_set")]
+  public static extern void CXmlVector_m_Contents_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlVector_m_Contents_get")]
+  public static extern global::System.IntPtr CXmlVector_m_Contents_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_new_CXmlElement")]
+  public static extern global::System.IntPtr new_CXmlElement();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_CXmlElement")]
+  public static extern void delete_CXmlElement(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_Serialize__SWIG_0")]
+  public static extern int CXmlElement_Serialize__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_SerializeThroughAPI")]
+  public static extern int CXmlElement_SerializeThroughAPI(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_Serialize__SWIG_1")]
+  public static extern int CXmlElement_Serialize__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_SerializeBuffer")]
+  public static extern int CXmlElement_SerializeBuffer(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_SetName")]
+  public static extern void CXmlElement_SetName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_LoadFromXml__SWIG_0")]
+  public static extern int CXmlElement_LoadFromXml__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_LoadFromXml__SWIG_1")]
+  public static extern int CXmlElement_LoadFromXml__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_LoadFromStr__SWIG_0")]
+  public static extern int CXmlElement_LoadFromStr__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_LoadFromStr__SWIG_1")]
+  public static extern int CXmlElement_LoadFromStr__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_GetParamValueByName")]
+  public static extern string CXmlElement_GetParamValueByName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_GetElementByName")]
+  public static extern global::System.IntPtr CXmlElement_GetElementByName(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_Deserialize__SWIG_0")]
+  public static extern int CXmlElement_Deserialize__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_Deserialize__SWIG_1")]
+  public static extern int CXmlElement_Deserialize__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_ClearContents")]
+  public static extern void CXmlElement_ClearContents(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_Clone")]
+  public static extern global::System.IntPtr CXmlElement_Clone(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_ProcessXmlNode")]
+  public static extern int CXmlElement_ProcessXmlNode(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_CopyFrom")]
+  public static extern void CXmlElement_CopyFrom(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_GetName")]
+  public static extern string CXmlElement_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_m_Params_set")]
+  public static extern void CXmlElement_m_Params_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_m_Params_get")]
+  public static extern global::System.IntPtr CXmlElement_m_Params_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_m_Elements_set")]
+  public static extern void CXmlElement_m_Elements_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_m_Elements_get")]
+  public static extern global::System.IntPtr CXmlElement_m_Elements_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_m_szName_set")]
+  public static extern void CXmlElement_m_szName_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_m_szName_get")]
+  public static extern global::System.IntPtr CXmlElement_m_szName_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlElement_AppendXML")]
+  public static extern int CXmlElement_AppendXML(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_XMLAddInt")]
+  public static extern int XMLAddInt(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_XMLGetInt")]
+  public static extern int XMLGetInt(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_XMLAddFloat")]
+  public static extern int XMLAddFloat(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_XMLGetFloat")]
+  public static extern float XMLGetFloat(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_XMLGetBOOL")]
+  public static extern int XMLGetBOOL(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_GetXmlFileDataFromStream__SWIG_0")]
+  public static extern int GetXmlFileDataFromStream__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_GetXmlFileDataFromStream__SWIG_1")]
+  public static extern int GetXmlFileDataFromStream__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3);
+
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IMaterialInfo_SWIGUpcast")]
   public static extern global::System.IntPtr IMaterialInfo_SWIGUpcast(global::System.IntPtr jarg1);
 
@@ -4092,4 +4647,7 @@ class Engine2PINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SWIGUpcast")]
   public static extern global::System.IntPtr IAnimMeshInfo_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CXmlParams_SWIGUpcast")]
+  public static extern global::System.IntPtr CXmlParams_SWIGUpcast(global::System.IntPtr jarg1);
 }

@@ -49,14 +49,12 @@ public class EngineDecalInfo : global::System.IDisposable {
     } 
   }
 
-  public SWIGTYPE_p_uint32 m_nDecalID {
+  public uint m_nDecalID {
     set {
-      Engine2PINVOKE.EngineDecalInfo_m_nDecalID_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.EngineDecalInfo_m_nDecalID_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.EngineDecalInfo_m_nDecalID_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.EngineDecalInfo_m_nDecalID_get(swigCPtr);
       return ret;
     } 
   }

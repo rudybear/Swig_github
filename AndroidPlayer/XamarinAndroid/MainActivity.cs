@@ -60,7 +60,8 @@ namespace XamarinAndroid
             if (engine.StartEngine("Engine2 Player", "mnt/sdcard/Fish/config_mobile.xml?low", this.Handle))
             {
                 Log.Verbose("Engine2 Android player", "Start Engine completed!");
-               // engine.GetCore().GetScene().GetRender().ReCreateScreen(0, 0, 0, 0);
+                // engine.GetCore().GetScene().GetRender().ReCreateScreen(0, 0, 0, 0);
+                engine.GetScene().Load("mnt/sdcard/Fish/scenes/scene.bin");
             }
 
         }

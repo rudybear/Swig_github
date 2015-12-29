@@ -39,14 +39,12 @@ public class ComponentInfo : global::System.IDisposable {
     }
   }
 
-  public SWIGTYPE_p_uint32 m_iParent {
+  public uint m_iParent {
     set {
-      Engine2PINVOKE.ComponentInfo_m_iParent_set(swigCPtr, SWIGTYPE_p_uint32.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.ComponentInfo_m_iParent_set(swigCPtr, value);
     } 
     get {
-      SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.ComponentInfo_m_iParent_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      uint ret = Engine2PINVOKE.ComponentInfo_m_iParent_get(swigCPtr);
       return ret;
     } 
   }

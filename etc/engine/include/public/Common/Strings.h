@@ -871,7 +871,7 @@ namespace Engine2
 		if (length() - _Pos1 < _Num1)
 			_Num1 = length() - _Pos1; // trim to size
 #ifndef SWIG
-		int res = _Num1 == 0 ? 0 : strnicmp( m_str+_Pos1,_Ptr,(_Num1 < _Num2)?_Num1:_Num2);
+		int res = _Num1 == 0 ? 0 : strnicmp(m_str + _Pos1, _Ptr, (_Num1 < _Num2) ? _Num1 : _Num2);
 #else
 	#ifndef ANDROID
 			int res = _Num1 == 0 ? 0 : _strnicmp(m_str + _Pos1, _Ptr, (_Num1 < _Num2) ? _Num1 : _Num2);

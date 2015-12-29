@@ -155,8 +155,8 @@ public class IScene : global::System.IDisposable {
     return ret;
   }
 
-  public virtual IMeshInfo AddCreateMesh(SWIGTYPE_p_CXmlElement paraminfo, int bSelfDraw) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IScene_AddCreateMesh(swigCPtr, SWIGTYPE_p_CXmlElement.getCPtr(paraminfo), bSelfDraw);
+  public virtual IMeshInfo AddCreateMesh(CXmlElement paraminfo, int bSelfDraw) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IScene_AddCreateMesh(swigCPtr, CXmlElement.getCPtr(paraminfo), bSelfDraw);
     IMeshInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new IMeshInfo(cPtr, false);
     return ret;
   }

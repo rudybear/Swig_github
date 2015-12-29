@@ -66,8 +66,8 @@ public class ICore : global::System.IDisposable {
     return ret;
   }
 
-  public virtual bool Init(SWIGTYPE_p_CXmlElement init) {
-    bool ret = Engine2PINVOKE.ICore_Init__SWIG_3(swigCPtr, SWIGTYPE_p_CXmlElement.getCPtr(init));
+  public virtual bool Init(CXmlElement init) {
+    bool ret = Engine2PINVOKE.ICore_Init__SWIG_3(swigCPtr, CXmlElement.getCPtr(init));
     return ret;
   }
 

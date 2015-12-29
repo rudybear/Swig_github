@@ -296,11 +296,1513 @@ SWIGEXPORT void SWIGSTDCALL SWIGRegisterStringCallback_Engine2(SWIG_CSharpString
 #include "public/Core/ICore.h"
 #include "Public/Core/IGameMod.h"
 #include "Public/Render/IRender.h"
+#include "public/Common/Strings.h"
 
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_npos_get() {
+  unsigned long jresult ;
+  size_t result;
+  
+  result = Engine2::String_template< char,Engine2::StandardAllocator >::npos;
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_Engine2String__SWIG_0() {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *result = 0 ;
+  
+  result = (Engine2::String_template< char,Engine2::StandardAllocator > *)new Engine2::String_template< char,Engine2::StandardAllocator >();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_Engine2String__SWIG_1(void * jarg1) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg1 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator > *)new Engine2::String_template< char,Engine2::StandardAllocator >((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_Engine2String__SWIG_2(void * jarg1, unsigned long jarg2, unsigned long jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg1 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator > *)new Engine2::String_template< char,Engine2::StandardAllocator >((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg1,arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_Engine2String__SWIG_3(char jarg1, unsigned long jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg1 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator > *)new Engine2::String_template< char,Engine2::StandardAllocator >(arg1,arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_Engine2String__SWIG_4(char jarg1) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg1 ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator > *)new Engine2::String_template< char,Engine2::StandardAllocator >(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_Engine2String__SWIG_5(char * jarg1) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator > *)new Engine2::String_template< char,Engine2::StandardAllocator >(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_Engine2String__SWIG_6(char * jarg1, unsigned long jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator > *)new Engine2::String_template< char,Engine2::StandardAllocator >(arg1,arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_Engine2String__SWIG_7(char * jarg1, char * jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator > *)new Engine2::String_template< char,Engine2::StandardAllocator >(arg1,arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_delete_Engine2String(void * jarg1) {
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_length(void * jarg1) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->length();
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_size(void * jarg1) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->size();
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Engine2String_empty(void * jarg1) {
+  unsigned int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  bool result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (bool)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->empty();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Engine2String_clear(void * jarg1) {
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  (arg1)->clear();
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_capacity(void * jarg1) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->capacity();
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Engine2String_reserve__SWIG_0(void * jarg1, unsigned long jarg2) {
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  (arg1)->reserve(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Engine2String_reserve__SWIG_1(void * jarg1) {
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  (arg1)->reserve();
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_append__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->append((Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_append__SWIG_1(void * jarg1, char * jarg2, unsigned long jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->append((Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_append__SWIG_2(void * jarg1, void * jarg2, unsigned long jarg3, unsigned long jarg4) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg4 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg4; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->append((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2,arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_append__SWIG_3(void * jarg1, void * jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->append((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_append__SWIG_4(void * jarg1, unsigned long jarg2, char jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->append(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_append__SWIG_5(void * jarg1, char * jarg2, char * jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->append(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_assign__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->assign(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_assign__SWIG_1(void * jarg1, char * jarg2, unsigned long jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->assign(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_assign__SWIG_2(void * jarg1, void * jarg2, unsigned long jarg3, unsigned long jarg4) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg4 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg4; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->assign((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2,arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_assign__SWIG_3(void * jarg1, void * jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->assign((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_assign__SWIG_4(void * jarg1, unsigned long jarg2, char jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->assign(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_assign__SWIG_5(void * jarg1, char * jarg2, char * jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->assign(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char SWIGSTDCALL CSharp_Engine2String_at(void * jarg1, unsigned long jarg2) {
+  char jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->at(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Engine2String_begin__SWIG_0(void * jarg1) {
+  char * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->begin();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Engine2String_end__SWIG_0(void * jarg1) {
+  char * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::const_iterator)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->end();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Engine2String_c_str(void * jarg1) {
+  char * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->c_str();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Engine2String_data(void * jarg1) {
+  char * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->data();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compare__SWIG_0(void * jarg1, void * jarg2) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compare((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compare__SWIG_1(void * jarg1, unsigned long jarg2, unsigned long jarg3, void * jarg4) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg4 = 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compare(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compare__SWIG_2(void * jarg1, unsigned long jarg2, unsigned long jarg3, void * jarg4, unsigned long jarg5, unsigned long jarg6) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg4 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg5 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg6 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg5; 
+  arg6 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg6; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compare(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg4,arg5,arg6);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compare__SWIG_3(void * jarg1, char * jarg2) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compare((Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compare__SWIG_4(void * jarg1, unsigned long jarg2, unsigned long jarg3, char * jarg4) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg4; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compare(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareWithPos__SWIG_0(void * jarg1, unsigned long jarg2, unsigned long jarg3, char * jarg4, unsigned long jarg5) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg5 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg4; 
+  arg5 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg5; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareWithPos(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg4,arg5);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareWithPos__SWIG_1(void * jarg1, unsigned long jarg2, unsigned long jarg3, char * jarg4) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg4; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareWithPos(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareNoCase__SWIG_0(void * jarg1, void * jarg2) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareNoCase((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareNoCase__SWIG_1(void * jarg1, unsigned long jarg2, unsigned long jarg3, void * jarg4) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg4 = 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareNoCase(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareNoCase__SWIG_2(void * jarg1, unsigned long jarg2, unsigned long jarg3, void * jarg4, unsigned long jarg5, unsigned long jarg6) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg4 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg5 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg6 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg5; 
+  arg6 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg6; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareNoCase(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg4,arg5,arg6);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareNoCase__SWIG_3(void * jarg1, char * jarg2) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareNoCase((Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareNoCase__SWIG_4(void * jarg1, unsigned long jarg2, unsigned long jarg3, char * jarg4) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg4; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareNoCase(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareNoCaseWithPos__SWIG_0(void * jarg1, unsigned long jarg2, unsigned long jarg3, char * jarg4, unsigned long jarg5) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg5 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg4; 
+  arg5 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg5; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareNoCaseWithPos(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg4,arg5);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String_compareNoCaseWithPos__SWIG_1(void * jarg1, unsigned long jarg2, unsigned long jarg3, char * jarg4) {
+  int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  int result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg4; 
+  result = (int)((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->compareNoCaseWithPos(arg2,arg3,(Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_copy__SWIG_0(void * jarg1, char * jarg2, unsigned long jarg3, unsigned long jarg4) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg4 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg4; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->copy(arg2,arg3,arg4);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_copy__SWIG_1(void * jarg1, char * jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->copy(arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Engine2String_push_back(void * jarg1, char jarg2) {
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  (arg1)->push_back(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Engine2String_resize__SWIG_0(void * jarg1, unsigned long jarg2, char jarg3) {
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg3 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg3; 
+  (arg1)->resize(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Engine2String_resize__SWIG_1(void * jarg1, unsigned long jarg2) {
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  (arg1)->resize(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_substr__SWIG_0(void * jarg1, unsigned long jarg2, unsigned long jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->substr(arg2,arg3);
+  jresult = new Engine2::String_template< char,Engine2::StandardAllocator >::_Self((const Engine2::String_template< char,Engine2::StandardAllocator >::_Self &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_substr__SWIG_1(void * jarg1, unsigned long jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->substr(arg2);
+  jresult = new Engine2::String_template< char,Engine2::StandardAllocator >::_Self((const Engine2::String_template< char,Engine2::StandardAllocator >::_Self &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_replace__SWIG_0(void * jarg1, char jarg2, char jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->replace(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_replace__SWIG_1(void * jarg1, char * jarg2, char * jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->replace(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_replace__SWIG_2(void * jarg1, unsigned long jarg2, unsigned long jarg3, char * jarg4) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg4; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->replace(arg2,arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_replace__SWIG_3(void * jarg1, unsigned long jarg2, unsigned long jarg3, char * jarg4, unsigned long jarg5) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg5 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg4; 
+  arg5 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg5; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->replace(arg2,arg3,arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_replace__SWIG_4(void * jarg1, unsigned long jarg2, unsigned long jarg3, unsigned long jarg4, char jarg5) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg4 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg5 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg4; 
+  arg5 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg5; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->replace(arg2,arg3,arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_insert__SWIG_0(void * jarg1, unsigned long jarg2, char jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->insert(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_insert__SWIG_1(void * jarg1, unsigned long jarg2, unsigned long jarg3, char jarg4) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg4 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg4; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->insert(arg2,arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_insert__SWIG_2(void * jarg1, unsigned long jarg2, char * jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->insert(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_insert__SWIG_3(void * jarg1, unsigned long jarg2, char * jarg3, unsigned long jarg4) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg4 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg4; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->insert(arg2,arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_erase__SWIG_0(void * jarg1, unsigned long jarg2, unsigned long jarg3) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->erase(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_erase__SWIG_1(void * jarg1, unsigned long jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->erase(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find__SWIG_0(void * jarg1, char jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find(arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find__SWIG_1(void * jarg1, char jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find(arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find__SWIG_2(void * jarg1, char * jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find(arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find__SWIG_3(void * jarg1, char * jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find(arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_rfind__SWIG_0(void * jarg1, char jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->rfind(arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_rfind__SWIG_1(void * jarg1, char jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->rfind(arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_last_of__SWIG_0(void * jarg1, char jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_last_of(arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_last_of__SWIG_1(void * jarg1, char jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_last_of(arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_of__SWIG_0(void * jarg1, char jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_of(arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_of__SWIG_1(void * jarg1, char jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_of(arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_of__SWIG_2(void * jarg1, char * jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_of(arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_of__SWIG_3(void * jarg1, char * jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_of(arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_of__SWIG_4(void * jarg1, void * jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_of((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_of__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_of((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_not_of__SWIG_0(void * jarg1, char jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_not_of(arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_not_of__SWIG_1(void * jarg1, char jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_not_of(arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_not_of__SWIG_2(void * jarg1, char * jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_not_of((Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_not_of__SWIG_3(void * jarg1, char * jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_not_of((Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_not_of__SWIG_4(void * jarg1, char * jarg2, unsigned long jarg3, unsigned long jarg4) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg4 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  arg4 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg4; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_not_of((Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg2,arg3,arg4);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_not_of__SWIG_5(void * jarg1, void * jarg2, unsigned long jarg3) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type arg3 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (Engine2::String_template< char,Engine2::StandardAllocator >::size_type)jarg3; 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_not_of((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2,arg3);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String_find_first_not_of__SWIG_6(void * jarg1, void * jarg2) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self const & type is null", 0);
+    return 0;
+  } 
+  result = ((Engine2::String_template< char,Engine2::StandardAllocator > const *)arg1)->find_first_not_of((Engine2::String_template< char,Engine2::StandardAllocator >::_Self const &)*arg2);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Engine2String_swap(void * jarg1, void * jarg2) {
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *arg2 = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String_template< char,Engine2::StandardAllocator >::_Self & type is null", 0);
+    return ;
+  } 
+  (arg1)->swap(*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_FixPathToUnix(void * jarg1) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->FixPathToUnix();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_Format(void * jarg1, char * jarg2) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  void *arg3 = 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->Format((Engine2::String_template< char,Engine2::StandardAllocator >::value_type const *)arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_MakeLower(void * jarg1) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->MakeLower();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_MakeLowerLocale(void * jarg1) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->MakeLowerLocale();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Engine2String_MakeUpper(void * jarg1) {
+  void * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator > *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::_Self *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator > *)jarg1; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::_Self *) &(arg1)->MakeUpper();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Engine2String__strlen(char * jarg1) {
+  unsigned long jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::size_type result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg1; 
+  result = Engine2::String_template< char,Engine2::StandardAllocator >::SWIGTEMPLATEDISAMBIGUATOR _strlen((char const *)arg1);
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Engine2String__strchr(char * jarg1, char jarg2) {
+  char * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type arg2 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)Engine2::String_template< char,Engine2::StandardAllocator >::SWIGTEMPLATEDISAMBIGUATOR _strchr((char const *)arg1,arg2);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Engine2String__strstr(char * jarg1, char * jarg2) {
+  char * jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::value_type *result = 0 ;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)jarg1; 
+  arg2 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg2; 
+  result = (Engine2::String_template< char,Engine2::StandardAllocator >::value_type *)Engine2::String_template< char,Engine2::StandardAllocator >::SWIGTEMPLATEDISAMBIGUATOR _strstr(arg1,(char const *)arg2);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Engine2String__IsValidString(char * jarg1) {
+  unsigned int jresult ;
+  Engine2::String_template< char,Engine2::StandardAllocator >::const_str arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str) 0 ;
+  bool result;
+  
+  arg1 = (Engine2::String_template< char,Engine2::StandardAllocator >::const_str)jarg1; 
+  result = (bool)Engine2::String_template< char,Engine2::StandardAllocator >::SWIGTEMPLATEDISAMBIGUATOR _IsValidString((char const *)arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Engine2String__usedMemory(int jarg1) {
+  int jresult ;
+  int arg1 ;
+  int result;
+  
+  arg1 = (int)jarg1; 
+  result = (int)Engine2::String_template< char,Engine2::StandardAllocator >::SWIGTEMPLATEDISAMBIGUATOR _usedMemory(arg1);
+  jresult = result; 
+  return jresult;
+}
+
 
 SWIGEXPORT int SWIGSTDCALL CSharp_ENGINE2_REV_get() {
   int jresult ;
@@ -332,30 +1834,24 @@ SWIGEXPORT int SWIGSTDCALL CSharp_LogNoCaretMask_get() {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_ComponentInfo_m_iParent_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_ComponentInfo_m_iParent_set(void * jarg1, unsigned int jarg2) {
   ComponentInfo *arg1 = (ComponentInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (ComponentInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_iParent = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_ComponentInfo_m_iParent_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_ComponentInfo_m_iParent_get(void * jarg1) {
+  unsigned int jresult ;
   ComponentInfo *arg1 = (ComponentInfo *) 0 ;
   uint32 result;
   
   arg1 = (ComponentInfo *)jarg1; 
-  result =  ((arg1)->m_iParent);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_iParent);
+  jresult = result; 
   return jresult;
 }
 
@@ -893,52 +2389,40 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IDebugInformationManager_RemoveDebugParam(voi
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParamNums(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParamNums(void * jarg1) {
+  unsigned int jresult ;
   IDebugInformationManager *arg1 = (IDebugInformationManager *) 0 ;
   uint32 result;
   
   arg1 = (IDebugInformationManager *)jarg1; 
-  result = (arg1)->GetDebugParamNums();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetDebugParamNums();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParamSection(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParamSection(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IDebugInformationManager *arg1 = (IDebugInformationManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IDebugInformationManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetDebugParamSection(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParam(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParam(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   IDebugInformationManager *arg1 = (IDebugInformationManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   CParam *result = 0 ;
   
   arg1 = (IDebugInformationManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (CParam *)(arg1)->GetDebugParam(arg2);
   jresult = (void *)result; 
   return jresult;
@@ -1159,64 +2643,52 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetPath(void * jarg1, char * ja
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetTexturesPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetTexturesPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetTexturesPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetTexturesPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetTexturesPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetTexturesPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetTexturesPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetModelsPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetModelsPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetModelsPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetModelsPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetModelsPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetModelsPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetModelsPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -1235,32 +2707,26 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetTerrainPath(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetEffectsPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetEffectsPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetEffectsPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetEffectsPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetEffectsPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetEffectsPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetEffectsPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -1279,32 +2745,26 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetEffectsWritePath(void * jarg
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetScriptsPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetScriptsPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetScriptsPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetScriptsPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetScriptsPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetScriptsPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetScriptsPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -1359,32 +2819,26 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetAnimationFolder(void * jarg1
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetParticlesPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetParticlesPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetParticlesPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetParticlesPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetParticlesPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetParticlesPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetParticlesPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -1491,20 +2945,14 @@ SWIGEXPORT void SWIGSTDCALL CSharp_ILogManager_RegisterListener(void * jarg1, vo
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_ILogManager_AddToLog(void * jarg1, void * jarg2, char * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_ILogManager_AddToLog(void * jarg1, unsigned int jarg2, char * jarg3) {
   ILogManager *arg1 = (ILogManager *) 0 ;
   uint32 arg2 ;
   char *arg3 = (char *) 0 ;
   void *arg4 = 0 ;
-  uint32 *argp2 ;
   
   arg1 = (ILogManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (char *)jarg3; 
   (arg1)->AddToLog(arg2,(char const *)arg3,arg4);
 }
@@ -1520,32 +2968,26 @@ SWIGEXPORT void SWIGSTDCALL CSharp_ILogManager_SetLastErrorLogging(void * jarg1,
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_ILogManager_GetLastErrorCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_ILogManager_GetLastErrorCount(void * jarg1) {
+  unsigned int jresult ;
   ILogManager *arg1 = (ILogManager *) 0 ;
   uint32 result;
   
   arg1 = (ILogManager *)jarg1; 
-  result = (arg1)->GetLastErrorCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetLastErrorCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_ILogManager_GetLastError(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_ILogManager_GetLastError(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   ILogManager *arg1 = (ILogManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (ILogManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetLastError(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -4311,30 +5753,24 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInfo_m_vNotProcessedMeshes_get(vo
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInfo_m_Flags_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInfo_m_Flags_set(void * jarg1, unsigned int jarg2) {
   MeshMergerInfo *arg1 = (MeshMergerInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (MeshMergerInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_Flags = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInfo_m_Flags_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_MeshMergerInfo_m_Flags_get(void * jarg1) {
+  unsigned int jresult ;
   MeshMergerInfo *arg1 = (MeshMergerInfo *) 0 ;
   uint32 result;
   
   arg1 = (MeshMergerInfo *)jarg1; 
-  result =  ((arg1)->m_Flags);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_Flags);
+  jresult = result; 
   return jresult;
 }
 
@@ -4369,30 +5805,24 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_Matrix_get(void * 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_set(void * jarg1, unsigned int jarg2) {
   MeshMergerInstanceInfo *arg1 = (MeshMergerInstanceInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (MeshMergerInstanceInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_iDiffuseColor = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_get(void * jarg1) {
+  unsigned int jresult ;
   MeshMergerInstanceInfo *arg1 = (MeshMergerInstanceInfo *) 0 ;
   uint32 result;
   
   arg1 = (MeshMergerInstanceInfo *)jarg1; 
-  result =  ((arg1)->m_iDiffuseColor);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_iDiffuseColor);
+  jresult = result; 
   return jresult;
 }
 
@@ -4481,30 +5911,24 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInfo2_m_vResultMeshes_get(void * 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInfo2_m_Flags2_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInfo2_m_Flags2_set(void * jarg1, unsigned int jarg2) {
   MeshMergerInfo2 *arg1 = (MeshMergerInfo2 *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (MeshMergerInfo2 *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_Flags2 = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInfo2_m_Flags2_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_MeshMergerInfo2_m_Flags2_get(void * jarg1) {
+  unsigned int jresult ;
   MeshMergerInfo2 *arg1 = (MeshMergerInfo2 *) 0 ;
   uint32 result;
   
   arg1 = (MeshMergerInfo2 *)jarg1; 
-  result =  ((arg1)->m_Flags2);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_Flags2);
+  jresult = result; 
   return jresult;
 }
 
@@ -4539,28 +5963,22 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_MeshAnimBakeInfo_MeshAnimBakeFrameInfo(
 
 SWIGEXPORT void SWIGSTDCALL CSharp_MeshAnimBakeInfo_MeshAnimBakeFrameInfo_m_strAnimName_set(void * jarg1, void * jarg2) {
   MeshAnimBakeInfo::MeshAnimBakeFrameInfo *arg1 = (MeshAnimBakeInfo::MeshAnimBakeFrameInfo *) 0 ;
-  Engine2::String arg2 ;
-  Engine2::String *argp2 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
   
   arg1 = (MeshAnimBakeInfo::MeshAnimBakeFrameInfo *)jarg1; 
-  argp2 = (Engine2::String *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_strAnimName = arg2;
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_strAnimName = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_MeshAnimBakeInfo_MeshAnimBakeFrameInfo_m_strAnimName_get(void * jarg1) {
   void * jresult ;
   MeshAnimBakeInfo::MeshAnimBakeFrameInfo *arg1 = (MeshAnimBakeInfo::MeshAnimBakeFrameInfo *) 0 ;
-  Engine2::String result;
+  Engine2::String *result = 0 ;
   
   arg1 = (MeshAnimBakeInfo::MeshAnimBakeFrameInfo *)jarg1; 
-  result =  ((arg1)->m_strAnimName);
-  jresult = new Engine2::String((const Engine2::String &)result); 
+  result = (Engine2::String *)& ((arg1)->m_strAnimName);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -4629,28 +6047,22 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_MeshAnimBakeInfo() {
 
 SWIGEXPORT void SWIGSTDCALL CSharp_MeshAnimBakeInfo_m_strSourceMeshName_set(void * jarg1, void * jarg2) {
   MeshAnimBakeInfo *arg1 = (MeshAnimBakeInfo *) 0 ;
-  Engine2::String arg2 ;
-  Engine2::String *argp2 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
   
   arg1 = (MeshAnimBakeInfo *)jarg1; 
-  argp2 = (Engine2::String *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_strSourceMeshName = arg2;
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_strSourceMeshName = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_MeshAnimBakeInfo_m_strSourceMeshName_get(void * jarg1) {
   void * jresult ;
   MeshAnimBakeInfo *arg1 = (MeshAnimBakeInfo *) 0 ;
-  Engine2::String result;
+  Engine2::String *result = 0 ;
   
   arg1 = (MeshAnimBakeInfo *)jarg1; 
-  result =  ((arg1)->m_strSourceMeshName);
-  jresult = new Engine2::String((const Engine2::String &)result); 
+  result = (Engine2::String *)& ((arg1)->m_strSourceMeshName);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -4745,28 +6157,22 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_MeshAnimBakeInfo_m_bForceToBakeInSing
 
 SWIGEXPORT void SWIGSTDCALL CSharp_MeshAnimBakeInfo_m_strFramePrefix_set(void * jarg1, void * jarg2) {
   MeshAnimBakeInfo *arg1 = (MeshAnimBakeInfo *) 0 ;
-  Engine2::String arg2 ;
-  Engine2::String *argp2 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
   
   arg1 = (MeshAnimBakeInfo *)jarg1; 
-  argp2 = (Engine2::String *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_strFramePrefix = arg2;
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_strFramePrefix = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_MeshAnimBakeInfo_m_strFramePrefix_get(void * jarg1) {
   void * jresult ;
   MeshAnimBakeInfo *arg1 = (MeshAnimBakeInfo *) 0 ;
-  Engine2::String result;
+  Engine2::String *result = 0 ;
   
   arg1 = (MeshAnimBakeInfo *)jarg1; 
-  result =  ((arg1)->m_strFramePrefix);
-  jresult = new Engine2::String((const Engine2::String &)result); 
+  result = (Engine2::String *)& ((arg1)->m_strFramePrefix);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -4795,28 +6201,22 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_MeshAnimBakeInfo_m_vAnimInfo_get(void * jar
 
 SWIGEXPORT void SWIGSTDCALL CSharp_MeshAnimBakeInfo_m_strResultMeshName_set(void * jarg1, void * jarg2) {
   MeshAnimBakeInfo *arg1 = (MeshAnimBakeInfo *) 0 ;
-  Engine2::String arg2 ;
-  Engine2::String *argp2 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
   
   arg1 = (MeshAnimBakeInfo *)jarg1; 
-  argp2 = (Engine2::String *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_strResultMeshName = arg2;
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_strResultMeshName = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_MeshAnimBakeInfo_m_strResultMeshName_get(void * jarg1) {
   void * jresult ;
   MeshAnimBakeInfo *arg1 = (MeshAnimBakeInfo *) 0 ;
-  Engine2::String result;
+  Engine2::String *result = 0 ;
   
   arg1 = (MeshAnimBakeInfo *)jarg1; 
-  result =  ((arg1)->m_strResultMeshName);
-  jresult = new Engine2::String((const Engine2::String &)result); 
+  result = (Engine2::String *)& ((arg1)->m_strResultMeshName);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -5187,8 +6587,8 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_IDecalManager(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_SpawnDecal(void * jarg1, void * jarg2) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_SpawnDecal(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   EngineDecalInfo *arg2 = 0 ;
   uint32 result;
@@ -5199,27 +6599,21 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_SpawnDecal(void * jarg1, void
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "EngineDecalInfo & type is null", 0);
     return 0;
   } 
-  result = (arg1)->SpawnDecal(*arg2);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->SpawnDecal(*arg2);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_MoveDecal(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_MoveDecal(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
   EngineDecalInfo *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (EngineDecalInfo *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "EngineDecalInfo & type is null", 0);
@@ -5231,98 +6625,68 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_MoveDecal(void * jarg1,
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_GetDecalMaterial(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_GetDecalMaterial(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   IMaterial *result = 0 ;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (IMaterial *)(arg1)->GetDecalMaterial(arg2);
   jresult = (void *)result; 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_GetDecalMesh(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_GetDecalMesh(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   IMeshInfo *result = 0 ;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (IMeshInfo *)(arg1)->GetDecalMesh(arg2);
   jresult = (void *)result; 
   return jresult;
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_RemoveDecal(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_RemoveDecal(void * jarg1, unsigned int jarg2) {
   unsigned int jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (bool)(arg1)->RemoveDecal(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IDecalManager_SetTransparency(void * jarg1, void * jarg2, float jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IDecalManager_SetTransparency(void * jarg1, unsigned int jarg2, float jarg3) {
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
   float arg3 ;
-  uint32 *argp2 ;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (float)jarg3; 
   (arg1)->SetTransparency(arg2,arg3);
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IDecalManager_GetTransparency(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IDecalManager_GetTransparency(void * jarg1, unsigned int jarg2) {
   float jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetTransparency(arg2);
   jresult = result; 
   return jresult;
@@ -5407,58 +6771,46 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_IDeviceDependendentInfo(void * jarg1) 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SMemTextureInfo_m_iWidth_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SMemTextureInfo_m_iWidth_set(void * jarg1, unsigned int jarg2) {
   SMemTextureInfo *arg1 = (SMemTextureInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SMemTextureInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_iWidth = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SMemTextureInfo_m_iWidth_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SMemTextureInfo_m_iWidth_get(void * jarg1) {
+  unsigned int jresult ;
   SMemTextureInfo *arg1 = (SMemTextureInfo *) 0 ;
   uint32 result;
   
   arg1 = (SMemTextureInfo *)jarg1; 
-  result =  ((arg1)->m_iWidth);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_iWidth);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SMemTextureInfo_m_iHeight_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SMemTextureInfo_m_iHeight_set(void * jarg1, unsigned int jarg2) {
   SMemTextureInfo *arg1 = (SMemTextureInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SMemTextureInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_iHeight = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SMemTextureInfo_m_iHeight_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SMemTextureInfo_m_iHeight_get(void * jarg1) {
+  unsigned int jresult ;
   SMemTextureInfo *arg1 = (SMemTextureInfo *) 0 ;
   uint32 result;
   
   arg1 = (SMemTextureInfo *)jarg1; 
-  result =  ((arg1)->m_iHeight);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_iHeight);
+  jresult = result; 
   return jresult;
 }
 
@@ -5509,114 +6861,90 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_SMemTextureInfo(void * jarg1) {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_atlasHeight_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_atlasHeight_set(void * jarg1, unsigned int jarg2) {
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SFontStatistics *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_atlasHeight = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SFontStatistics_m_atlasHeight_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SFontStatistics_m_atlasHeight_get(void * jarg1) {
+  unsigned int jresult ;
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 result;
   
   arg1 = (SFontStatistics *)jarg1; 
-  result =  ((arg1)->m_atlasHeight);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_atlasHeight);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_atlasWidth_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_atlasWidth_set(void * jarg1, unsigned int jarg2) {
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SFontStatistics *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_atlasWidth = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SFontStatistics_m_atlasWidth_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SFontStatistics_m_atlasWidth_get(void * jarg1) {
+  unsigned int jresult ;
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 result;
   
   arg1 = (SFontStatistics *)jarg1; 
-  result =  ((arg1)->m_atlasWidth);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_atlasWidth);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_textureCount_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_textureCount_set(void * jarg1, unsigned int jarg2) {
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SFontStatistics *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_textureCount = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SFontStatistics_m_textureCount_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SFontStatistics_m_textureCount_get(void * jarg1) {
+  unsigned int jresult ;
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 result;
   
   arg1 = (SFontStatistics *)jarg1; 
-  result =  ((arg1)->m_textureCount);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_textureCount);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_generationTimeMs_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_generationTimeMs_set(void * jarg1, unsigned int jarg2) {
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SFontStatistics *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_generationTimeMs = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SFontStatistics_m_generationTimeMs_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SFontStatistics_m_generationTimeMs_get(void * jarg1) {
+  unsigned int jresult ;
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 result;
   
   arg1 = (SFontStatistics *)jarg1; 
-  result =  ((arg1)->m_generationTimeMs);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_generationTimeMs);
+  jresult = result; 
   return jresult;
 }
 
@@ -8095,20 +9423,14 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IRender_SaveTextureToFile(void * jarg
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IRender_GetStatistics__SWIG_0(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IRender_GetStatistics__SWIG_0(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   IRender *arg1 = (IRender *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   SRenderStatistics *result = 0 ;
   
   arg1 = (IRender *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (SRenderStatistics *)((IRender const *)arg1)->GetStatistics(arg2);
   jresult = (void *)result; 
   return jresult;
@@ -8293,18 +9615,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_IRender_GetMaterialLib(void * jarg1) {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IRender_AddToBatchCount(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IRender_AddToBatchCount(void * jarg1, unsigned int jarg2) {
   IRender *arg1 = (IRender *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IRender *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->AddToBatchCount(arg2);
 }
 
@@ -9563,30 +10879,24 @@ SWIGEXPORT int SWIGSTDCALL CSharp_EngineDecalInfo_m_eDecalType_get(void * jarg1)
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_EngineDecalInfo_m_nDecalID_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_EngineDecalInfo_m_nDecalID_set(void * jarg1, unsigned int jarg2) {
   EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (EngineDecalInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_nDecalID = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_EngineDecalInfo_m_nDecalID_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_EngineDecalInfo_m_nDecalID_get(void * jarg1) {
+  unsigned int jresult ;
   EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
   uint32 result;
   
   arg1 = (EngineDecalInfo *)jarg1; 
-  result =  ((arg1)->m_nDecalID);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_nDecalID);
+  jresult = result; 
   return jresult;
 }
 
@@ -9747,28 +11057,22 @@ SWIGEXPORT float SWIGSTDCALL CSharp_EngineDecalInfo_m_fLifeTime_get(void * jarg1
 
 SWIGEXPORT void SWIGSTDCALL CSharp_EngineDecalInfo_m_szMaterialName_set(void * jarg1, void * jarg2) {
   EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
-  Engine2::String arg2 ;
-  Engine2::String *argp2 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
   
   arg1 = (EngineDecalInfo *)jarg1; 
-  argp2 = (Engine2::String *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_szMaterialName = arg2;
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_szMaterialName = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_EngineDecalInfo_m_szMaterialName_get(void * jarg1) {
   void * jresult ;
   EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
-  Engine2::String result;
+  Engine2::String *result = 0 ;
   
   arg1 = (EngineDecalInfo *)jarg1; 
-  result =  ((arg1)->m_szMaterialName);
-  jresult = new Engine2::String((const Engine2::String &)result); 
+  result = (Engine2::String *)& ((arg1)->m_szMaterialName);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -10335,62 +11639,44 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMeshInfo_GetSortInt(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMeshInfo_GetRenderFlags(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMeshInfo_GetRenderFlags(void * jarg1) {
+  unsigned int jresult ;
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IMeshInfo *)jarg1; 
-  result = ((IMeshInfo const *)arg1)->GetRenderFlags();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)((IMeshInfo const *)arg1)->GetRenderFlags();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_SetRenderFlags(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_SetRenderFlags(void * jarg1, unsigned int jarg2) {
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->SetRenderFlags(arg2);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_ForceSetRenderFlags(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_ForceSetRenderFlags(void * jarg1, unsigned int jarg2) {
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->ForceSetRenderFlags(arg2);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_RemoveRenderFlags(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_RemoveRenderFlags(void * jarg1, unsigned int jarg2) {
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->RemoveRenderFlags(arg2);
 }
 
@@ -10795,28 +12081,22 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_SetPrev(void * jarg1, void * jarg2)
 
 SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_m_strFileName_set(void * jarg1, void * jarg2) {
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
-  Engine2::String arg2 ;
-  Engine2::String *argp2 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
   
   arg1 = (IMeshInfo *)jarg1; 
-  argp2 = (Engine2::String *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_strFileName = arg2;
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_strFileName = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_IMeshInfo_m_strFileName_get(void * jarg1) {
   void * jresult ;
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
-  Engine2::String result;
+  Engine2::String *result = 0 ;
   
   arg1 = (IMeshInfo *)jarg1; 
-  result =  ((arg1)->m_strFileName);
-  jresult = new Engine2::String((const Engine2::String &)result); 
+  result = (Engine2::String *)& ((arg1)->m_strFileName);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -10977,56 +12257,44 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_XRefInfo_m_Mat_get(void * jarg1) {
 
 SWIGEXPORT void SWIGSTDCALL CSharp_XRefInfo_m_sName_set(void * jarg1, void * jarg2) {
   XRefInfo *arg1 = (XRefInfo *) 0 ;
-  Engine2::String arg2 ;
-  Engine2::String *argp2 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
   
   arg1 = (XRefInfo *)jarg1; 
-  argp2 = (Engine2::String *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_sName = arg2;
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_sName = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_XRefInfo_m_sName_get(void * jarg1) {
   void * jresult ;
   XRefInfo *arg1 = (XRefInfo *) 0 ;
-  Engine2::String result;
+  Engine2::String *result = 0 ;
   
   arg1 = (XRefInfo *)jarg1; 
-  result =  ((arg1)->m_sName);
-  jresult = new Engine2::String((const Engine2::String &)result); 
+  result = (Engine2::String *)& ((arg1)->m_sName);
+  jresult = (void *)result; 
   return jresult;
 }
 
 
 SWIGEXPORT void SWIGSTDCALL CSharp_XRefInfo_m_sFileName_set(void * jarg1, void * jarg2) {
   XRefInfo *arg1 = (XRefInfo *) 0 ;
-  Engine2::String arg2 ;
-  Engine2::String *argp2 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
   
   arg1 = (XRefInfo *)jarg1; 
-  argp2 = (Engine2::String *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_sFileName = arg2;
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_sFileName = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_XRefInfo_m_sFileName_get(void * jarg1) {
   void * jresult ;
   XRefInfo *arg1 = (XRefInfo *) 0 ;
-  Engine2::String result;
+  Engine2::String *result = 0 ;
   
   arg1 = (XRefInfo *)jarg1; 
-  result =  ((arg1)->m_sFileName);
-  jresult = new Engine2::String((const Engine2::String &)result); 
+  result = (Engine2::String *)& ((arg1)->m_sFileName);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -11083,73 +12351,55 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_IXRefInfoMesh(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialsCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialsCount(void * jarg1) {
+  unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  result = (arg1)->GetVisibleMaterialsCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetVisibleMaterialsCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialName(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialName(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetVisibleMaterialName(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterial(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterial(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   IMaterial *result = 0 ;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (IMaterial *)(arg1)->GetVisibleMaterial(arg2);
   jresult = (void *)result; 
   return jresult;
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterial(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterial(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   IMaterial *arg3 = (IMaterial *) 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (IMaterial *)jarg3; 
   result = (bool)(arg1)->SetVisibleMaterial(arg2,(IMaterial const *)arg3);
   jresult = result; 
@@ -11157,21 +12407,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterial(void
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterialByMaterialName(void * jarg1, void * jarg2, char * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterialByMaterialName(void * jarg1, unsigned int jarg2, char * jarg3) {
   unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   char *arg3 = (char *) 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (char *)jarg3; 
   result = (bool)(arg1)->SetVisibleMaterialByMaterialName(arg2,(char const *)arg3);
   jresult = result; 
@@ -11179,69 +12423,45 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterialByMat
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialParamCount(void * jarg1, void * jarg2) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialParamCount(void * jarg1, unsigned int jarg2) {
+  unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   uint32 result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  result = (arg1)->GetVisibleMaterialParamCount(arg2);
-  jresult = new uint32((const uint32 &)result); 
+  arg2 = (uint32)jarg2; 
+  result = (uint32)(arg1)->GetVisibleMaterialParamCount(arg2);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialParam(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialParam(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   void * jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   uint32 arg3 ;
-  uint32 *argp2 ;
-  uint32 *argp3 ;
   CParam *result = 0 ;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg3 = *argp3; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (uint32)jarg3; 
   result = (CParam *)(arg1)->GetVisibleMaterialParam(arg2,arg3);
   jresult = (void *)result; 
   return jresult;
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParam(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParam(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   CParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (CParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CParam & type is null", 0);
@@ -11253,21 +12473,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParam
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParamPtr(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParamPtr(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   CParam *arg3 = (CParam *) 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (CParam *)jarg3; 
   result = (bool)(arg1)->AddVisibleMaterialParamPtr(arg2,arg3);
   jresult = result; 
@@ -11703,30 +12917,24 @@ SWIGEXPORT int SWIGSTDCALL CSharp_AnimationParam_m_iOnlyAffectedBone_get(void * 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_AnimationParam_m_nLayer_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_AnimationParam_m_nLayer_set(void * jarg1, unsigned int jarg2) {
   AnimationParam *arg1 = (AnimationParam *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (AnimationParam *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_nLayer = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_AnimationParam_m_nLayer_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_AnimationParam_m_nLayer_get(void * jarg1) {
+  unsigned int jresult ;
   AnimationParam *arg1 = (AnimationParam *) 0 ;
   uint32 result;
   
   arg1 = (AnimationParam *)jarg1; 
-  result =  ((arg1)->m_nLayer);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_nLayer);
+  jresult = result; 
   return jresult;
 }
 
@@ -11893,6 +13101,90 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_AnimationParam(void * jarg1) {
 }
 
 
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_UVAnimationParam() {
+  void * jresult ;
+  UVAnimationParam *result = 0 ;
+  
+  result = (UVAnimationParam *)new UVAnimationParam();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_UVAnimationParam_m_fSpeed_set(void * jarg1, float jarg2) {
+  UVAnimationParam *arg1 = (UVAnimationParam *) 0 ;
+  float arg2 ;
+  
+  arg1 = (UVAnimationParam *)jarg1; 
+  arg2 = (float)jarg2; 
+  if (arg1) (arg1)->m_fSpeed = arg2;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_UVAnimationParam_m_fSpeed_get(void * jarg1) {
+  float jresult ;
+  UVAnimationParam *arg1 = (UVAnimationParam *) 0 ;
+  float result;
+  
+  arg1 = (UVAnimationParam *)jarg1; 
+  result = (float) ((arg1)->m_fSpeed);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_UVAnimationParam_m_bGameUpdate_set(void * jarg1, unsigned int jarg2) {
+  UVAnimationParam *arg1 = (UVAnimationParam *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (UVAnimationParam *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->m_bGameUpdate = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_UVAnimationParam_m_bGameUpdate_get(void * jarg1) {
+  unsigned int jresult ;
+  UVAnimationParam *arg1 = (UVAnimationParam *) 0 ;
+  bool result;
+  
+  arg1 = (UVAnimationParam *)jarg1; 
+  result = (bool) ((arg1)->m_bGameUpdate);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_UVAnimationParam_m_bLooped_set(void * jarg1, unsigned int jarg2) {
+  UVAnimationParam *arg1 = (UVAnimationParam *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (UVAnimationParam *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->m_bLooped = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_UVAnimationParam_m_bLooped_get(void * jarg1) {
+  unsigned int jresult ;
+  UVAnimationParam *arg1 = (UVAnimationParam *) 0 ;
+  bool result;
+  
+  arg1 = (UVAnimationParam *)jarg1; 
+  result = (bool) ((arg1)->m_bLooped);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_delete_UVAnimationParam(void * jarg1) {
+  UVAnimationParam *arg1 = (UVAnimationParam *) 0 ;
+  
+  arg1 = (UVAnimationParam *)jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT void SWIGSTDCALL CSharp_LightmapInfo_m_vecLightmapWorldCoord_set(void * jarg1, void * jarg2) {
   LightmapInfo *arg1 = (LightmapInfo *) 0 ;
   CVec2 *arg2 = (CVec2 *) 0 ;
@@ -11957,28 +13249,22 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_LightmapInfo(void * jarg1) {
 
 SWIGEXPORT void SWIGSTDCALL CSharp_PreloadInfo_m_vecTextures_set(void * jarg1, void * jarg2) {
   PreloadInfo *arg1 = (PreloadInfo *) 0 ;
-  Engine2::Vector< Engine2::String > arg2 ;
-  Engine2::Vector< Engine2::String > *argp2 ;
+  Engine2::Vector< Engine2::String > *arg2 = (Engine2::Vector< Engine2::String > *) 0 ;
   
   arg1 = (PreloadInfo *)jarg1; 
-  argp2 = (Engine2::Vector< Engine2::String > *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::Vector< Engine2::String >", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->m_vecTextures = arg2;
+  arg2 = (Engine2::Vector< Engine2::String > *)jarg2; 
+  if (arg1) (arg1)->m_vecTextures = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_PreloadInfo_m_vecTextures_get(void * jarg1) {
   void * jresult ;
   PreloadInfo *arg1 = (PreloadInfo *) 0 ;
-  Engine2::Vector< Engine2::String > result;
+  Engine2::Vector< Engine2::String > *result = 0 ;
   
   arg1 = (PreloadInfo *)jarg1; 
-  result =  ((arg1)->m_vecTextures);
-  jresult = new Engine2::Vector< Engine2::String >((const Engine2::Vector< Engine2::String > &)result); 
+  result = (Engine2::Vector< Engine2::String > *)& ((arg1)->m_vecTextures);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -12273,14 +13559,14 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_IsSubmeshMaxMaterialUse
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumLods(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumLods(void * jarg1) {
+  unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  result = (arg1)->GetNumLods();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetNumLods();
+  jresult = result; 
   return jresult;
 }
 
@@ -12339,14 +13625,14 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetLodDistance(void * jarg1, vo
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleLod(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleLod(void * jarg1) {
+  unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  result = (arg1)->GetVisibleLod();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetVisibleLod();
+  jresult = result; 
   return jresult;
 }
 
@@ -12447,84 +13733,66 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_TestRayIntersectionSubm
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumMaterials(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumMaterials(void * jarg1) {
+  unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  result = (arg1)->GetNumMaterials();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetNumMaterials();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleGlobalMaterialNum(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleGlobalMaterialNum(void * jarg1, unsigned int jarg2) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  uint32 result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  result = (uint32)(arg1)->GetVisibleGlobalMaterialNum(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleFromGlobalMaterialNum(void * jarg1, unsigned int jarg2) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  uint32 result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  result = (uint32)(arg1)->GetVisibleFromGlobalMaterialNum(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetMaxMaterialsCount(void * jarg1) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  result = (uint32)((IBaseMeshInfo const *)arg1)->GetMaxMaterialsCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetMaxMaterial(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
-  uint32 result;
-  
-  arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  result = (arg1)->GetVisibleGlobalMaterialNum(arg2);
-  jresult = new uint32((const uint32 &)result); 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleFromGlobalMaterialNum(void * jarg1, void * jarg2) {
-  void * jresult ;
-  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
-  uint32 arg2 ;
-  uint32 *argp2 ;
-  uint32 result;
-  
-  arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  result = (arg1)->GetVisibleFromGlobalMaterialNum(arg2);
-  jresult = new uint32((const uint32 &)result); 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetMaxMaterialsCount(void * jarg1) {
-  void * jresult ;
-  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
-  uint32 result;
-  
-  arg1 = (IBaseMeshInfo *)jarg1; 
-  result = ((IBaseMeshInfo const *)arg1)->GetMaxMaterialsCount();
-  jresult = new uint32((const uint32 &)result); 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetMaxMaterial(void * jarg1, void * jarg2) {
-  void * jresult ;
-  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
-  uint32 arg2 ;
-  uint32 *argp2 ;
   MaxMeshMaterial *result = 0 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (MaxMeshMaterial *)((IBaseMeshInfo const *)arg1)->GetMaxMaterial(arg2);
   jresult = (void *)result; 
   return jresult;
@@ -12605,35 +13873,23 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadAnimations(void * jarg1) 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadAnimation(void * jarg1, unsigned int jarg2) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->UnloadAnimation(arg2);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartAnimation(void * jarg1, unsigned int jarg2, void * jarg3) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -12643,18 +13899,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartAnimation(void * jarg1, vo
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StopAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StopAnimation(void * jarg1, unsigned int jarg2) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->StopAnimation(arg2);
 }
 
@@ -12671,20 +13921,14 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumAnimations(void * jarg1) {
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IBaseMeshInfo_GetAnimationName(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IBaseMeshInfo_GetAnimationName(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetAnimationName(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -12705,21 +13949,15 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_GetAnimationID(void * jarg1, cha
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams__SWIG_0(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -12731,21 +13969,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams(void * jarg1,
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams__SWIG_0(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -12757,40 +13989,28 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams(void * jar
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetStartTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetStartTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetStartTime(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetEndTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetEndTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetEndTime(arg2);
   jresult = result; 
   return jresult;
@@ -12804,6 +14024,136 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetRootBone(void * jarg1, int j
   arg1 = (IBaseMeshInfo *)jarg1; 
   arg2 = (int)jarg2; 
   (arg1)->SetRootBone(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_LoadUVAnimation(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  char *arg2 = (char *) 0 ;
+  uint32 result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (uint32)(arg1)->LoadUVAnimation((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadUVAnimation(void * jarg1, unsigned int jarg2) {
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  (arg1)->UnloadUVAnimation(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumUVAnimations(void * jarg1) {
+  int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  int result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  result = (int)(arg1)->GetNumUVAnimations();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_IBaseMeshInfo_GetUVAnimationName(void * jarg1, unsigned int jarg2) {
+  char * jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  char *result = 0 ;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  result = (char *)(arg1)->GetUVAnimationName(arg2);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_GetUVAnimationID(void * jarg1, char * jarg2) {
+  int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (int)(arg1)->GetUVAnimationID((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartUVAnimation(void * jarg1, unsigned int jarg2, void * jarg3) {
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  UVAnimationParam *arg3 = 0 ;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (UVAnimationParam *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "UVAnimationParam & type is null", 0);
+    return ;
+  } 
+  (arg1)->StartUVAnimation(arg2,*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StopUVAnimation(void * jarg1, unsigned int jarg2) {
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  (arg1)->StopUVAnimation(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams__SWIG_1(void * jarg1, unsigned int jarg2, void * jarg3) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  UVAnimationParam *arg3 = 0 ;
+  bool result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (UVAnimationParam *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "UVAnimationParam & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->GetParams(arg2,*arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams__SWIG_1(void * jarg1, unsigned int jarg2, void * jarg3) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  UVAnimationParam *arg3 = 0 ;
+  bool result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (UVAnimationParam *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "UVAnimationParam & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->UpdateParams(arg2,*arg3);
+  jresult = result; 
+  return jresult;
 }
 
 
@@ -13029,18 +14379,12 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_LoadAnimation(void * jarg1, char
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_UnloadAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_UnloadAnimation(void * jarg1, unsigned int jarg2) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->UnloadAnimation(arg2);
 }
 
@@ -13065,20 +14409,14 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_GetNumAnimations(void * jarg1) {
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IAnimMeshInfo_GetAnimationName(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IAnimMeshInfo_GetAnimationName(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetAnimationName(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -13099,19 +14437,13 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_GetAnimationID(void * jarg1, cha
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StartAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StartAnimation(void * jarg1, unsigned int jarg2, void * jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -13121,94 +14453,52 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StartAnimation(void * jarg1, vo
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_DetachBoneFromAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_DetachBoneFromAnimation(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   uint32 arg3 ;
-  uint32 *argp2 ;
-  uint32 *argp3 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg3 = *argp3; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (uint32)jarg3; 
   (arg1)->DetachBoneFromAnimation(arg2,arg3);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_AttachBoneToAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_AttachBoneToAnimation(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   uint32 arg3 ;
-  uint32 *argp2 ;
-  uint32 *argp3 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg3 = *argp3; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (uint32)jarg3; 
   (arg1)->AttachBoneToAnimation(arg2,arg3);
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_IsBoneAttachedToAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_IsBoneAttachedToAnimation(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   uint32 arg3 ;
-  uint32 *argp2 ;
-  uint32 *argp3 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg3 = *argp3; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (uint32)jarg3; 
   result = (bool)(arg1)->IsBoneAttachedToAnimation(arg2,arg3);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StopAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StopAnimation(void * jarg1, unsigned int jarg2) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->StopAnimation(arg2);
 }
 
@@ -13227,21 +14517,15 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_GetAnimationSize(void * jarg1, c
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetParams(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetParams(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -13253,21 +14537,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetParams(void * jarg1,
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_UpdateParams(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_UpdateParams(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -13291,20 +14569,14 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetSkeleton(void * jarg1) {
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_Update__SWIG_0(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_Update__SWIG_0(void * jarg1, unsigned int jarg2) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (bool)(arg1)->Update(arg2);
   jresult = result; 
   return jresult;
@@ -13323,156 +14595,108 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_Update__SWIG_1(void * j
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetTimeGameUpdate(void * jarg1, void * jarg2, unsigned int jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetTimeGameUpdate(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   bool arg3 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = jarg3 ? true : false; 
   (arg1)->SetTimeGameUpdate(arg2,arg3);
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetStartTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetStartTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetStartTime(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetEndTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetEndTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetEndTime(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetCurrentTrackTime(void * jarg1, void * jarg2, float jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetCurrentTrackTime(void * jarg1, unsigned int jarg2, float jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   float arg3 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (float)jarg3; 
   (arg1)->SetCurrentTrackTime(arg2,arg3);
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetCurrentTrackTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetCurrentTrackTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetCurrentTrackTime(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetCurrentWeight(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetCurrentWeight(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetCurrentWeight(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetCurrentWeight(void * jarg1, void * jarg2, float jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetCurrentWeight(void * jarg1, unsigned int jarg2, float jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   float arg3 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (float)jarg3; 
   (arg1)->SetCurrentWeight(arg2,arg3);
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetGlobalIDFromLocalID(void * jarg1, void * jarg2) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetGlobalIDFromLocalID(void * jarg1, unsigned int jarg2) {
+  unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   uint32 result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  result = (arg1)->GetGlobalIDFromLocalID(arg2);
-  jresult = new uint32((const uint32 &)result); 
+  arg2 = (uint32)jarg2; 
+  result = (uint32)(arg1)->GetGlobalIDFromLocalID(arg2);
+  jresult = result; 
   return jresult;
 }
 
@@ -13485,20 +14709,14 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetBindPose(void * jarg1) {
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_IsAnimationPlay(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_IsAnimationPlay(void * jarg1, unsigned int jarg2) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (bool)(arg1)->IsAnimationPlay(arg2);
   jresult = result; 
   return jresult;
@@ -13539,14 +14757,14 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_GetMaxMipLevel(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetNumLods(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetNumLods(void * jarg1) {
+  unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  result = (arg1)->GetNumLods();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetNumLods();
+  jresult = result; 
   return jresult;
 }
 
@@ -13605,20 +14823,20 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodDistance(void * jarg1, vo
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetActiveBonesCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetActiveBonesCount(void * jarg1) {
+  unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  result = (arg1)->GetActiveBonesCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetActiveBonesCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodUpdateMult(void * jarg1, void * jarg2) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodUpdateMult(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
   int32 *argp2 ;
@@ -13631,18 +14849,17 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodUpdateMult(void * jarg1
     return 0;
   }
   arg2 = *argp2; 
-  result = (arg1)->GetLodUpdateMult(arg2);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetLodUpdateMult(arg2);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodUpdateMult(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodUpdateMult(void * jarg1, void * jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
   uint32 arg3 ;
   int32 *argp2 ;
-  uint32 *argp3 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
   argp2 = (int32 *)jarg2; 
@@ -13651,12 +14868,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodUpdateMult(void * jarg1, 
     return ;
   }
   arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg3 = *argp3; 
+  arg3 = (uint32)jarg3; 
   (arg1)->SetLodUpdateMult(arg2,arg3);
 }
 
@@ -15077,18 +16289,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_CVec4__SWIG_1(float jarg1, float jarg2,
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_CVec4__SWIG_2(void * jarg1) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_CVec4__SWIG_2(unsigned int jarg1) {
   void * jresult ;
   uint32 arg1 ;
-  uint32 *argp1 ;
   CVec4 *result = 0 ;
   
-  argp1 = (uint32 *)jarg1; 
-  if (!argp1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg1 = *argp1; 
+  arg1 = (uint32)jarg1; 
   result = (CVec4 *)new CVec4(arg1);
   jresult = (void *)result; 
   return jresult;
@@ -17585,7 +18791,45 @@ SWIGEXPORT void SWIGSTDCALL CSharp_CCamera_SetViewParams3(void * jarg1, void * j
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_CCamera_SetProjParams(void * jarg1, float jarg2, float jarg3, float jarg4, float jarg5) {
+SWIGEXPORT void SWIGSTDCALL CSharp_CCamera_SetProjParams__SWIG_0(void * jarg1, float jarg2, float jarg3, float jarg4, float jarg5, float jarg6, float jarg7) {
+  CCamera *arg1 = (CCamera *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  float arg7 ;
+  
+  arg1 = (CCamera *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  arg6 = (float)jarg6; 
+  arg7 = (float)jarg7; 
+  (arg1)->SetProjParams(arg2,arg3,arg4,arg5,arg6,arg7);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CCamera_SetProjParams__SWIG_1(void * jarg1, float jarg2, float jarg3, float jarg4, float jarg5, float jarg6) {
+  CCamera *arg1 = (CCamera *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  
+  arg1 = (CCamera *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  arg6 = (float)jarg6; 
+  (arg1)->SetProjParams(arg2,arg3,arg4,arg5,arg6);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CCamera_SetProjParams__SWIG_2(void * jarg1, float jarg2, float jarg3, float jarg4, float jarg5) {
   CCamera *arg1 = (CCamera *) 0 ;
   float arg2 ;
   float arg3 ;
@@ -17963,6 +19207,996 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_CCamera(void * jarg1) {
 }
 
 
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_CXmlParam__SWIG_0() {
+  void * jresult ;
+  CXmlParam *result = 0 ;
+  
+  result = (CXmlParam *)new CXmlParam();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_CXmlParam__SWIG_1(void * jarg1, void * jarg2) {
+  void * jresult ;
+  Engine2::String *arg1 = 0 ;
+  Engine2::String *arg2 = 0 ;
+  CXmlParam *result = 0 ;
+  
+  arg1 = (Engine2::String *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (CXmlParam *)new CXmlParam((Engine2::String const &)*arg1,(Engine2::String const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_delete_CXmlParam(void * jarg1) {
+  CXmlParam *arg1 = (CXmlParam *) 0 ;
+  
+  arg1 = (CXmlParam *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlParam_ParamName_set(void * jarg1, void * jarg2) {
+  CXmlParam *arg1 = (CXmlParam *) 0 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
+  
+  arg1 = (CXmlParam *)jarg1; 
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->ParamName = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlParam_ParamName_get(void * jarg1) {
+  void * jresult ;
+  CXmlParam *arg1 = (CXmlParam *) 0 ;
+  Engine2::String *result = 0 ;
+  
+  arg1 = (CXmlParam *)jarg1; 
+  result = (Engine2::String *)& ((arg1)->ParamName);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlParam_ParamValue_set(void * jarg1, void * jarg2) {
+  CXmlParam *arg1 = (CXmlParam *) 0 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
+  
+  arg1 = (CXmlParam *)jarg1; 
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->ParamValue = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlParam_ParamValue_get(void * jarg1) {
+  void * jresult ;
+  CXmlParam *arg1 = (CXmlParam *) 0 ;
+  Engine2::String *result = 0 ;
+  
+  arg1 = (CXmlParam *)jarg1; 
+  result = (Engine2::String *)& ((arg1)->ParamValue);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_delete_IXmlParams(void * jarg1) {
+  IXmlParams *arg1 = (IXmlParams *) 0 ;
+  
+  arg1 = (IXmlParams *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IXmlParams_GetParam(void * jarg1, int jarg2) {
+  void * jresult ;
+  IXmlParams *arg1 = (IXmlParams *) 0 ;
+  int arg2 ;
+  CXmlParam *result = 0 ;
+  
+  arg1 = (IXmlParams *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (CXmlParam *)((IXmlParams const *)arg1)->GetParam(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_IXmlParams_GetNumParams(void * jarg1) {
+  int jresult ;
+  IXmlParams *arg1 = (IXmlParams *) 0 ;
+  int result;
+  
+  arg1 = (IXmlParams *)jarg1; 
+  result = (int)((IXmlParams const *)arg1)->GetNumParams();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IXmlParams_GetParamByName(void * jarg1, void * jarg2) {
+  void * jresult ;
+  IXmlParams *arg1 = (IXmlParams *) 0 ;
+  Engine2::String arg2 ;
+  Engine2::String *argp2 ;
+  CXmlParam *result = 0 ;
+  
+  arg1 = (IXmlParams *)jarg1; 
+  argp2 = (Engine2::String *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (CXmlParam *)(arg1)->GetParamByName(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_IXmlParams_GetValueByName(void * jarg1, void * jarg2) {
+  char * jresult ;
+  IXmlParams *arg1 = (IXmlParams *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  char *result = 0 ;
+  
+  arg1 = (IXmlParams *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (char *)((IXmlParams const *)arg1)->GetValueByName((Engine2::String const &)*arg2);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IXmlParams_SetParam(void * jarg1, void * jarg2, void * jarg3) {
+  IXmlParams *arg1 = (IXmlParams *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  Engine2::String *arg3 = 0 ;
+  
+  arg1 = (IXmlParams *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return ;
+  } 
+  arg3 = (Engine2::String *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetParam((Engine2::String const &)*arg2,(Engine2::String const &)*arg3);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_CXmlParams() {
+  void * jresult ;
+  CXmlParams *result = 0 ;
+  
+  result = (CXmlParams *)new CXmlParams();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_delete_CXmlParams(void * jarg1) {
+  CXmlParams *arg1 = (CXmlParams *) 0 ;
+  
+  arg1 = (CXmlParams *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlParams_GetParam(void * jarg1, int jarg2) {
+  void * jresult ;
+  CXmlParams *arg1 = (CXmlParams *) 0 ;
+  int arg2 ;
+  CXmlParam *result = 0 ;
+  
+  arg1 = (CXmlParams *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (CXmlParam *)((CXmlParams const *)arg1)->GetParam(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlParams_GetParamByName(void * jarg1, void * jarg2) {
+  void * jresult ;
+  CXmlParams *arg1 = (CXmlParams *) 0 ;
+  Engine2::String arg2 ;
+  Engine2::String *argp2 ;
+  CXmlParam *result = 0 ;
+  
+  arg1 = (CXmlParams *)jarg1; 
+  argp2 = (Engine2::String *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null Engine2::String", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (CXmlParam *)(arg1)->GetParamByName(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlParams_GetNumParams(void * jarg1) {
+  int jresult ;
+  CXmlParams *arg1 = (CXmlParams *) 0 ;
+  int result;
+  
+  arg1 = (CXmlParams *)jarg1; 
+  result = (int)((CXmlParams const *)arg1)->GetNumParams();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_CXmlParams_GetValueByName(void * jarg1, void * jarg2) {
+  char * jresult ;
+  CXmlParams *arg1 = (CXmlParams *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  char *result = 0 ;
+  
+  arg1 = (CXmlParams *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (char *)((CXmlParams const *)arg1)->GetValueByName((Engine2::String const &)*arg2);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlParams_SetParam(void * jarg1, void * jarg2, void * jarg3) {
+  CXmlParams *arg1 = (CXmlParams *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  Engine2::String *arg3 = 0 ;
+  
+  arg1 = (CXmlParams *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return ;
+  } 
+  arg3 = (Engine2::String *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetParam((Engine2::String const &)*arg2,(Engine2::String const &)*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlParams_m_Contents_set(void * jarg1, void * jarg2) {
+  CXmlParams *arg1 = (CXmlParams *) 0 ;
+  XmlParamList *arg2 = (XmlParamList *) 0 ;
+  
+  arg1 = (CXmlParams *)jarg1; 
+  arg2 = (XmlParamList *)jarg2; 
+  if (arg1) (arg1)->m_Contents = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlParams_m_Contents_get(void * jarg1) {
+  void * jresult ;
+  CXmlParams *arg1 = (CXmlParams *) 0 ;
+  XmlParamList *result = 0 ;
+  
+  arg1 = (CXmlParams *)jarg1; 
+  result = (XmlParamList *)& ((arg1)->m_Contents);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_CXmlVector() {
+  void * jresult ;
+  CXmlVector *result = 0 ;
+  
+  result = (CXmlVector *)new CXmlVector();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_delete_CXmlVector(void * jarg1) {
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlVector_Serialize(void * jarg1, void * jarg2, int jarg3) {
+  int jresult ;
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  FILE *arg2 = (FILE *) 0 ;
+  int arg3 ;
+  BOOL result;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (FILE *)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (BOOL)(arg1)->Serialize(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlVector_SerializeBuffer(void * jarg1, void * jarg2, int jarg3) {
+  int jresult ;
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  int arg3 ;
+  BOOL result;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String & type is null", 0);
+    return 0;
+  } 
+  arg3 = (int)jarg3; 
+  result = (BOOL)(arg1)->SerializeBuffer(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlVector_Deserialize(void * jarg1, void * jarg2, int jarg3) {
+  int jresult ;
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  int arg3 ;
+  int result;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (int)jarg3; 
+  result = (int)(arg1)->Deserialize((Engine2::String const &)*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlVector_FindElementByName__SWIG_0(void * jarg1, void * jarg2) {
+  void * jresult ;
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  CXmlElement *result = 0 ;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (CXmlElement *)(arg1)->FindElementByName((Engine2::String const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlVector_FindElementByNameConst(void * jarg1, void * jarg2) {
+  void * jresult ;
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  CXmlElement *result = 0 ;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (CXmlElement *)((CXmlVector const *)arg1)->FindElementByNameConst((Engine2::String const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlVector_AddElement(void * jarg1, void * jarg2) {
+  void * jresult ;
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  CXmlElement *arg2 = (CXmlElement *) 0 ;
+  CXmlElement *result = 0 ;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (CXmlElement *)jarg2; 
+  result = (CXmlElement *)(arg1)->AddElement((CXmlElement const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlVector_SwapElements(void * jarg1, unsigned long jarg2, unsigned long jarg3) {
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  size_t arg2 ;
+  size_t arg3 ;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (size_t)jarg2; 
+  arg3 = (size_t)jarg3; 
+  (arg1)->SwapElements(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlVector_RemoveElement(void * jarg1, unsigned long jarg2) {
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  size_t arg2 ;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (size_t)jarg2; 
+  (arg1)->RemoveElement(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlVector_m_Contents_set(void * jarg1, void * jarg2) {
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  XmlElementsList *arg2 = (XmlElementsList *) 0 ;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  arg2 = (XmlElementsList *)jarg2; 
+  if (arg1) (arg1)->m_Contents = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlVector_m_Contents_get(void * jarg1) {
+  void * jresult ;
+  CXmlVector *arg1 = (CXmlVector *) 0 ;
+  XmlElementsList *result = 0 ;
+  
+  arg1 = (CXmlVector *)jarg1; 
+  result = (XmlElementsList *)& ((arg1)->m_Contents);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_CXmlElement() {
+  void * jresult ;
+  CXmlElement *result = 0 ;
+  
+  result = (CXmlElement *)new CXmlElement();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_delete_CXmlElement(void * jarg1) {
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_Serialize__SWIG_0(void * jarg1, void * jarg2) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (BOOL)(arg1)->Serialize((Engine2::String const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_SerializeThroughAPI(void * jarg1, char * jarg2) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  char *arg2 = (char *) 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (BOOL)(arg1)->SerializeThroughAPI((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_Serialize__SWIG_1(void * jarg1, void * jarg2, int jarg3) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  FILE *arg2 = (FILE *) 0 ;
+  int arg3 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (FILE *)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (BOOL)(arg1)->Serialize(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_SerializeBuffer(void * jarg1, void * jarg2, int jarg3) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  int arg3 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String & type is null", 0);
+    return 0;
+  } 
+  arg3 = (int)jarg3; 
+  result = (BOOL)(arg1)->SerializeBuffer(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlElement_SetName(void * jarg1, void * jarg2) {
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetName((Engine2::String const &)*arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_LoadFromXml__SWIG_0(void * jarg1, void * jarg2) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (BOOL)(arg1)->LoadFromXml((Engine2::String const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_LoadFromXml__SWIG_1(void * jarg1, char * jarg2) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  char *arg2 = (char *) 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (BOOL)(arg1)->LoadFromXml((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_LoadFromStr__SWIG_0(void * jarg1, void * jarg2) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (BOOL)(arg1)->LoadFromStr((Engine2::String const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_LoadFromStr__SWIG_1(void * jarg1, char * jarg2, unsigned long jarg3) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  char *arg2 = (char *) 0 ;
+  size_t arg3 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (size_t)jarg3; 
+  result = (BOOL)(arg1)->LoadFromStr((char const *)arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_CXmlElement_GetParamValueByName(void * jarg1, void * jarg2) {
+  char * jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  char *result = 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (char *)((CXmlElement const *)arg1)->GetParamValueByName((Engine2::String const &)*arg2);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlElement_GetElementByName(void * jarg1, void * jarg2) {
+  void * jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  CXmlElement *result = 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (CXmlElement *)(arg1)->GetElementByName((Engine2::String const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_Deserialize__SWIG_0(void * jarg1, void * jarg2) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (BOOL)(arg1)->Deserialize((Engine2::String const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_Deserialize__SWIG_1(void * jarg1, void * jarg2, int jarg3) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  int arg3 ;
+  int result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (int)jarg3; 
+  result = (int)(arg1)->Deserialize((Engine2::String const &)*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlElement_ClearContents(void * jarg1) {
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  (arg1)->ClearContents();
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlElement_Clone(void * jarg1) {
+  void * jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  CXmlElement *result = 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  result = (CXmlElement *)((CXmlElement const *)arg1)->Clone();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_ProcessXmlNode(void * jarg1, void * jarg2, void * jarg3) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  xml::TiXmlNode *arg2 = (xml::TiXmlNode *) 0 ;
+  CXmlElement *arg3 = (CXmlElement *) 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (xml::TiXmlNode *)jarg2; 
+  arg3 = (CXmlElement *)jarg3; 
+  result = (BOOL)(arg1)->ProcessXmlNode(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlElement_CopyFrom(void * jarg1, void * jarg2) {
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  CXmlElement *arg2 = (CXmlElement *) 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (CXmlElement *)jarg2; 
+  (arg1)->CopyFrom((CXmlElement const *)arg2);
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_CXmlElement_GetName(void * jarg1) {
+  char * jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  result = (char *)(arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlElement_m_Params_set(void * jarg1, void * jarg2) {
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  CXmlParams *arg2 = (CXmlParams *) 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (CXmlParams *)jarg2; 
+  if (arg1) (arg1)->m_Params = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlElement_m_Params_get(void * jarg1) {
+  void * jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  CXmlParams *result = 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  result = (CXmlParams *)& ((arg1)->m_Params);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlElement_m_Elements_set(void * jarg1, void * jarg2) {
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  CXmlVector *arg2 = (CXmlVector *) 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (CXmlVector *)jarg2; 
+  if (arg1) (arg1)->m_Elements = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlElement_m_Elements_get(void * jarg1) {
+  void * jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  CXmlVector *result = 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  result = (CXmlVector *)& ((arg1)->m_Elements);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_CXmlElement_m_szName_set(void * jarg1, void * jarg2) {
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = (Engine2::String *) 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2; 
+  if (arg1) (arg1)->m_szName = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_CXmlElement_m_szName_get(void * jarg1) {
+  void * jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *result = 0 ;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  result = (Engine2::String *)& ((arg1)->m_szName);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_CXmlElement_AppendXML(void * jarg1, void * jarg2) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  CXmlElement *arg2 = (CXmlElement *) 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (CXmlElement *)jarg2; 
+  result = (BOOL)(arg1)->AppendXML(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_XMLAddInt(void * jarg1, void * jarg2, int jarg3) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  int arg3 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (int)jarg3; 
+  result = (BOOL)XMLAddInt(arg1,(Engine2::String_template< char,Engine2::StandardAllocator > const &)*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_XMLGetInt(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  int arg3 ;
+  BOOL *arg4 = 0 ;
+  int result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (int)jarg3; 
+  arg4 = (BOOL *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "BOOL & type is null", 0);
+    return 0;
+  } 
+  result = (int)XMLGetInt((CXmlElement const *)arg1,(Engine2::String_template< char,Engine2::StandardAllocator > const &)*arg2,arg3,*arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_XMLAddFloat(void * jarg1, void * jarg2, float jarg3) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  float arg3 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (float)jarg3; 
+  result = (BOOL)XMLAddFloat(arg1,(Engine2::String_template< char,Engine2::StandardAllocator > const &)*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_XMLGetFloat(void * jarg1, void * jarg2, float jarg3, void * jarg4) {
+  float jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  float arg3 ;
+  BOOL *arg4 = 0 ;
+  float result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (float)jarg3; 
+  arg4 = (BOOL *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "BOOL & type is null", 0);
+    return 0;
+  } 
+  result = (float)XMLGetFloat((CXmlElement const *)arg1,(Engine2::String_template< char,Engine2::StandardAllocator > const &)*arg2,arg3,*arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_XMLGetBOOL(void * jarg1, void * jarg2) {
+  int jresult ;
+  CXmlElement *arg1 = (CXmlElement *) 0 ;
+  Engine2::String *arg2 = 0 ;
+  BOOL result;
+  
+  arg1 = (CXmlElement *)jarg1; 
+  arg2 = (Engine2::String *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Engine2::String const & type is null", 0);
+    return 0;
+  } 
+  result = (BOOL)XMLGetBOOL((CXmlElement const *)arg1,(Engine2::String_template< char,Engine2::StandardAllocator > const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_GetXmlFileDataFromStream__SWIG_0(void * jarg1, void * jarg2, char * jarg3, int jarg4) {
+  int jresult ;
+  IVFSFileManager *arg1 = (IVFSFileManager *) 0 ;
+  CXmlElement *arg2 = (CXmlElement *) 0 ;
+  char *arg3 = (char *) 0 ;
+  BOOL arg4 ;
+  BOOL result;
+  
+  arg1 = (IVFSFileManager *)jarg1; 
+  arg2 = (CXmlElement *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (BOOL)jarg4; 
+  result = (BOOL)GetXmlFileDataFromStream(arg1,arg2,(char const *)arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_GetXmlFileDataFromStream__SWIG_1(void * jarg1, void * jarg2, char * jarg3) {
+  int jresult ;
+  IVFSFileManager *arg1 = (IVFSFileManager *) 0 ;
+  CXmlElement *arg2 = (CXmlElement *) 0 ;
+  char *arg3 = (char *) 0 ;
+  BOOL result;
+  
+  arg1 = (IVFSFileManager *)jarg1; 
+  arg2 = (CXmlElement *)jarg2; 
+  arg3 = (char *)jarg3; 
+  result = (BOOL)GetXmlFileDataFromStream(arg1,arg2,(char const *)arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
 SWIGEXPORT IMeshInfo * SWIGSTDCALL CSharp_IMaterialInfo_SWIGUpcast(IMaterialInfo *jarg1) {
     return (IMeshInfo *)jarg1;
 }
@@ -17981,6 +20215,10 @@ SWIGEXPORT IMaterialInfo * SWIGSTDCALL CSharp_IBaseMeshInfo_SWIGUpcast(IBaseMesh
 
 SWIGEXPORT IBaseMeshInfo * SWIGSTDCALL CSharp_IAnimMeshInfo_SWIGUpcast(IAnimMeshInfo *jarg1) {
     return (IBaseMeshInfo *)jarg1;
+}
+
+SWIGEXPORT IXmlParams * SWIGSTDCALL CSharp_CXmlParams_SWIGUpcast(CXmlParams *jarg1) {
+    return (IXmlParams *)jarg1;
 }
 
 #ifdef __cplusplus

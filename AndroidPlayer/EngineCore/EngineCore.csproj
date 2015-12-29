@@ -43,12 +43,12 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Json" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseComponent.cs" />
+    <Compile Include="BaseMesh.cs" />
     <Compile Include="BaseObject.cs" />
     <Compile Include="Base\Matrix44.cs" />
     <Compile Include="Base\Vec3.cs" />
@@ -65,6 +65,10 @@
     <Compile Include="Engine2Swig\CVec2.cs" />
     <Compile Include="Engine2Swig\CVec3.cs" />
     <Compile Include="Engine2Swig\CVec4.cs" />
+    <Compile Include="Engine2Swig\CXmlElement.cs" />
+    <Compile Include="Engine2Swig\CXmlParam.cs" />
+    <Compile Include="Engine2Swig\CXmlParams.cs" />
+    <Compile Include="Engine2Swig\CXmlVector.cs" />
     <Compile Include="Engine2Swig\EBloomParam.cs" />
     <Compile Include="Engine2Swig\eDebugMode.cs" />
     <Compile Include="Engine2Swig\eDecalType.cs" />
@@ -75,6 +79,7 @@
     <Compile Include="Engine2Swig\EMotionBlurParam.cs" />
     <Compile Include="Engine2Swig\Engine2.cs" />
     <Compile Include="Engine2Swig\Engine2PINVOKE.cs" />
+    <Compile Include="Engine2Swig\Engine2String.cs" />
     <Compile Include="Engine2Swig\EngineDecalInfo.cs" />
     <Compile Include="Engine2Swig\ERenderer.cs" />
     <Compile Include="Engine2Swig\ERendererError.cs" />
@@ -117,6 +122,7 @@
     <Compile Include="Engine2Swig\IVisAreaTree.cs" />
     <Compile Include="Engine2Swig\IWindow.cs" />
     <Compile Include="Engine2Swig\IWindowListener.cs" />
+    <Compile Include="Engine2Swig\IXmlParams.cs" />
     <Compile Include="Engine2Swig\IXRefInfoMesh.cs" />
     <Compile Include="Engine2Swig\LightmapInfo.cs" />
     <Compile Include="Engine2Swig\MeshAnimBakeInfo.cs" />
@@ -142,6 +148,7 @@
     <Compile Include="Engine2Swig\SWIGTYPE_p_CLight.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_CLightArray.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_CMatrix44.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_const_str.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_CParam.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_CPlane.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_CQuat.cs" />
@@ -152,6 +159,7 @@
     <Compile Include="Engine2Swig\SWIGTYPE_p_CVec3.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_CXmlElement.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_CXmlParams.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_DLLIMPORT.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_DWORD.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_eActiveType.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_eAsyncState.cs" />
@@ -162,21 +170,28 @@
     <Compile Include="Engine2Swig\SWIGTYPE_p_eDEPTHSTATE.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_eMeshType.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__String.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__String_templateT_char_StandardAllocator_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_AnimationParam_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_ComponentInfo_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CParam_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CVec3_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CVec4_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CXmlElement_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_CXmlParam_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_Engine2__String_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_StandardAllocator_t_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_IMeshInfo_p_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_MeshAnimBakeInfo__MeshAnimBakeFrameInfo_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_MeshMergerInstanceInfo_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_size_t_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_Engine2__VectorT_String_templateT_char_StandardAllocator_t_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_EngineDecalInfo.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_eParticleType.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_eRenderType.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_EStatsType.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_ETarget.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_FILE.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_FLOAT.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_f_void__void.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_HICON.cs" />
@@ -227,17 +242,23 @@
     <Compile Include="Engine2Swig\SWIGTYPE_p_SIZE.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_SRenderGraph.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_SRenderStatistics.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_String_templateT_char_StandardAllocator_t.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_String_templateT_char_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_TEXFORMAT.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_TEXNUM.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_TShaderCombinations.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_TShaderMask.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_UINT.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_uint32.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_uint32_t.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_uint64.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_uint8.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_unsigned_int.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_void.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_WIN_HWND.cs" />
     <Compile Include="Engine2Swig\SWIGTYPE_p_WPARAM.cs" />
+    <Compile Include="Engine2Swig\SWIGTYPE_p_xml__TiXmlNode.cs" />
+    <Compile Include="Engine2Swig\UVAnimationParam.cs" />
     <Compile Include="Engine2Swig\Visibility.cs" />
     <Compile Include="Engine2Swig\XRefInfo.cs" />
     <Compile Include="GameObject.cs" />
@@ -249,6 +270,8 @@
     <Compile Include="Scene.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Engine2Swig\Engine2Swig.vcxproj" />
+    <None Include="Engine2Swig\Engine2Swig.vcxproj.filters" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
@@ -256,6 +279,7 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Engine2Swig\Engine2Swig.vcxproj.user" />
     <Content Include="Engine2Swig\Engine2_wrap.cxx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

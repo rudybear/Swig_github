@@ -324,18 +324,18 @@ public class IRender : global::System.IDisposable {
     Engine2PINVOKE.IRender_SetAmbientShadow(swigCPtr, arg0);
   }
 
-  public virtual SWIGTYPE_p_Engine2__VectorT_Engine2__String_t FillResolutionList(SWIGTYPE_p_int Curr) {
-    SWIGTYPE_p_Engine2__VectorT_Engine2__String_t ret = new SWIGTYPE_p_Engine2__VectorT_Engine2__String_t(Engine2PINVOKE.IRender_FillResolutionList(swigCPtr, SWIGTYPE_p_int.getCPtr(Curr)), false);
+  public virtual SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t FillResolutionList(SWIGTYPE_p_int Curr) {
+    SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t ret = new SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t(Engine2PINVOKE.IRender_FillResolutionList(swigCPtr, SWIGTYPE_p_int.getCPtr(Curr)), false);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_Engine2__VectorT_Engine2__String_t FillProfilesList(SWIGTYPE_p_int Curr) {
-    SWIGTYPE_p_Engine2__VectorT_Engine2__String_t ret = new SWIGTYPE_p_Engine2__VectorT_Engine2__String_t(Engine2PINVOKE.IRender_FillProfilesList(swigCPtr, SWIGTYPE_p_int.getCPtr(Curr)), false);
+  public virtual SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t FillProfilesList(SWIGTYPE_p_int Curr) {
+    SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t ret = new SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t(Engine2PINVOKE.IRender_FillProfilesList(swigCPtr, SWIGTYPE_p_int.getCPtr(Curr)), false);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_Engine2__VectorT_Engine2__String_t FillMultisampleList(SWIGTYPE_p_int Curr) {
-    SWIGTYPE_p_Engine2__VectorT_Engine2__String_t ret = new SWIGTYPE_p_Engine2__VectorT_Engine2__String_t(Engine2PINVOKE.IRender_FillMultisampleList(swigCPtr, SWIGTYPE_p_int.getCPtr(Curr)), false);
+  public virtual SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t FillMultisampleList(SWIGTYPE_p_int Curr) {
+    SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t ret = new SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t(Engine2PINVOKE.IRender_FillMultisampleList(swigCPtr, SWIGTYPE_p_int.getCPtr(Curr)), false);
     return ret;
   }
 
@@ -561,8 +561,8 @@ public class IRender : global::System.IDisposable {
     return ret;
   }
 
-  public virtual IMeshInfo AddCreateMesh(SWIGTYPE_p_CXmlElement paraminfo) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IRender_AddCreateMesh(swigCPtr, SWIGTYPE_p_CXmlElement.getCPtr(paraminfo));
+  public virtual IMeshInfo AddCreateMesh(CXmlElement paraminfo) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IRender_AddCreateMesh(swigCPtr, CXmlElement.getCPtr(paraminfo));
     IMeshInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new IMeshInfo(cPtr, false);
     return ret;
   }
@@ -724,10 +724,9 @@ public class IRender : global::System.IDisposable {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_SRenderStatistics GetStatistics(SWIGTYPE_p_uint32 nFlags) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IRender_GetStatistics__SWIG_0(swigCPtr, SWIGTYPE_p_uint32.getCPtr(nFlags));
+  public virtual SWIGTYPE_p_SRenderStatistics GetStatistics(uint nFlags) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IRender_GetStatistics__SWIG_0(swigCPtr, nFlags);
     SWIGTYPE_p_SRenderStatistics ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_SRenderStatistics(cPtr, false);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
@@ -801,9 +800,8 @@ public class IRender : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void AddToBatchCount(SWIGTYPE_p_uint32 arg0) {
-    Engine2PINVOKE.IRender_AddToBatchCount(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void AddToBatchCount(uint arg0) {
+    Engine2PINVOKE.IRender_AddToBatchCount(swigCPtr, arg0);
   }
 
   public virtual void ForceRenderMask(SWIGTYPE_p_TShaderMask mask) {
@@ -816,24 +814,24 @@ public class IRender : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void DumpTextures(SWIGTYPE_p_Engine2__VectorT_Engine2__String_t pDest) {
-    Engine2PINVOKE.IRender_DumpTextures__SWIG_0(swigCPtr, SWIGTYPE_p_Engine2__VectorT_Engine2__String_t.getCPtr(pDest));
+  public virtual void DumpTextures(SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t pDest) {
+    Engine2PINVOKE.IRender_DumpTextures__SWIG_0(swigCPtr, SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t.getCPtr(pDest));
   }
 
   public virtual void DumpTextures() {
     Engine2PINVOKE.IRender_DumpTextures__SWIG_1(swigCPtr);
   }
 
-  public virtual void DumpMeshes(SWIGTYPE_p_Engine2__VectorT_Engine2__String_t pDest) {
-    Engine2PINVOKE.IRender_DumpMeshes__SWIG_0(swigCPtr, SWIGTYPE_p_Engine2__VectorT_Engine2__String_t.getCPtr(pDest));
+  public virtual void DumpMeshes(SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t pDest) {
+    Engine2PINVOKE.IRender_DumpMeshes__SWIG_0(swigCPtr, SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t.getCPtr(pDest));
   }
 
   public virtual void DumpMeshes() {
     Engine2PINVOKE.IRender_DumpMeshes__SWIG_1(swigCPtr);
   }
 
-  public virtual void DumpAnimations(SWIGTYPE_p_Engine2__VectorT_Engine2__String_t pDest) {
-    Engine2PINVOKE.IRender_DumpAnimations__SWIG_0(swigCPtr, SWIGTYPE_p_Engine2__VectorT_Engine2__String_t.getCPtr(pDest));
+  public virtual void DumpAnimations(SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t pDest) {
+    Engine2PINVOKE.IRender_DumpAnimations__SWIG_0(swigCPtr, SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t.getCPtr(pDest));
   }
 
   public virtual void DumpAnimations() {

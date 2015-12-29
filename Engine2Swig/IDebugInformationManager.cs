@@ -51,21 +51,19 @@ public class IDebugInformationManager : global::System.IDisposable {
     Engine2PINVOKE.IDebugInformationManager_RemoveDebugParam(swigCPtr, SWIGTYPE_p_CParam.getCPtr(arg0));
   }
 
-  public virtual SWIGTYPE_p_uint32 GetDebugParamNums() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IDebugInformationManager_GetDebugParamNums(swigCPtr), true);
+  public virtual uint GetDebugParamNums() {
+    uint ret = Engine2PINVOKE.IDebugInformationManager_GetDebugParamNums(swigCPtr);
     return ret;
   }
 
-  public virtual string GetDebugParamSection(SWIGTYPE_p_uint32 num) {
-    string ret = Engine2PINVOKE.IDebugInformationManager_GetDebugParamSection(swigCPtr, SWIGTYPE_p_uint32.getCPtr(num));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetDebugParamSection(uint num) {
+    string ret = Engine2PINVOKE.IDebugInformationManager_GetDebugParamSection(swigCPtr, num);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_CParam GetDebugParam(SWIGTYPE_p_uint32 num) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IDebugInformationManager_GetDebugParam(swigCPtr, SWIGTYPE_p_uint32.getCPtr(num));
+  public virtual SWIGTYPE_p_CParam GetDebugParam(uint num) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IDebugInformationManager_GetDebugParam(swigCPtr, num);
     SWIGTYPE_p_CParam ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_CParam(cPtr, false);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 

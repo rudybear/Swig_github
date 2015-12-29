@@ -18,7 +18,7 @@ namespace EngineCore
         private CCamera camera;
 
         public float fov;
-        public float Fov
+        public float FovV
         {
             get { return fov; }
             set { fov = value; SetProjParams(); }
@@ -40,7 +40,8 @@ namespace EngineCore
 
         private void SetProjParams()
         {
-            core.GetScene().ProjParams(fov, near, far);
+            if (core != null)
+                core.GetScene().ProjParams(fov, near, far);
         }
         public Camera()
         {
@@ -49,7 +50,7 @@ namespace EngineCore
 
         public override void PostLoad()
         {
-
+            SetProjParams();
         }
 
         public void onCreated()

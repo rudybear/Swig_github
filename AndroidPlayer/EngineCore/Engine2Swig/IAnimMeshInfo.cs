@@ -48,9 +48,8 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public override void UnloadAnimation(SWIGTYPE_p_uint32 arg0) {
-    Engine2PINVOKE.IAnimMeshInfo_UnloadAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public override void UnloadAnimation(uint arg0) {
+    Engine2PINVOKE.IAnimMeshInfo_UnloadAnimation(swigCPtr, arg0);
   }
 
   public override void UnloadAnimations() {
@@ -62,9 +61,8 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public override string GetAnimationName(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.IAnimMeshInfo_GetAnimationName(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public override string GetAnimationName(uint arg0) {
+    string ret = Engine2PINVOKE.IAnimMeshInfo_GetAnimationName(swigCPtr, arg0);
     return ret;
   }
 
@@ -73,30 +71,26 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public override void StartAnimation(SWIGTYPE_p_uint32 id, AnimationParam arg1) {
-    Engine2PINVOKE.IAnimMeshInfo_StartAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), AnimationParam.getCPtr(arg1));
+  public override void StartAnimation(uint id, AnimationParam arg1) {
+    Engine2PINVOKE.IAnimMeshInfo_StartAnimation(swigCPtr, id, AnimationParam.getCPtr(arg1));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual void DetachBoneFromAnimation(SWIGTYPE_p_uint32 animationID, SWIGTYPE_p_uint32 boneID) {
-    Engine2PINVOKE.IAnimMeshInfo_DetachBoneFromAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(animationID), SWIGTYPE_p_uint32.getCPtr(boneID));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void DetachBoneFromAnimation(uint animationID, uint boneID) {
+    Engine2PINVOKE.IAnimMeshInfo_DetachBoneFromAnimation(swigCPtr, animationID, boneID);
   }
 
-  public virtual void AttachBoneToAnimation(SWIGTYPE_p_uint32 animationID, SWIGTYPE_p_uint32 boneID) {
-    Engine2PINVOKE.IAnimMeshInfo_AttachBoneToAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(animationID), SWIGTYPE_p_uint32.getCPtr(boneID));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void AttachBoneToAnimation(uint animationID, uint boneID) {
+    Engine2PINVOKE.IAnimMeshInfo_AttachBoneToAnimation(swigCPtr, animationID, boneID);
   }
 
-  public virtual bool IsBoneAttachedToAnimation(SWIGTYPE_p_uint32 animationID, SWIGTYPE_p_uint32 boneID) {
-    bool ret = Engine2PINVOKE.IAnimMeshInfo_IsBoneAttachedToAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(animationID), SWIGTYPE_p_uint32.getCPtr(boneID));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual bool IsBoneAttachedToAnimation(uint animationID, uint boneID) {
+    bool ret = Engine2PINVOKE.IAnimMeshInfo_IsBoneAttachedToAnimation(swigCPtr, animationID, boneID);
     return ret;
   }
 
-  public override void StopAnimation(SWIGTYPE_p_uint32 id) {
-    Engine2PINVOKE.IAnimMeshInfo_StopAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public override void StopAnimation(uint id) {
+    Engine2PINVOKE.IAnimMeshInfo_StopAnimation(swigCPtr, id);
   }
 
   public override int GetAnimationSize(string arg0) {
@@ -104,14 +98,14 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public override bool GetParams(SWIGTYPE_p_uint32 id, AnimationParam arg1) {
-    bool ret = Engine2PINVOKE.IAnimMeshInfo_GetParams(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), AnimationParam.getCPtr(arg1));
+  public override bool GetParams(uint id, AnimationParam arg1) {
+    bool ret = Engine2PINVOKE.IAnimMeshInfo_GetParams(swigCPtr, id, AnimationParam.getCPtr(arg1));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public override bool UpdateParams(SWIGTYPE_p_uint32 id, AnimationParam param) {
-    bool ret = Engine2PINVOKE.IAnimMeshInfo_UpdateParams(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), AnimationParam.getCPtr(param));
+  public override bool UpdateParams(uint id, AnimationParam param) {
+    bool ret = Engine2PINVOKE.IAnimMeshInfo_UpdateParams(swigCPtr, id, AnimationParam.getCPtr(param));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -122,9 +116,8 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public virtual bool Update(SWIGTYPE_p_uint32 boneId) {
-    bool ret = Engine2PINVOKE.IAnimMeshInfo_Update__SWIG_0(swigCPtr, SWIGTYPE_p_uint32.getCPtr(boneId));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual bool Update(uint boneId) {
+    bool ret = Engine2PINVOKE.IAnimMeshInfo_Update__SWIG_0(swigCPtr, boneId);
     return ret;
   }
 
@@ -133,48 +126,40 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public virtual void SetTimeGameUpdate(SWIGTYPE_p_uint32 id, bool arg1) {
-    Engine2PINVOKE.IAnimMeshInfo_SetTimeGameUpdate(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), arg1);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void SetTimeGameUpdate(uint id, bool arg1) {
+    Engine2PINVOKE.IAnimMeshInfo_SetTimeGameUpdate(swigCPtr, id, arg1);
   }
 
-  public override float GetStartTime(SWIGTYPE_p_uint32 id) {
-    float ret = Engine2PINVOKE.IAnimMeshInfo_GetStartTime(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public override float GetStartTime(uint id) {
+    float ret = Engine2PINVOKE.IAnimMeshInfo_GetStartTime(swigCPtr, id);
     return ret;
   }
 
-  public override float GetEndTime(SWIGTYPE_p_uint32 id) {
-    float ret = Engine2PINVOKE.IAnimMeshInfo_GetEndTime(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public override float GetEndTime(uint id) {
+    float ret = Engine2PINVOKE.IAnimMeshInfo_GetEndTime(swigCPtr, id);
     return ret;
   }
 
-  public virtual void SetCurrentTrackTime(SWIGTYPE_p_uint32 id, float arg1) {
-    Engine2PINVOKE.IAnimMeshInfo_SetCurrentTrackTime(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), arg1);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void SetCurrentTrackTime(uint id, float arg1) {
+    Engine2PINVOKE.IAnimMeshInfo_SetCurrentTrackTime(swigCPtr, id, arg1);
   }
 
-  public virtual float GetCurrentTrackTime(SWIGTYPE_p_uint32 id) {
-    float ret = Engine2PINVOKE.IAnimMeshInfo_GetCurrentTrackTime(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual float GetCurrentTrackTime(uint id) {
+    float ret = Engine2PINVOKE.IAnimMeshInfo_GetCurrentTrackTime(swigCPtr, id);
     return ret;
   }
 
-  public virtual float GetCurrentWeight(SWIGTYPE_p_uint32 id) {
-    float ret = Engine2PINVOKE.IAnimMeshInfo_GetCurrentWeight(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual float GetCurrentWeight(uint id) {
+    float ret = Engine2PINVOKE.IAnimMeshInfo_GetCurrentWeight(swigCPtr, id);
     return ret;
   }
 
-  public virtual void SetCurrentWeight(SWIGTYPE_p_uint32 arg0, float arg1) {
-    Engine2PINVOKE.IAnimMeshInfo_SetCurrentWeight(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0), arg1);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void SetCurrentWeight(uint arg0, float arg1) {
+    Engine2PINVOKE.IAnimMeshInfo_SetCurrentWeight(swigCPtr, arg0, arg1);
   }
 
-  public virtual SWIGTYPE_p_uint32 GetGlobalIDFromLocalID(SWIGTYPE_p_uint32 arg0) {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IAnimMeshInfo_GetGlobalIDFromLocalID(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0)), true);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual uint GetGlobalIDFromLocalID(uint arg0) {
+    uint ret = Engine2PINVOKE.IAnimMeshInfo_GetGlobalIDFromLocalID(swigCPtr, arg0);
     return ret;
   }
 
@@ -182,9 +167,8 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     Engine2PINVOKE.IAnimMeshInfo_SetBindPose(swigCPtr);
   }
 
-  public virtual bool IsAnimationPlay(SWIGTYPE_p_uint32 arg0) {
-    bool ret = Engine2PINVOKE.IAnimMeshInfo_IsAnimationPlay(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual bool IsAnimationPlay(uint arg0) {
+    bool ret = Engine2PINVOKE.IAnimMeshInfo_IsAnimationPlay(swigCPtr, arg0);
     return ret;
   }
 
@@ -202,8 +186,8 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public override SWIGTYPE_p_uint32 GetNumLods() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IAnimMeshInfo_GetNumLods(swigCPtr), true);
+  public override uint GetNumLods() {
+    uint ret = Engine2PINVOKE.IAnimMeshInfo_GetNumLods(swigCPtr);
     return ret;
   }
 
@@ -223,19 +207,19 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual SWIGTYPE_p_uint32 GetActiveBonesCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IAnimMeshInfo_GetActiveBonesCount(swigCPtr), true);
+  public virtual uint GetActiveBonesCount() {
+    uint ret = Engine2PINVOKE.IAnimMeshInfo_GetActiveBonesCount(swigCPtr);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetLodUpdateMult(SWIGTYPE_p_int32 lod) {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IAnimMeshInfo_GetLodUpdateMult(swigCPtr, SWIGTYPE_p_int32.getCPtr(lod)), true);
+  public virtual uint GetLodUpdateMult(SWIGTYPE_p_int32 lod) {
+    uint ret = Engine2PINVOKE.IAnimMeshInfo_GetLodUpdateMult(swigCPtr, SWIGTYPE_p_int32.getCPtr(lod));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual void SetLodUpdateMult(SWIGTYPE_p_int32 lod, SWIGTYPE_p_uint32 mult) {
-    Engine2PINVOKE.IAnimMeshInfo_SetLodUpdateMult(swigCPtr, SWIGTYPE_p_int32.getCPtr(lod), SWIGTYPE_p_uint32.getCPtr(mult));
+  public virtual void SetLodUpdateMult(SWIGTYPE_p_int32 lod, uint mult) {
+    Engine2PINVOKE.IAnimMeshInfo_SetLodUpdateMult(swigCPtr, SWIGTYPE_p_int32.getCPtr(lod), mult);
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
   }
 

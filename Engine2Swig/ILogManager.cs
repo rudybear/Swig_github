@@ -43,23 +43,21 @@ public class ILogManager : global::System.IDisposable {
     Engine2PINVOKE.ILogManager_RegisterListener(swigCPtr, ILogListener.getCPtr(arg0));
   }
 
-  public virtual void AddToLog(SWIGTYPE_p_uint32 attr, string format) {
-    Engine2PINVOKE.ILogManager_AddToLog(swigCPtr, SWIGTYPE_p_uint32.getCPtr(attr), format);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void AddToLog(uint attr, string format) {
+    Engine2PINVOKE.ILogManager_AddToLog(swigCPtr, attr, format);
   }
 
   public virtual void SetLastErrorLogging(bool arg0) {
     Engine2PINVOKE.ILogManager_SetLastErrorLogging(swigCPtr, arg0);
   }
 
-  public virtual SWIGTYPE_p_uint32 GetLastErrorCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.ILogManager_GetLastErrorCount(swigCPtr), true);
+  public virtual uint GetLastErrorCount() {
+    uint ret = Engine2PINVOKE.ILogManager_GetLastErrorCount(swigCPtr);
     return ret;
   }
 
-  public virtual string GetLastError(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.ILogManager_GetLastError(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetLastError(uint arg0) {
+    string ret = Engine2PINVOKE.ILogManager_GetLastError(swigCPtr, arg0);
     return ret;
   }
 

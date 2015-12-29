@@ -39,14 +39,13 @@ public class PreloadInfo : global::System.IDisposable {
     }
   }
 
-  public SWIGTYPE_p_Engine2__VectorT_Engine2__String_t m_vecTextures {
+  public SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t m_vecTextures {
     set {
-      Engine2PINVOKE.PreloadInfo_m_vecTextures_set(swigCPtr, SWIGTYPE_p_Engine2__VectorT_Engine2__String_t.getCPtr(value));
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      Engine2PINVOKE.PreloadInfo_m_vecTextures_set(swigCPtr, SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_Engine2__VectorT_Engine2__String_t ret = new SWIGTYPE_p_Engine2__VectorT_Engine2__String_t(Engine2PINVOKE.PreloadInfo_m_vecTextures_get(swigCPtr), true);
-      if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = Engine2PINVOKE.PreloadInfo_m_vecTextures_get(swigCPtr);
+      SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_Engine2__VectorT_Engine2__String_templateT_char_Engine2__StandardAllocator_t_t(cPtr, false);
       return ret;
     } 
   }

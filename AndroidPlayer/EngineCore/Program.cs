@@ -285,6 +285,7 @@ namespace EngineCore
 #if WIN
             Application.Idle += new EventHandler(Application_Idle);
 #endif
+            core.GetScene().GetRender().GetSceneGraphFactory().ForceSimpleMainVisAreaTree();
             scene = new Scene(core);
 
             registeredObjects = new RegisteredObjects();

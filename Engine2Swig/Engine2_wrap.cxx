@@ -1834,30 +1834,24 @@ SWIGEXPORT int SWIGSTDCALL CSharp_LogNoCaretMask_get() {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_ComponentInfo_m_iParent_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_ComponentInfo_m_iParent_set(void * jarg1, unsigned int jarg2) {
   ComponentInfo *arg1 = (ComponentInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (ComponentInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_iParent = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_ComponentInfo_m_iParent_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_ComponentInfo_m_iParent_get(void * jarg1) {
+  unsigned int jresult ;
   ComponentInfo *arg1 = (ComponentInfo *) 0 ;
   uint32 result;
   
   arg1 = (ComponentInfo *)jarg1; 
-  result =  ((arg1)->m_iParent);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_iParent);
+  jresult = result; 
   return jresult;
 }
 
@@ -2395,52 +2389,40 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IDebugInformationManager_RemoveDebugParam(voi
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParamNums(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParamNums(void * jarg1) {
+  unsigned int jresult ;
   IDebugInformationManager *arg1 = (IDebugInformationManager *) 0 ;
   uint32 result;
   
   arg1 = (IDebugInformationManager *)jarg1; 
-  result = (arg1)->GetDebugParamNums();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetDebugParamNums();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParamSection(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParamSection(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IDebugInformationManager *arg1 = (IDebugInformationManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IDebugInformationManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetDebugParamSection(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParam(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IDebugInformationManager_GetDebugParam(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   IDebugInformationManager *arg1 = (IDebugInformationManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   CParam *result = 0 ;
   
   arg1 = (IDebugInformationManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (CParam *)(arg1)->GetDebugParam(arg2);
   jresult = (void *)result; 
   return jresult;
@@ -2661,64 +2643,52 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetPath(void * jarg1, char * ja
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetTexturesPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetTexturesPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetTexturesPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetTexturesPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetTexturesPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetTexturesPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetTexturesPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetModelsPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetModelsPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetModelsPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetModelsPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetModelsPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetModelsPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetModelsPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -2737,32 +2707,26 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetTerrainPath(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetEffectsPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetEffectsPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetEffectsPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetEffectsPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetEffectsPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetEffectsPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetEffectsPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -2781,32 +2745,26 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetEffectsWritePath(void * jarg
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetScriptsPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetScriptsPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetScriptsPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetScriptsPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetScriptsPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetScriptsPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetScriptsPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -2861,32 +2819,26 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetAnimationFolder(void * jarg1
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IConfigFile_GetParticlesPathCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IConfigFile_GetParticlesPathCount(void * jarg1) {
+  unsigned int jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 result;
   
   arg1 = (IConfigFile *)jarg1; 
-  result = (arg1)->GetParticlesPathCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetParticlesPathCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetParticlesPath(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IConfigFile_GetParticlesPath(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IConfigFile *arg1 = (IConfigFile *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IConfigFile *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetParticlesPath(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -2993,20 +2945,14 @@ SWIGEXPORT void SWIGSTDCALL CSharp_ILogManager_RegisterListener(void * jarg1, vo
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_ILogManager_AddToLog(void * jarg1, void * jarg2, char * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_ILogManager_AddToLog(void * jarg1, unsigned int jarg2, char * jarg3) {
   ILogManager *arg1 = (ILogManager *) 0 ;
   uint32 arg2 ;
   char *arg3 = (char *) 0 ;
   void *arg4 = 0 ;
-  uint32 *argp2 ;
   
   arg1 = (ILogManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (char *)jarg3; 
   (arg1)->AddToLog(arg2,(char const *)arg3,arg4);
 }
@@ -3022,32 +2968,26 @@ SWIGEXPORT void SWIGSTDCALL CSharp_ILogManager_SetLastErrorLogging(void * jarg1,
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_ILogManager_GetLastErrorCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_ILogManager_GetLastErrorCount(void * jarg1) {
+  unsigned int jresult ;
   ILogManager *arg1 = (ILogManager *) 0 ;
   uint32 result;
   
   arg1 = (ILogManager *)jarg1; 
-  result = (arg1)->GetLastErrorCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetLastErrorCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_ILogManager_GetLastError(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_ILogManager_GetLastError(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   ILogManager *arg1 = (ILogManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (ILogManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetLastError(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -5813,30 +5753,24 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInfo_m_vNotProcessedMeshes_get(vo
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInfo_m_Flags_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInfo_m_Flags_set(void * jarg1, unsigned int jarg2) {
   MeshMergerInfo *arg1 = (MeshMergerInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (MeshMergerInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_Flags = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInfo_m_Flags_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_MeshMergerInfo_m_Flags_get(void * jarg1) {
+  unsigned int jresult ;
   MeshMergerInfo *arg1 = (MeshMergerInfo *) 0 ;
   uint32 result;
   
   arg1 = (MeshMergerInfo *)jarg1; 
-  result =  ((arg1)->m_Flags);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_Flags);
+  jresult = result; 
   return jresult;
 }
 
@@ -5871,30 +5805,24 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_Matrix_get(void * 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_set(void * jarg1, unsigned int jarg2) {
   MeshMergerInstanceInfo *arg1 = (MeshMergerInstanceInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (MeshMergerInstanceInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_iDiffuseColor = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_MeshMergerInstanceInfo_m_iDiffuseColor_get(void * jarg1) {
+  unsigned int jresult ;
   MeshMergerInstanceInfo *arg1 = (MeshMergerInstanceInfo *) 0 ;
   uint32 result;
   
   arg1 = (MeshMergerInstanceInfo *)jarg1; 
-  result =  ((arg1)->m_iDiffuseColor);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_iDiffuseColor);
+  jresult = result; 
   return jresult;
 }
 
@@ -5983,30 +5911,24 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInfo2_m_vResultMeshes_get(void * 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInfo2_m_Flags2_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_MeshMergerInfo2_m_Flags2_set(void * jarg1, unsigned int jarg2) {
   MeshMergerInfo2 *arg1 = (MeshMergerInfo2 *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (MeshMergerInfo2 *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_Flags2 = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_MeshMergerInfo2_m_Flags2_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_MeshMergerInfo2_m_Flags2_get(void * jarg1) {
+  unsigned int jresult ;
   MeshMergerInfo2 *arg1 = (MeshMergerInfo2 *) 0 ;
   uint32 result;
   
   arg1 = (MeshMergerInfo2 *)jarg1; 
-  result =  ((arg1)->m_Flags2);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_Flags2);
+  jresult = result; 
   return jresult;
 }
 
@@ -6665,8 +6587,8 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_IDecalManager(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_SpawnDecal(void * jarg1, void * jarg2) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_SpawnDecal(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   EngineDecalInfo *arg2 = 0 ;
   uint32 result;
@@ -6677,27 +6599,21 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_SpawnDecal(void * jarg1, void
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "EngineDecalInfo & type is null", 0);
     return 0;
   } 
-  result = (arg1)->SpawnDecal(*arg2);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->SpawnDecal(*arg2);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_MoveDecal(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_MoveDecal(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
   EngineDecalInfo *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (EngineDecalInfo *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "EngineDecalInfo & type is null", 0);
@@ -6709,98 +6625,68 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_MoveDecal(void * jarg1,
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_GetDecalMaterial(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_GetDecalMaterial(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   IMaterial *result = 0 ;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (IMaterial *)(arg1)->GetDecalMaterial(arg2);
   jresult = (void *)result; 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_GetDecalMesh(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IDecalManager_GetDecalMesh(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   IMeshInfo *result = 0 ;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (IMeshInfo *)(arg1)->GetDecalMesh(arg2);
   jresult = (void *)result; 
   return jresult;
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_RemoveDecal(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IDecalManager_RemoveDecal(void * jarg1, unsigned int jarg2) {
   unsigned int jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (bool)(arg1)->RemoveDecal(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IDecalManager_SetTransparency(void * jarg1, void * jarg2, float jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IDecalManager_SetTransparency(void * jarg1, unsigned int jarg2, float jarg3) {
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
   float arg3 ;
-  uint32 *argp2 ;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (float)jarg3; 
   (arg1)->SetTransparency(arg2,arg3);
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IDecalManager_GetTransparency(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IDecalManager_GetTransparency(void * jarg1, unsigned int jarg2) {
   float jresult ;
   Engine2::Render::IDecalManager *arg1 = (Engine2::Render::IDecalManager *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (Engine2::Render::IDecalManager *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetTransparency(arg2);
   jresult = result; 
   return jresult;
@@ -6885,58 +6771,46 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_IDeviceDependendentInfo(void * jarg1) 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SMemTextureInfo_m_iWidth_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SMemTextureInfo_m_iWidth_set(void * jarg1, unsigned int jarg2) {
   SMemTextureInfo *arg1 = (SMemTextureInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SMemTextureInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_iWidth = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SMemTextureInfo_m_iWidth_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SMemTextureInfo_m_iWidth_get(void * jarg1) {
+  unsigned int jresult ;
   SMemTextureInfo *arg1 = (SMemTextureInfo *) 0 ;
   uint32 result;
   
   arg1 = (SMemTextureInfo *)jarg1; 
-  result =  ((arg1)->m_iWidth);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_iWidth);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SMemTextureInfo_m_iHeight_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SMemTextureInfo_m_iHeight_set(void * jarg1, unsigned int jarg2) {
   SMemTextureInfo *arg1 = (SMemTextureInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SMemTextureInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_iHeight = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SMemTextureInfo_m_iHeight_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SMemTextureInfo_m_iHeight_get(void * jarg1) {
+  unsigned int jresult ;
   SMemTextureInfo *arg1 = (SMemTextureInfo *) 0 ;
   uint32 result;
   
   arg1 = (SMemTextureInfo *)jarg1; 
-  result =  ((arg1)->m_iHeight);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_iHeight);
+  jresult = result; 
   return jresult;
 }
 
@@ -6987,114 +6861,90 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_SMemTextureInfo(void * jarg1) {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_atlasHeight_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_atlasHeight_set(void * jarg1, unsigned int jarg2) {
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SFontStatistics *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_atlasHeight = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SFontStatistics_m_atlasHeight_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SFontStatistics_m_atlasHeight_get(void * jarg1) {
+  unsigned int jresult ;
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 result;
   
   arg1 = (SFontStatistics *)jarg1; 
-  result =  ((arg1)->m_atlasHeight);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_atlasHeight);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_atlasWidth_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_atlasWidth_set(void * jarg1, unsigned int jarg2) {
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SFontStatistics *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_atlasWidth = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SFontStatistics_m_atlasWidth_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SFontStatistics_m_atlasWidth_get(void * jarg1) {
+  unsigned int jresult ;
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 result;
   
   arg1 = (SFontStatistics *)jarg1; 
-  result =  ((arg1)->m_atlasWidth);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_atlasWidth);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_textureCount_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_textureCount_set(void * jarg1, unsigned int jarg2) {
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SFontStatistics *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_textureCount = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SFontStatistics_m_textureCount_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SFontStatistics_m_textureCount_get(void * jarg1) {
+  unsigned int jresult ;
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 result;
   
   arg1 = (SFontStatistics *)jarg1; 
-  result =  ((arg1)->m_textureCount);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_textureCount);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_generationTimeMs_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_SFontStatistics_m_generationTimeMs_set(void * jarg1, unsigned int jarg2) {
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (SFontStatistics *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_generationTimeMs = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_SFontStatistics_m_generationTimeMs_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_SFontStatistics_m_generationTimeMs_get(void * jarg1) {
+  unsigned int jresult ;
   SFontStatistics *arg1 = (SFontStatistics *) 0 ;
   uint32 result;
   
   arg1 = (SFontStatistics *)jarg1; 
-  result =  ((arg1)->m_generationTimeMs);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_generationTimeMs);
+  jresult = result; 
   return jresult;
 }
 
@@ -9573,20 +9423,14 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IRender_SaveTextureToFile(void * jarg
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IRender_GetStatistics__SWIG_0(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IRender_GetStatistics__SWIG_0(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   IRender *arg1 = (IRender *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   SRenderStatistics *result = 0 ;
   
   arg1 = (IRender *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (SRenderStatistics *)((IRender const *)arg1)->GetStatistics(arg2);
   jresult = (void *)result; 
   return jresult;
@@ -9771,18 +9615,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_IRender_GetMaterialLib(void * jarg1) {
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IRender_AddToBatchCount(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IRender_AddToBatchCount(void * jarg1, unsigned int jarg2) {
   IRender *arg1 = (IRender *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IRender *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->AddToBatchCount(arg2);
 }
 
@@ -11041,30 +10879,24 @@ SWIGEXPORT int SWIGSTDCALL CSharp_EngineDecalInfo_m_eDecalType_get(void * jarg1)
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_EngineDecalInfo_m_nDecalID_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_EngineDecalInfo_m_nDecalID_set(void * jarg1, unsigned int jarg2) {
   EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (EngineDecalInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_nDecalID = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_EngineDecalInfo_m_nDecalID_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_EngineDecalInfo_m_nDecalID_get(void * jarg1) {
+  unsigned int jresult ;
   EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
   uint32 result;
   
   arg1 = (EngineDecalInfo *)jarg1; 
-  result =  ((arg1)->m_nDecalID);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_nDecalID);
+  jresult = result; 
   return jresult;
 }
 
@@ -11807,62 +11639,44 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMeshInfo_GetSortInt(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMeshInfo_GetRenderFlags(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMeshInfo_GetRenderFlags(void * jarg1) {
+  unsigned int jresult ;
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IMeshInfo *)jarg1; 
-  result = ((IMeshInfo const *)arg1)->GetRenderFlags();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)((IMeshInfo const *)arg1)->GetRenderFlags();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_SetRenderFlags(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_SetRenderFlags(void * jarg1, unsigned int jarg2) {
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->SetRenderFlags(arg2);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_ForceSetRenderFlags(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_ForceSetRenderFlags(void * jarg1, unsigned int jarg2) {
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->ForceSetRenderFlags(arg2);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_RemoveRenderFlags(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IMeshInfo_RemoveRenderFlags(void * jarg1, unsigned int jarg2) {
   IMeshInfo *arg1 = (IMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->RemoveRenderFlags(arg2);
 }
 
@@ -12537,73 +12351,55 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_IXRefInfoMesh(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialsCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialsCount(void * jarg1) {
+  unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  result = (arg1)->GetVisibleMaterialsCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetVisibleMaterialsCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialName(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialName(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetVisibleMaterialName(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterial(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterial(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   IMaterial *result = 0 ;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (IMaterial *)(arg1)->GetVisibleMaterial(arg2);
   jresult = (void *)result; 
   return jresult;
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterial(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterial(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   IMaterial *arg3 = (IMaterial *) 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (IMaterial *)jarg3; 
   result = (bool)(arg1)->SetVisibleMaterial(arg2,(IMaterial const *)arg3);
   jresult = result; 
@@ -12611,21 +12407,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterial(void
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterialByMaterialName(void * jarg1, void * jarg2, char * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterialByMaterialName(void * jarg1, unsigned int jarg2, char * jarg3) {
   unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   char *arg3 = (char *) 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (char *)jarg3; 
   result = (bool)(arg1)->SetVisibleMaterialByMaterialName(arg2,(char const *)arg3);
   jresult = result; 
@@ -12633,69 +12423,45 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_SetVisibleMaterialByMat
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialParamCount(void * jarg1, void * jarg2) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialParamCount(void * jarg1, unsigned int jarg2) {
+  unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   uint32 result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  result = (arg1)->GetVisibleMaterialParamCount(arg2);
-  jresult = new uint32((const uint32 &)result); 
+  arg2 = (uint32)jarg2; 
+  result = (uint32)(arg1)->GetVisibleMaterialParamCount(arg2);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialParam(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_IMaterialInfo_GetVisibleMaterialParam(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   void * jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   uint32 arg3 ;
-  uint32 *argp2 ;
-  uint32 *argp3 ;
   CParam *result = 0 ;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg3 = *argp3; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (uint32)jarg3; 
   result = (CParam *)(arg1)->GetVisibleMaterialParam(arg2,arg3);
   jresult = (void *)result; 
   return jresult;
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParam(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParam(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   CParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (CParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CParam & type is null", 0);
@@ -12707,21 +12473,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParam
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParamPtr(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IMaterialInfo_AddVisibleMaterialParamPtr(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IMaterialInfo *arg1 = (IMaterialInfo *) 0 ;
   uint32 arg2 ;
   CParam *arg3 = (CParam *) 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IMaterialInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (CParam *)jarg3; 
   result = (bool)(arg1)->AddVisibleMaterialParamPtr(arg2,arg3);
   jresult = result; 
@@ -13157,30 +12917,24 @@ SWIGEXPORT int SWIGSTDCALL CSharp_AnimationParam_m_iOnlyAffectedBone_get(void * 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_AnimationParam_m_nLayer_set(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_AnimationParam_m_nLayer_set(void * jarg1, unsigned int jarg2) {
   AnimationParam *arg1 = (AnimationParam *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (AnimationParam *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   if (arg1) (arg1)->m_nLayer = arg2;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_AnimationParam_m_nLayer_get(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_AnimationParam_m_nLayer_get(void * jarg1) {
+  unsigned int jresult ;
   AnimationParam *arg1 = (AnimationParam *) 0 ;
   uint32 result;
   
   arg1 = (AnimationParam *)jarg1; 
-  result =  ((arg1)->m_nLayer);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32) ((arg1)->m_nLayer);
+  jresult = result; 
   return jresult;
 }
 
@@ -13805,14 +13559,14 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_IsSubmeshMaxMaterialUse
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumLods(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumLods(void * jarg1) {
+  unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  result = (arg1)->GetNumLods();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetNumLods();
+  jresult = result; 
   return jresult;
 }
 
@@ -13871,14 +13625,14 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetLodDistance(void * jarg1, vo
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleLod(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleLod(void * jarg1) {
+  unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  result = (arg1)->GetVisibleLod();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetVisibleLod();
+  jresult = result; 
   return jresult;
 }
 
@@ -13979,84 +13733,66 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_TestRayIntersectionSubm
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumMaterials(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumMaterials(void * jarg1) {
+  unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  result = (arg1)->GetNumMaterials();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetNumMaterials();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleGlobalMaterialNum(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleGlobalMaterialNum(void * jarg1, unsigned int jarg2) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  uint32 result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  result = (uint32)(arg1)->GetVisibleGlobalMaterialNum(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleFromGlobalMaterialNum(void * jarg1, unsigned int jarg2) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 arg2 ;
+  uint32 result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  arg2 = (uint32)jarg2; 
+  result = (uint32)(arg1)->GetVisibleFromGlobalMaterialNum(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetMaxMaterialsCount(void * jarg1) {
+  unsigned int jresult ;
+  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
+  uint32 result;
+  
+  arg1 = (IBaseMeshInfo *)jarg1; 
+  result = (uint32)((IBaseMeshInfo const *)arg1)->GetMaxMaterialsCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetMaxMaterial(void * jarg1, unsigned int jarg2) {
   void * jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
-  uint32 result;
-  
-  arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  result = (arg1)->GetVisibleGlobalMaterialNum(arg2);
-  jresult = new uint32((const uint32 &)result); 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleFromGlobalMaterialNum(void * jarg1, void * jarg2) {
-  void * jresult ;
-  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
-  uint32 arg2 ;
-  uint32 *argp2 ;
-  uint32 result;
-  
-  arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  result = (arg1)->GetVisibleFromGlobalMaterialNum(arg2);
-  jresult = new uint32((const uint32 &)result); 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetMaxMaterialsCount(void * jarg1) {
-  void * jresult ;
-  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
-  uint32 result;
-  
-  arg1 = (IBaseMeshInfo *)jarg1; 
-  result = ((IBaseMeshInfo const *)arg1)->GetMaxMaterialsCount();
-  jresult = new uint32((const uint32 &)result); 
-  return jresult;
-}
-
-
-SWIGEXPORT void * SWIGSTDCALL CSharp_IBaseMeshInfo_GetMaxMaterial(void * jarg1, void * jarg2) {
-  void * jresult ;
-  IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
-  uint32 arg2 ;
-  uint32 *argp2 ;
   MaxMeshMaterial *result = 0 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (MaxMeshMaterial *)((IBaseMeshInfo const *)arg1)->GetMaxMaterial(arg2);
   jresult = (void *)result; 
   return jresult;
@@ -14137,35 +13873,23 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadAnimations(void * jarg1) 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadAnimation(void * jarg1, unsigned int jarg2) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->UnloadAnimation(arg2);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartAnimation(void * jarg1, unsigned int jarg2, void * jarg3) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -14175,18 +13899,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartAnimation(void * jarg1, vo
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StopAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StopAnimation(void * jarg1, unsigned int jarg2) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->StopAnimation(arg2);
 }
 
@@ -14203,20 +13921,14 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumAnimations(void * jarg1) {
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IBaseMeshInfo_GetAnimationName(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IBaseMeshInfo_GetAnimationName(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetAnimationName(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -14237,21 +13949,15 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_GetAnimationID(void * jarg1, cha
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams__SWIG_0(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -14263,21 +13969,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams__SWIG_0(void 
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams__SWIG_0(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -14289,40 +13989,28 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams__SWIG_0(vo
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetStartTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetStartTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetStartTime(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetEndTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetEndTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetEndTime(arg2);
   jresult = result; 
   return jresult;
@@ -14339,32 +14027,26 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetRootBone(void * jarg1, int j
 }
 
 
-SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_LoadUVAnimation(void * jarg1, char * jarg2) {
-  int jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_LoadUVAnimation(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   char *arg2 = (char *) 0 ;
-  int result;
+  uint32 result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
   arg2 = (char *)jarg2; 
-  result = (int)(arg1)->LoadUVAnimation((char const *)arg2);
+  result = (uint32)(arg1)->LoadUVAnimation((char const *)arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadUVAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_UnloadUVAnimation(void * jarg1, unsigned int jarg2) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->UnloadUVAnimation(arg2);
 }
 
@@ -14381,20 +14063,14 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumUVAnimations(void * jarg1)
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IBaseMeshInfo_GetUVAnimationName(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IBaseMeshInfo_GetUVAnimationName(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetUVAnimationName(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -14415,19 +14091,13 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IBaseMeshInfo_GetUVAnimationID(void * jarg1, c
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartUVAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartUVAnimation(void * jarg1, unsigned int jarg2, void * jarg3) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   UVAnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (UVAnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "UVAnimationParam & type is null", 0);
@@ -14437,37 +14107,25 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StartUVAnimation(void * jarg1, 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StopUVAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_StopUVAnimation(void * jarg1, unsigned int jarg2) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->StopUVAnimation(arg2);
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams__SWIG_1(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams__SWIG_1(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   UVAnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (UVAnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "UVAnimationParam & type is null", 0);
@@ -14479,21 +14137,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetParams__SWIG_1(void 
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams__SWIG_1(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_UpdateParams__SWIG_1(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   uint32 arg2 ;
   UVAnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (UVAnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "UVAnimationParam & type is null", 0);
@@ -14727,18 +14379,12 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_LoadAnimation(void * jarg1, char
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_UnloadAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_UnloadAnimation(void * jarg1, unsigned int jarg2) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->UnloadAnimation(arg2);
 }
 
@@ -14763,20 +14409,14 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_GetNumAnimations(void * jarg1) {
 }
 
 
-SWIGEXPORT char * SWIGSTDCALL CSharp_IAnimMeshInfo_GetAnimationName(void * jarg1, void * jarg2) {
+SWIGEXPORT char * SWIGSTDCALL CSharp_IAnimMeshInfo_GetAnimationName(void * jarg1, unsigned int jarg2) {
   char * jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   char *result = 0 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (char *)(arg1)->GetAnimationName(arg2);
   jresult = SWIG_csharp_string_callback((const char *)result); 
   return jresult;
@@ -14797,19 +14437,13 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_GetAnimationID(void * jarg1, cha
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StartAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StartAnimation(void * jarg1, unsigned int jarg2, void * jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -14819,94 +14453,52 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StartAnimation(void * jarg1, vo
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_DetachBoneFromAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_DetachBoneFromAnimation(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   uint32 arg3 ;
-  uint32 *argp2 ;
-  uint32 *argp3 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg3 = *argp3; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (uint32)jarg3; 
   (arg1)->DetachBoneFromAnimation(arg2,arg3);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_AttachBoneToAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_AttachBoneToAnimation(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   uint32 arg3 ;
-  uint32 *argp2 ;
-  uint32 *argp3 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg3 = *argp3; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (uint32)jarg3; 
   (arg1)->AttachBoneToAnimation(arg2,arg3);
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_IsBoneAttachedToAnimation(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_IsBoneAttachedToAnimation(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   uint32 arg3 ;
-  uint32 *argp2 ;
-  uint32 *argp3 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg3 = *argp3; 
+  arg2 = (uint32)jarg2; 
+  arg3 = (uint32)jarg3; 
   result = (bool)(arg1)->IsBoneAttachedToAnimation(arg2,arg3);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StopAnimation(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_StopAnimation(void * jarg1, unsigned int jarg2) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   (arg1)->StopAnimation(arg2);
 }
 
@@ -14925,21 +14517,15 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_GetAnimationSize(void * jarg1, c
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetParams(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetParams(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -14951,21 +14537,15 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetParams(void * jarg1,
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_UpdateParams(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_UpdateParams(void * jarg1, unsigned int jarg2, void * jarg3) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   AnimationParam *arg3 = 0 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (AnimationParam *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "AnimationParam & type is null", 0);
@@ -14989,20 +14569,14 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetSkeleton(void * jarg1) {
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_Update__SWIG_0(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_Update__SWIG_0(void * jarg1, unsigned int jarg2) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (bool)(arg1)->Update(arg2);
   jresult = result; 
   return jresult;
@@ -15021,156 +14595,108 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_Update__SWIG_1(void * j
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetTimeGameUpdate(void * jarg1, void * jarg2, unsigned int jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetTimeGameUpdate(void * jarg1, unsigned int jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   bool arg3 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = jarg3 ? true : false; 
   (arg1)->SetTimeGameUpdate(arg2,arg3);
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetStartTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetStartTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetStartTime(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetEndTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetEndTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetEndTime(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetCurrentTrackTime(void * jarg1, void * jarg2, float jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetCurrentTrackTime(void * jarg1, unsigned int jarg2, float jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   float arg3 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (float)jarg3; 
   (arg1)->SetCurrentTrackTime(arg2,arg3);
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetCurrentTrackTime(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetCurrentTrackTime(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetCurrentTrackTime(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetCurrentWeight(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetCurrentWeight(void * jarg1, unsigned int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (float)(arg1)->GetCurrentWeight(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetCurrentWeight(void * jarg1, void * jarg2, float jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetCurrentWeight(void * jarg1, unsigned int jarg2, float jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
   float arg3 ;
-  uint32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   arg3 = (float)jarg3; 
   (arg1)->SetCurrentWeight(arg2,arg3);
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetGlobalIDFromLocalID(void * jarg1, void * jarg2) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetGlobalIDFromLocalID(void * jarg1, unsigned int jarg2) {
+  unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   uint32 result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
-  result = (arg1)->GetGlobalIDFromLocalID(arg2);
-  jresult = new uint32((const uint32 &)result); 
+  arg2 = (uint32)jarg2; 
+  result = (uint32)(arg1)->GetGlobalIDFromLocalID(arg2);
+  jresult = result; 
   return jresult;
 }
 
@@ -15183,20 +14709,14 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetBindPose(void * jarg1) {
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_IsAnimationPlay(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_IsAnimationPlay(void * jarg1, unsigned int jarg2) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 arg2 ;
-  uint32 *argp2 ;
   bool result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (uint32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (uint32)jarg2; 
   result = (bool)(arg1)->IsAnimationPlay(arg2);
   jresult = result; 
   return jresult;
@@ -15237,14 +14757,14 @@ SWIGEXPORT int SWIGSTDCALL CSharp_IAnimMeshInfo_GetMaxMipLevel(void * jarg1) {
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetNumLods(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetNumLods(void * jarg1) {
+  unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  result = (arg1)->GetNumLods();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetNumLods();
+  jresult = result; 
   return jresult;
 }
 
@@ -15303,20 +14823,20 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodDistance(void * jarg1, vo
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetActiveBonesCount(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetActiveBonesCount(void * jarg1) {
+  unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   uint32 result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  result = (arg1)->GetActiveBonesCount();
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetActiveBonesCount();
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodUpdateMult(void * jarg1, void * jarg2) {
-  void * jresult ;
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodUpdateMult(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
   int32 *argp2 ;
@@ -15329,18 +14849,17 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodUpdateMult(void * jarg1
     return 0;
   }
   arg2 = *argp2; 
-  result = (arg1)->GetLodUpdateMult(arg2);
-  jresult = new uint32((const uint32 &)result); 
+  result = (uint32)(arg1)->GetLodUpdateMult(arg2);
+  jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodUpdateMult(void * jarg1, void * jarg2, void * jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodUpdateMult(void * jarg1, void * jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
   uint32 arg3 ;
   int32 *argp2 ;
-  uint32 *argp3 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
   argp2 = (int32 *)jarg2; 
@@ -15349,12 +14868,7 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodUpdateMult(void * jarg1, 
     return ;
   }
   arg2 = *argp2; 
-  argp3 = (uint32 *)jarg3; 
-  if (!argp3) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return ;
-  }
-  arg3 = *argp3; 
+  arg3 = (uint32)jarg3; 
   (arg1)->SetLodUpdateMult(arg2,arg3);
 }
 
@@ -16775,18 +16289,12 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_new_CVec4__SWIG_1(float jarg1, float jarg2,
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_new_CVec4__SWIG_2(void * jarg1) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_new_CVec4__SWIG_2(unsigned int jarg1) {
   void * jresult ;
   uint32 arg1 ;
-  uint32 *argp1 ;
   CVec4 *result = 0 ;
   
-  argp1 = (uint32 *)jarg1; 
-  if (!argp1) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null uint32", 0);
-    return 0;
-  }
-  arg1 = *argp1; 
+  arg1 = (uint32)jarg1; 
   result = (CVec4 *)new CVec4(arg1);
   jresult = (void *)result; 
   return jresult;

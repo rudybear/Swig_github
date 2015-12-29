@@ -199,7 +199,7 @@ public:
 	// UVAnim interface
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	virtual int LoadUVAnimation (const char *) = 0;
+	virtual uint32 LoadUVAnimation (const char *) = 0;
 	virtual void UnloadUVAnimation(uint32) = 0;
 	virtual int GetNumUVAnimations() = 0;
 	virtual const char * GetUVAnimationName(uint32) = 0;

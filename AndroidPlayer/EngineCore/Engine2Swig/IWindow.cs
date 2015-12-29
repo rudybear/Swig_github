@@ -44,13 +44,13 @@ public class IWindow : global::System.IDisposable {
     return ret;
   }
 
-  public virtual void SetName(SWIGTYPE_p_Engine2__String name) {
-    Engine2PINVOKE.IWindow_SetName(swigCPtr, SWIGTYPE_p_Engine2__String.getCPtr(name));
+  public virtual void SetName(Engine2String name) {
+    Engine2PINVOKE.IWindow_SetName(swigCPtr, Engine2String.getCPtr(name));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual SWIGTYPE_p_Engine2__String GetName() {
-    SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.IWindow_GetName(swigCPtr), false);
+  public virtual Engine2String GetName() {
+    Engine2String ret = new Engine2String(Engine2PINVOKE.IWindow_GetName(swigCPtr), false);
     return ret;
   }
 

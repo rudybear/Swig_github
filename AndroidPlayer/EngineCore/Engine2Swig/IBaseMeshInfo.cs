@@ -131,8 +131,8 @@ public class IBaseMeshInfo : IMaterialInfo {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetNumLods() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IBaseMeshInfo_GetNumLods(swigCPtr), true);
+  public virtual uint GetNumLods() {
+    uint ret = Engine2PINVOKE.IBaseMeshInfo_GetNumLods(swigCPtr);
     return ret;
   }
 
@@ -152,8 +152,8 @@ public class IBaseMeshInfo : IMaterialInfo {
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual SWIGTYPE_p_uint32 GetVisibleLod() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IBaseMeshInfo_GetVisibleLod(swigCPtr), true);
+  public virtual uint GetVisibleLod() {
+    uint ret = Engine2PINVOKE.IBaseMeshInfo_GetVisibleLod(swigCPtr);
     return ret;
   }
 
@@ -178,32 +178,29 @@ public class IBaseMeshInfo : IMaterialInfo {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetNumMaterials() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IBaseMeshInfo_GetNumMaterials(swigCPtr), true);
+  public virtual uint GetNumMaterials() {
+    uint ret = Engine2PINVOKE.IBaseMeshInfo_GetNumMaterials(swigCPtr);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetVisibleGlobalMaterialNum(SWIGTYPE_p_uint32 visibleNum) {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IBaseMeshInfo_GetVisibleGlobalMaterialNum(swigCPtr, SWIGTYPE_p_uint32.getCPtr(visibleNum)), true);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual uint GetVisibleGlobalMaterialNum(uint visibleNum) {
+    uint ret = Engine2PINVOKE.IBaseMeshInfo_GetVisibleGlobalMaterialNum(swigCPtr, visibleNum);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetVisibleFromGlobalMaterialNum(SWIGTYPE_p_uint32 globalNum) {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IBaseMeshInfo_GetVisibleFromGlobalMaterialNum(swigCPtr, SWIGTYPE_p_uint32.getCPtr(globalNum)), true);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual uint GetVisibleFromGlobalMaterialNum(uint globalNum) {
+    uint ret = Engine2PINVOKE.IBaseMeshInfo_GetVisibleFromGlobalMaterialNum(swigCPtr, globalNum);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_uint32 GetMaxMaterialsCount() {
-    SWIGTYPE_p_uint32 ret = new SWIGTYPE_p_uint32(Engine2PINVOKE.IBaseMeshInfo_GetMaxMaterialsCount(swigCPtr), true);
+  public virtual uint GetMaxMaterialsCount() {
+    uint ret = Engine2PINVOKE.IBaseMeshInfo_GetMaxMaterialsCount(swigCPtr);
     return ret;
   }
 
-  public virtual SWIGTYPE_p_MaxMeshMaterial GetMaxMaterial(SWIGTYPE_p_uint32 num) {
-    global::System.IntPtr cPtr = Engine2PINVOKE.IBaseMeshInfo_GetMaxMaterial(swigCPtr, SWIGTYPE_p_uint32.getCPtr(num));
+  public virtual SWIGTYPE_p_MaxMeshMaterial GetMaxMaterial(uint num) {
+    global::System.IntPtr cPtr = Engine2PINVOKE.IBaseMeshInfo_GetMaxMaterial(swigCPtr, num);
     SWIGTYPE_p_MaxMeshMaterial ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_MaxMeshMaterial(cPtr, false);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
@@ -238,19 +235,17 @@ public class IBaseMeshInfo : IMaterialInfo {
     Engine2PINVOKE.IBaseMeshInfo_UnloadAnimations(swigCPtr);
   }
 
-  public virtual void UnloadAnimation(SWIGTYPE_p_uint32 arg0) {
-    Engine2PINVOKE.IBaseMeshInfo_UnloadAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
+  public virtual void UnloadAnimation(uint arg0) {
+    Engine2PINVOKE.IBaseMeshInfo_UnloadAnimation(swigCPtr, arg0);
+  }
+
+  public virtual void StartAnimation(uint id, AnimationParam arg1) {
+    Engine2PINVOKE.IBaseMeshInfo_StartAnimation(swigCPtr, id, AnimationParam.getCPtr(arg1));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual void StartAnimation(SWIGTYPE_p_uint32 id, AnimationParam arg1) {
-    Engine2PINVOKE.IBaseMeshInfo_StartAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), AnimationParam.getCPtr(arg1));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public virtual void StopAnimation(SWIGTYPE_p_uint32 id) {
-    Engine2PINVOKE.IBaseMeshInfo_StopAnimation(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void StopAnimation(uint id) {
+    Engine2PINVOKE.IBaseMeshInfo_StopAnimation(swigCPtr, id);
   }
 
   public virtual int GetNumAnimations() {
@@ -258,9 +253,8 @@ public class IBaseMeshInfo : IMaterialInfo {
     return ret;
   }
 
-  public virtual string GetAnimationName(SWIGTYPE_p_uint32 arg0) {
-    string ret = Engine2PINVOKE.IBaseMeshInfo_GetAnimationName(swigCPtr, SWIGTYPE_p_uint32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual string GetAnimationName(uint arg0) {
+    string ret = Engine2PINVOKE.IBaseMeshInfo_GetAnimationName(swigCPtr, arg0);
     return ret;
   }
 
@@ -269,32 +263,75 @@ public class IBaseMeshInfo : IMaterialInfo {
     return ret;
   }
 
-  public virtual bool GetParams(SWIGTYPE_p_uint32 id, AnimationParam arg1) {
-    bool ret = Engine2PINVOKE.IBaseMeshInfo_GetParams(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), AnimationParam.getCPtr(arg1));
+  public virtual bool GetParams(uint id, AnimationParam arg1) {
+    bool ret = Engine2PINVOKE.IBaseMeshInfo_GetParams__SWIG_0(swigCPtr, id, AnimationParam.getCPtr(arg1));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual bool UpdateParams(SWIGTYPE_p_uint32 id, AnimationParam param) {
-    bool ret = Engine2PINVOKE.IBaseMeshInfo_UpdateParams(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id), AnimationParam.getCPtr(param));
+  public virtual bool UpdateParams(uint id, AnimationParam param) {
+    bool ret = Engine2PINVOKE.IBaseMeshInfo_UpdateParams__SWIG_0(swigCPtr, id, AnimationParam.getCPtr(param));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual float GetStartTime(SWIGTYPE_p_uint32 id) {
-    float ret = Engine2PINVOKE.IBaseMeshInfo_GetStartTime(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual float GetStartTime(uint id) {
+    float ret = Engine2PINVOKE.IBaseMeshInfo_GetStartTime(swigCPtr, id);
     return ret;
   }
 
-  public virtual float GetEndTime(SWIGTYPE_p_uint32 id) {
-    float ret = Engine2PINVOKE.IBaseMeshInfo_GetEndTime(swigCPtr, SWIGTYPE_p_uint32.getCPtr(id));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual float GetEndTime(uint id) {
+    float ret = Engine2PINVOKE.IBaseMeshInfo_GetEndTime(swigCPtr, id);
     return ret;
   }
 
   public virtual void SetRootBone(int arg0) {
     Engine2PINVOKE.IBaseMeshInfo_SetRootBone(swigCPtr, arg0);
+  }
+
+  public virtual uint LoadUVAnimation(string arg0) {
+    uint ret = Engine2PINVOKE.IBaseMeshInfo_LoadUVAnimation(swigCPtr, arg0);
+    return ret;
+  }
+
+  public virtual void UnloadUVAnimation(uint arg0) {
+    Engine2PINVOKE.IBaseMeshInfo_UnloadUVAnimation(swigCPtr, arg0);
+  }
+
+  public virtual int GetNumUVAnimations() {
+    int ret = Engine2PINVOKE.IBaseMeshInfo_GetNumUVAnimations(swigCPtr);
+    return ret;
+  }
+
+  public virtual string GetUVAnimationName(uint arg0) {
+    string ret = Engine2PINVOKE.IBaseMeshInfo_GetUVAnimationName(swigCPtr, arg0);
+    return ret;
+  }
+
+  public virtual int GetUVAnimationID(string arg0) {
+    int ret = Engine2PINVOKE.IBaseMeshInfo_GetUVAnimationID(swigCPtr, arg0);
+    return ret;
+  }
+
+  public virtual void StartUVAnimation(uint id, UVAnimationParam arg1) {
+    Engine2PINVOKE.IBaseMeshInfo_StartUVAnimation(swigCPtr, id, UVAnimationParam.getCPtr(arg1));
+    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public virtual void StopUVAnimation(uint id) {
+    Engine2PINVOKE.IBaseMeshInfo_StopUVAnimation(swigCPtr, id);
+  }
+
+  public virtual bool GetParams(uint id, UVAnimationParam arg1) {
+    bool ret = Engine2PINVOKE.IBaseMeshInfo_GetParams__SWIG_1(swigCPtr, id, UVAnimationParam.getCPtr(arg1));
+    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public virtual bool UpdateParams(uint id, UVAnimationParam param) {
+    bool ret = Engine2PINVOKE.IBaseMeshInfo_UpdateParams__SWIG_1(swigCPtr, id, UVAnimationParam.getCPtr(param));
+    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+    return ret;
   }
 
   public virtual uint GetXRefsCount() {

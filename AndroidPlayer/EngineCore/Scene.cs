@@ -155,7 +155,7 @@ namespace EngineCore
                     //    errors.Add(args.ErrorContext.Error.Message);
                     //    args.ErrorContext.Handled = true;
                     //},
-                    MissingMemberHandling = MissingMemberHandling.Error,
+                    MissingMemberHandling = MissingMemberHandling.Ignore,
                     TypeNameHandling = TypeNameHandling.All
                 };
 

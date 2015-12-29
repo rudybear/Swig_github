@@ -47,8 +47,8 @@ public class ILoadingProfilerManager : global::System.IDisposable {
     Engine2PINVOKE.ILoadingProfilerManager_DumpStatsToXML(swigCPtr, arg0);
   }
 
-  public virtual SWIGTYPE_p_Engine2__String DumpStatsToString() {
-    SWIGTYPE_p_Engine2__String ret = new SWIGTYPE_p_Engine2__String(Engine2PINVOKE.ILoadingProfilerManager_DumpStatsToString(swigCPtr), true);
+  public virtual Engine2String DumpStatsToString() {
+    Engine2String ret = new Engine2String(Engine2PINVOKE.ILoadingProfilerManager_DumpStatsToString(swigCPtr), true);
     return ret;
   }
 

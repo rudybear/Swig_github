@@ -85,8 +85,7 @@ public class CVec4 : global::System.IDisposable {
   public CVec4(float _x, float _y, float _z, float _w) : this(Engine2PINVOKE.new_CVec4__SWIG_1(_x, _y, _z, _w), true) {
   }
 
-  public CVec4(SWIGTYPE_p_uint32 dColor) : this(Engine2PINVOKE.new_CVec4__SWIG_2(SWIGTYPE_p_uint32.getCPtr(dColor)), true) {
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public CVec4(uint dColor) : this(Engine2PINVOKE.new_CVec4__SWIG_2(dColor), true) {
   }
 
   public CVec4(float c) : this(Engine2PINVOKE.new_CVec4__SWIG_3(c), true) {
