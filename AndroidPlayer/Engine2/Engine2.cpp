@@ -106,6 +106,9 @@ WIN_HWND getWIN_HWND()
 * Initialize an EGL context for the current display.
 */
 static int engine_init_display(struct engine* engine) {
+
+#if EMPTY_TEST
+	//return 0;
 	// initialize OpenGL ES and EGL
 
 	/*
@@ -192,6 +195,7 @@ static int engine_init_display(struct engine* engine) {
 	glDisable(GL_DEPTH_TEST);
 
 	LOGI("engine_init_display done");
+#endif
 	return 0;
 }
 
@@ -204,6 +208,9 @@ extern int FM_updateframe(int nFlags);
 
 static void startEngine()
 {
+#if EMPTY_TEST
+	return;
+#endif
 	LOGI("startEngine");
 	if (g_engine && g_engine->app && g_engine->app->activity && g_engine->app->activity->vm)
 	{
@@ -242,41 +249,69 @@ static void engine_draw_frame(struct engine* engine) {
 
 	//FM_updateframe(1);
 
+	//LOGI("engine_draw_frame");
+#if !EMPTY_TEST
+	if (g_engine && g_engine->app && g_engine->app->activity && g_engine->app->activity->vm)
+	{
+
+		JNIEnv *pEnv = g_engine->app->activity->env;
+		jint res = g_engine->app->activity->vm->AttachCurrentThread(&pEnv, NULL);
+
+		//LOGI("engine_draw_frame 1");
+		if (res == JNI_OK && pEnv)
+		{
+			//LOGI("engine_draw_frame 3");
+			jobject activityObject = g_engine->app->activity->clazz;
+			jclass  activityClass = pEnv->GetObjectClass(activityObject);
+
+			jmethodID senEnable = pEnv->GetMethodID(activityClass, "FrameEngine", "()V");
+			pEnv->CallVoidMethod(activityObject, senEnable);
+			//LOGI("engine_draw_frame 4");
+			pEnv->DeleteLocalRef(activityClass);
+
+			g_engine->app->activity->vm->DetachCurrentThread();
+		}
+	}
+
 	return;
+#else
 
 	//LOGI("Frametime:%d", getSystemTime());
 	//g_pCore->Frame(TRUE);
-	//if (engine->display == NULL) {
+	if (engine->display == NULL) {
 	//    // No display.
-	//    return;
-	//}
+	    return;
+	}
 
 	//// Just fill the screen with a color.
-	//glClearColor(((float)engine->state.x)/engine->width, engine->state.angle,
-	//        ((float)engine->state.y)/engine->height, 1);
-	//glClear(GL_COLOR_BUFFER_BIT);
+	glClearColor(((float)engine->state.x)/engine->width, engine->state.angle,
+	        ((float)engine->state.y)/engine->height, 1);
+	glClear(GL_COLOR_BUFFER_BIT);
 
-	//eglSwapBuffers(engine->display, engine->surface);
+	eglSwapBuffers(engine->display, engine->surface);
+#endif
 }
 
 /**
 * Tear down the EGL context currently associated with the display.
 */
 static void engine_term_display(struct engine* engine) {
-	if (engine->display != EGL_NO_DISPLAY) {
-		eglMakeCurrent(engine->display, EGL_NO_SURFACE, EGL_NO_SURFACE, EGL_NO_CONTEXT);
-		if (engine->context != EGL_NO_CONTEXT) {
-			eglDestroyContext(engine->display, engine->context);
-		}
-		if (engine->surface != EGL_NO_SURFACE) {
-			eglDestroySurface(engine->display, engine->surface);
-		}
-		eglTerminate(engine->display);
-	}
-	engine->animating = 0;
-	engine->display = EGL_NO_DISPLAY;
-	engine->context = EGL_NO_CONTEXT;
-	engine->surface = EGL_NO_SURFACE;
+
+	LOGI("engine_term_display");
+	//if (engine->display != EGL_NO_DISPLAY) {
+	//	eglMakeCurrent(engine->display, EGL_NO_SURFACE, EGL_NO_SURFACE, EGL_NO_CONTEXT);
+	//	if (engine->context != EGL_NO_CONTEXT) {
+	//		eglDestroyContext(engine->display, engine->context);
+	//	}
+	//	if (engine->surface != EGL_NO_SURFACE) {
+	//		eglDestroySurface(engine->display, engine->surface);
+	//	}
+	//	eglTerminate(engine->display);
+	//}
+	//engine->animating = 0;
+	//engine->display = EGL_NO_DISPLAY;
+	//engine->context = EGL_NO_CONTEXT;
+	//engine->surface = EGL_NO_SURFACE;
 }
 
 /**

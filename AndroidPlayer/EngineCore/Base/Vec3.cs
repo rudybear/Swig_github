@@ -11,6 +11,13 @@ namespace EngineCore.Base
         public float y;
         public float z;
 
+        public Vec3(float _x, float _y, float _z)
+        {
+            x = _x;
+            y = _y;
+            z = _z;
+        }
+
         public CVec3 ToCVec3()
         {
             return new CVec3(x, y, z);

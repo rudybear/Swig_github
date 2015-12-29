@@ -36,6 +36,11 @@ namespace EngineCore
         {
 
         }
+
+        public virtual void PostLoad()
+        {
+
+        }
     }
 
 

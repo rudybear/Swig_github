@@ -12,10 +12,10 @@ using System.Drawing;
 using System.Reflection;
 using System.IO;
 using System.Security.Permissions;
+using Android.Util;
 
 namespace EngineCore
 {
-
     //public class BaseComponent
     //{
     //    private int hash;
@@ -111,6 +111,7 @@ namespace EngineCore
                 int colorRGBA = color;// Engine2.Color_RGBA(color.R, color.G, color.B, color.A, ERenderer.eRN_D3D9);
 #endif
                 core.GetScene().GetRender().CreateGUIObject().DrawText(0, posX, posY, colorRGBA, text);
+                core.GetScene().GetRender().CreateGUIObject().DrawTextScaled(0, posX, posY, 10.0f, 10.0f, colorRGBA, text);
             }
         }
     }
@@ -246,9 +247,20 @@ namespace EngineCore
 
         public bool StartEngine(string name, string config, IntPtr windowHandle)
         {
+            Log.Verbose("Engine2 Android player", "Create Core");
             core = Engine2.CreateCore(eStartGameType.eNoCrashHandling, name);
-            core.GetConfigFile().LoadConfigFromFile(config);
+            Log.Verbose("Engine2 Android player", "Load config");
+            if (core.GetConfigFile().LoadConfigFromFile(config) == 0)
+            {
+                Log.Verbose("Engine2 Android player", "Load config failed");
+            }
+            else
+            {
+                Log.Verbose("Engine2 Android player", "Load config successful!");
+                Log.Verbose("Engine2 Android player", core.GetConfigFile().GetEffectsWritePath());
+            }
 
+#if false
             if (windowHandle.ToInt64() != 0)
             {
                 IWindow wnd = core.AddWindow();
@@ -263,6 +275,7 @@ namespace EngineCore
                 // TODO
                 core.SetInitialWindowParameters(0, 0, 1024, 768, 32, 0);
             }
+#endif
 
             //core.ParseConsoleParams("-render render_ogl.dll");
             IntPtr ptrToNull = System.Runtime.InteropServices.Marshal.AllocHGlobal(sizeof(int));
@@ -280,17 +293,25 @@ namespace EngineCore
             registeredObjects.typeObjects.Add(Type.GetType("EngineCore.UILabel"));//new Type(EngineCore.UILabel));
 
             //scene = new BaseObject();
-            //LabelComponent label = new LabelComponent();
-            //scene.AddComponent(label);
+            EngineCore.UILabel label = new EngineCore.UILabel();
+            scene.AddObject(label);
 
-            //label.text = " Hello, World";
-            //label.core = core;
+            label.text = " Hello, World";
+            label.core = core;
 
+            core.GetScene().GetRender().SetShowFPS(true);
+            core.GetScene().GetRender().SetAmbientLight(unchecked((int)0xff777777));
+            core.GetScene().ProjParams(60.0f, 0.1f, 1000.0f);
 
             return true;
         }
 
         private void Application_Idle(Object sender, EventArgs e)
+        {
+            ApplicationFrame();
+        }
+
+        public void ApplicationFrame()
         {
             //scene.GetComponent<LabelComponent>().Render();
             EventHandler handler = PreUpdateEvent;

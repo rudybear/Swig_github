@@ -3,7 +3,7 @@
   <ItemGroup>
     <ClCompile Include="Engine2.cpp" />
     <ClCompile Include="..\..\Engine2Swig\Engine2_wrap.cxx" />
-    <ClCompile Include="android_native_app_glue.c" />
+    <ClCompile Include="android_native_app_glue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine2.h" />

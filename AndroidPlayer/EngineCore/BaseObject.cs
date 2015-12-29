@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using System.ComponentModel;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
+
 
 namespace EngineCore
 {
     [TypeDescriptionProvider(typeof(BaseObjectTypeDescriptionProvider))]
-    [Serializable()] 
+    [Serializable()]
     public class BaseObject //: ISerializable
     {
-        [NonSerialized] public ICore core = null;
+        [NonSerialized]
+        public ICore core = null;
 
         public virtual string ObjectName
         {
@@ -29,7 +29,7 @@ namespace EngineCore
             objects = new List<BaseComponent>();
         }
 
-        public T GetComponent<T>() where T : BaseComponent      
+        public T GetComponent<T>() where T : BaseComponent
         {
             try
             {
@@ -43,7 +43,7 @@ namespace EngineCore
                     }
                 }
             }
-            catch 
+            catch
             {
                 // log - invalid cast
             }
@@ -63,9 +63,17 @@ namespace EngineCore
 
         public virtual void Update()
         {
-            foreach(BaseComponent comp in objects)
+            foreach (BaseComponent comp in objects)
             {
                 comp.Update();
+            }
+        }
+
+        public virtual void PostLoad()
+        {
+            foreach (BaseComponent comp in objects)
+            {
+                comp.PostLoad();
             }
         }
 
@@ -122,31 +130,31 @@ namespace EngineCore
         }
     }
 
-//class BaseObjectCustomTypeDescriptor : CustomTypeDescriptor
-//{
-//    public BaseObjectCustomTypeDescriptor(ICustomTypeDescriptor parent, object instance)
-//        : base(parent)
-//    {
-//        Title title = (Title)instance;
+    //class BaseObjectCustomTypeDescriptor : CustomTypeDescriptor
+    //{
+    //    public BaseObjectCustomTypeDescriptor(ICustomTypeDescriptor parent, object instance)
+    //        : base(parent)
+    //    {
+    //        Title title = (Title)instance;
 
-//        customFields.AddRange(CustomFieldsGenerator.GenerateCustomFields(title.Category)
-//            .Select(f => new CustomFieldPropertyDescriptor(f)).Cast<PropertyDescriptor>());
+    //        customFields.AddRange(CustomFieldsGenerator.GenerateCustomFields(title.Category)
+    //            .Select(f => new CustomFieldPropertyDescriptor(f)).Cast<PropertyDescriptor>());
 
-//    }
+    //    }
 
-//    private List<PropertyDescriptor> customFields = new List<PropertyDescriptor>();
+    //    private List<PropertyDescriptor> customFields = new List<PropertyDescriptor>();
 
-//    public override PropertyDescriptorCollection GetProperties()
-//    {
-//        return new PropertyDescriptorCollection(base.GetProperties()
-//            .Cast<PropertyDescriptor>().Union(customFields).ToArray());
-//    }
+    //    public override PropertyDescriptorCollection GetProperties()
+    //    {
+    //        return new PropertyDescriptorCollection(base.GetProperties()
+    //            .Cast<PropertyDescriptor>().Union(customFields).ToArray());
+    //    }
 
-//    public override PropertyDescriptorCollection GetProperties(Attribute[] attributes)
-//    {
-//        return new PropertyDescriptorCollection(base.GetProperties(attributes)
-//            .Cast<PropertyDescriptor>().Union(customFields).ToArray());
-//    }
+    //    public override PropertyDescriptorCollection GetProperties(Attribute[] attributes)
+    //    {
+    //        return new PropertyDescriptorCollection(base.GetProperties(attributes)
+    //            .Cast<PropertyDescriptor>().Union(customFields).ToArray());
+    //    }
 
-//}
+    //}
 }

@@ -15,9 +15,11 @@ namespace XamarinAndroid
     [Activity(Label = "XamarinAndroid",
         MainLauncher = true,
         Icon = "@drawable/icon",
-        ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.KeyboardHidden
+        ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.KeyboardHidden,
+        ScreenOrientation = ScreenOrientation.Landscape,
+        Theme = "@android:style/Theme.Black.NoTitleBar.Fullscreen"
 #if __ANDROID_11__
-		,HardwareAccelerated=false
+        , HardwareAccelerated=false
 #endif
         )]
     [MetaData("android.app.lib_name", Value = "Engine2")]
@@ -55,11 +57,18 @@ namespace XamarinAndroid
             Log.Verbose("Engine2 Android player", "Start Engine");
             engine = new Engine();
 
-            if (engine.StartEngine("Engine2 Player", "sdcard/Fish/config_mobile.xml?low", this.Handle))
+            if (engine.StartEngine("Engine2 Player", "mnt/sdcard/Fish/config_mobile.xml?low", this.Handle))
             {
                 Log.Verbose("Engine2 Android player", "Start Engine completed!");
+               // engine.GetCore().GetScene().GetRender().ReCreateScreen(0, 0, 0, 0);
             }
 
+        }
+
+        [Export]
+        public void FrameEngine()
+        {
+            engine.ApplicationFrame();
         }
         protected override void OnPause()
         {

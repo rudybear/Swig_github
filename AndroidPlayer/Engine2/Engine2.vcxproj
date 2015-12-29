@@ -55,6 +55,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionDir)XamarinAndroid\lib\armeabi-v7a\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
@@ -64,7 +65,7 @@
       <PreprocessorDefinitions>ANDROID_NDK;ANDROID;SWIG</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>d:\sources\engine\trunk\public_development\etc\engine\lib\android\armeabi\libEngine.a</AdditionalDependencies>
+      <AdditionalDependencies>d:\sources\engine\trunk\public_development\etc\engine\lib\android\armeabi-v7a\libEngine.a</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -72,10 +73,10 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>ANDROID_NDK;ANDROID;SWIG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\alexey.medvedev\Documents\GitHub\Swig_github\etc\engine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>d:\sources\Swig_github\swig\Swig\etc\engine\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>..\..\etc\engine\lib\android\armeabi\libEngine.a</AdditionalDependencies>
+      <AdditionalDependencies>..\..\etc\engine\lib\android\armeabi-v7a\libEngine.a</AdditionalDependencies>
       <LibraryDependencies>m;jnigraphics;EGL;GLESv2;z;%(LibraryDependencies)</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -93,7 +94,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Engine2Swig\Engine2_wrap.cxx" />
-    <ClCompile Include="android_native_app_glue.c">
+    <ClCompile Include="android_native_app_glue.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Use</PrecompiledHeader>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">CompileAsCpp</CompileAs>
     </ClCompile>
