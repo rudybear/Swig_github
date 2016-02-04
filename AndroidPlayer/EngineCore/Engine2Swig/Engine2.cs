@@ -304,6 +304,12 @@ public class Engine2 {
   public static readonly int OBJ_DONT_UPDATE_CM = Engine2PINVOKE.OBJ_DONT_UPDATE_CM_get();
   public static readonly int OBJ_ALWAYS_RENDERED = Engine2PINVOKE.OBJ_ALWAYS_RENDERED_get();
   public static readonly int OBJ_USE_INSTANCING = Engine2PINVOKE.OBJ_USE_INSTANCING_get();
+  public static readonly int LIGHT_POINT = Engine2PINVOKE.LIGHT_POINT_get();
+  public static readonly int LIGHT_SPOT = Engine2PINVOKE.LIGHT_SPOT_get();
+  public static readonly int LIGHT_DIRECTIONAL = Engine2PINVOKE.LIGHT_DIRECTIONAL_get();
+  public static readonly int LIGHT_PROJECTION = Engine2PINVOKE.LIGHT_PROJECTION_get();
+  public static readonly int LIGHT_SHADOW = Engine2PINVOKE.LIGHT_SHADOW_get();
+  public static readonly int LIGHT_AMBIENT = Engine2PINVOKE.LIGHT_AMBIENT_get();
   public static readonly int TOTALLYVISIBLE = Engine2PINVOKE.TOTALLYVISIBLE_get();
   public static readonly int TOSCREENLEFT = Engine2PINVOKE.TOSCREENLEFT_get();
   public static readonly int TOSCREENRIGHT = Engine2PINVOKE.TOSCREENRIGHT_get();

@@ -12,11 +12,11 @@
 public class IIndoorMeshInfo : IMeshInfo {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal IIndoorMeshInfo(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.IIndoorMeshInfo_SWIGUpcast(cPtr), cMemoryOwn) {
+  public IIndoorMeshInfo(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.IIndoorMeshInfo_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(IIndoorMeshInfo obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(IIndoorMeshInfo obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 

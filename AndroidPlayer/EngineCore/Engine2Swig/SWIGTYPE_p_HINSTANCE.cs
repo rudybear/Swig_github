@@ -12,7 +12,7 @@
 public class SWIGTYPE_p_HINSTANCE {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal SWIGTYPE_p_HINSTANCE(global::System.IntPtr cPtr, bool futureUse) {
+  public SWIGTYPE_p_HINSTANCE(global::System.IntPtr cPtr, bool futureUse) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -20,7 +20,7 @@ public class SWIGTYPE_p_HINSTANCE {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_HINSTANCE obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_HINSTANCE obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 }

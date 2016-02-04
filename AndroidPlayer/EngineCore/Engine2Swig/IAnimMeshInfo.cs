@@ -12,11 +12,11 @@
 public class IAnimMeshInfo : IBaseMeshInfo {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal IAnimMeshInfo(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.IAnimMeshInfo_SWIGUpcast(cPtr), cMemoryOwn) {
+  public IAnimMeshInfo(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.IAnimMeshInfo_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(IAnimMeshInfo obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(IAnimMeshInfo obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
@@ -191,20 +191,17 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public override void SetAccessibleLod(SWIGTYPE_p_int32 arg0) {
-    Engine2PINVOKE.IAnimMeshInfo_SetAccessibleLod(swigCPtr, SWIGTYPE_p_int32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public override void SetAccessibleLod(int arg0) {
+    Engine2PINVOKE.IAnimMeshInfo_SetAccessibleLod(swigCPtr, arg0);
   }
 
-  public override float GetLodDistance(SWIGTYPE_p_int32 arg0) {
-    float ret = Engine2PINVOKE.IAnimMeshInfo_GetLodDistance(swigCPtr, SWIGTYPE_p_int32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public override float GetLodDistance(int arg0) {
+    float ret = Engine2PINVOKE.IAnimMeshInfo_GetLodDistance(swigCPtr, arg0);
     return ret;
   }
 
-  public override void SetLodDistance(SWIGTYPE_p_int32 arg0, float arg1) {
-    Engine2PINVOKE.IAnimMeshInfo_SetLodDistance(swigCPtr, SWIGTYPE_p_int32.getCPtr(arg0), arg1);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public override void SetLodDistance(int arg0, float arg1) {
+    Engine2PINVOKE.IAnimMeshInfo_SetLodDistance(swigCPtr, arg0, arg1);
   }
 
   public virtual uint GetActiveBonesCount() {
@@ -212,15 +209,13 @@ public class IAnimMeshInfo : IBaseMeshInfo {
     return ret;
   }
 
-  public virtual uint GetLodUpdateMult(SWIGTYPE_p_int32 lod) {
-    uint ret = Engine2PINVOKE.IAnimMeshInfo_GetLodUpdateMult(swigCPtr, SWIGTYPE_p_int32.getCPtr(lod));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual uint GetLodUpdateMult(int lod) {
+    uint ret = Engine2PINVOKE.IAnimMeshInfo_GetLodUpdateMult(swigCPtr, lod);
     return ret;
   }
 
-  public virtual void SetLodUpdateMult(SWIGTYPE_p_int32 lod, uint mult) {
-    Engine2PINVOKE.IAnimMeshInfo_SetLodUpdateMult(swigCPtr, SWIGTYPE_p_int32.getCPtr(lod), mult);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void SetLodUpdateMult(int lod, uint mult) {
+    Engine2PINVOKE.IAnimMeshInfo_SetLodUpdateMult(swigCPtr, lod, mult);
   }
 
   public virtual bool TestRayIntersectionSubmesh(int num, SWIGTYPE_p_CSegment nRay, CVec3 vecIntersection, CVec3 vecSkinnedIntersection, CVec3 vecNormal) {

@@ -13,12 +13,12 @@ public class IScene : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal IScene(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public IScene(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(IScene obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(IScene obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
@@ -143,9 +143,9 @@ public class IScene : global::System.IDisposable {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_IWeather GetWeatherSystem() {
+  public virtual IWeather GetWeatherSystem() {
     global::System.IntPtr cPtr = Engine2PINVOKE.IScene_GetWeatherSystem(swigCPtr);
-    SWIGTYPE_p_IWeather ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_IWeather(cPtr, false);
+    IWeather ret = (cPtr == global::System.IntPtr.Zero) ? null : new IWeather(cPtr, false);
     return ret;
   }
 

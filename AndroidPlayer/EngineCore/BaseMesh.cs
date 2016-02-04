@@ -60,7 +60,7 @@ namespace EngineCore
         public string MeshName
         {
             get { return meshName; }
-            set { meshName = value; if (core != null) LoadMesh(meshName); }
+            set { meshName = value; LoadMesh(meshName); }
         }
 
         public BaseMesh()
@@ -94,7 +94,26 @@ namespace EngineCore
 
             IMeshInfo info = core.GetScene().AddCreateMesh(node, 0);
 
-            mesh = new IBaseMeshInfo(IMeshInfo.getCPtr(info).Handle, false);
+            IntPtr ptr = IMeshInfo.getCPtr(info).Handle;
+            mesh = new IBaseMeshInfo(ptr, false);
+
+            mesh.RebuildMesh();
+            mesh.SetLodDistance(0, 1000000);
+
+            if (ptr != null)
+            {
+                string animName = name;
+                int dot = animName.LastIndexOf('.');
+                animName = animName.Substring(0, dot) + ".uvanim";
+
+                uint num = mesh.LoadUVAnimation(animName);
+                if (num != 0XFFFFFFFF)
+                {
+                    UVAnimationParam anim = new UVAnimationParam();
+                    anim.m_bLooped = true;
+                    mesh.StartUVAnimation((uint)num, anim);
+                }
+            }
 
             return mesh != null;
         }

@@ -13,12 +13,12 @@ public class EngineDecalInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal EngineDecalInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public EngineDecalInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(EngineDecalInfo obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(EngineDecalInfo obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
@@ -233,6 +233,16 @@ public class EngineDecalInfo : global::System.IDisposable {
     } 
     get {
       float ret = Engine2PINVOKE.EngineDecalInfo_m_fBoxLength_get(swigCPtr);
+      return ret;
+    } 
+  }
+
+  public float m_fClipExtension {
+    set {
+      Engine2PINVOKE.EngineDecalInfo_m_fClipExtension_set(swigCPtr, value);
+    } 
+    get {
+      float ret = Engine2PINVOKE.EngineDecalInfo_m_fClipExtension_get(swigCPtr);
       return ret;
     } 
   }

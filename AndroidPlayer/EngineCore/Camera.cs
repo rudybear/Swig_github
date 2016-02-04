@@ -18,10 +18,10 @@ namespace EngineCore
         private CCamera camera;
 
         public float fov;
-        public float FovV
+        public float Fov
         {
             get { return fov; }
-            set { fov = value; SetProjParams(); }
+            set { fov = value;  SetProjParams(); }
         }
 
         public float near;
@@ -38,10 +38,17 @@ namespace EngineCore
             set { far = value; SetProjParams(); }
         }
 
+        public float aspect;
+
+        public float Aspect
+        {
+            get { return aspect; }
+            set { aspect = value; SetProjParams(); }
+        }
+
         private void SetProjParams()
         {
-            if (core != null)
-                core.GetScene().ProjParams(fov, near, far);
+            core.GetScene().ProjParams(fov, near, far);
         }
         public Camera()
         {
@@ -50,16 +57,18 @@ namespace EngineCore
 
         public override void PostLoad()
         {
-            SetProjParams();
+
         }
 
         public void onCreated()
         {
             camera = new CCamera();
             position.z = 5.0f;
+            aspect = 1.0f;
             near = 0.1f;
-            far = 1000.0f;
+            far = 20000.0f;
             fov = 60.0f;
+            rotation.z = -1.0f;
         }
 
         [OnDeserializing]
@@ -72,7 +81,8 @@ namespace EngineCore
         {
             // eye, look, up
             //Vec3 eye = new Vec3(0, 0, 5);
-            Vec3 look = new Vec3(0, 0, 0);
+            float dist = 10.0f;
+            Vec3 look = new Vec3(position.x + rotation.x* dist, position.y + rotation.y* dist, position.z + rotation.z* dist);
             Vec3 up = new Vec3(0, 1, 0);
 
             camera.SetViewParams(position.ToCVec3(), look.ToCVec3(), up.ToCVec3());

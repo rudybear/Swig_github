@@ -12,7 +12,7 @@
 public class SWIGTYPE_p_ILevelLogData {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal SWIGTYPE_p_ILevelLogData(global::System.IntPtr cPtr, bool futureUse) {
+  public SWIGTYPE_p_ILevelLogData(global::System.IntPtr cPtr, bool futureUse) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -20,7 +20,7 @@ public class SWIGTYPE_p_ILevelLogData {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_ILevelLogData obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_ILevelLogData obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 }

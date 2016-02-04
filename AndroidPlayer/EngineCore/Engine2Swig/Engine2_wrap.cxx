@@ -11275,6 +11275,28 @@ SWIGEXPORT float SWIGSTDCALL CSharp_EngineDecalInfo_m_fBoxLength_get(void * jarg
 }
 
 
+SWIGEXPORT void SWIGSTDCALL CSharp_EngineDecalInfo_m_fClipExtension_set(void * jarg1, float jarg2) {
+  EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
+  float arg2 ;
+  
+  arg1 = (EngineDecalInfo *)jarg1; 
+  arg2 = (float)jarg2; 
+  if (arg1) (arg1)->m_fClipExtension = arg2;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_EngineDecalInfo_m_fClipExtension_get(void * jarg1) {
+  float jresult ;
+  EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
+  float result;
+  
+  arg1 = (EngineDecalInfo *)jarg1; 
+  result = (float) ((arg1)->m_fClipExtension);
+  jresult = result; 
+  return jresult;
+}
+
+
 SWIGEXPORT void SWIGSTDCALL CSharp_EngineDecalInfo_m_nSortPriority_set(void * jarg1, void * jarg2) {
   EngineDecalInfo *arg1 = (EngineDecalInfo *) 0 ;
   uint8 arg2 ;
@@ -13571,55 +13593,37 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetNumLods(void * jarg1
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetAccessibleLod(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetAccessibleLod(void * jarg1, int jarg2) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   int32 arg2 ;
-  int32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   (arg1)->SetAccessibleLod(arg2);
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetLodDistance(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IBaseMeshInfo_GetLodDistance(void * jarg1, int jarg2) {
   float jresult ;
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   int32 arg2 ;
-  int32 *argp2 ;
   float result;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   result = (float)(arg1)->GetLodDistance(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetLodDistance(void * jarg1, void * jarg2, float jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetLodDistance(void * jarg1, int jarg2, float jarg3) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   int32 arg2 ;
   float arg3 ;
-  int32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   arg3 = (float)jarg3; 
   (arg1)->SetLodDistance(arg2,arg3);
 }
@@ -13637,40 +13641,28 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IBaseMeshInfo_GetVisibleLod(void * ja
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetLodDistances(void * jarg1, void * jarg2, float jarg3, float jarg4) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_SetLodDistances(void * jarg1, int jarg2, float jarg3, float jarg4) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   int32 arg2 ;
   float arg3 ;
   float arg4 ;
-  int32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   arg3 = (float)jarg3; 
   arg4 = (float)jarg4; 
   (arg1)->SetLodDistances(arg2,arg3,arg4);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_GetLodDistances(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_GetLodDistances(void * jarg1, int jarg2, void * jarg3, void * jarg4) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   int32 arg2 ;
   float *arg3 = 0 ;
   float *arg4 = 0 ;
-  int32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   arg3 = (float *)jarg3;
   if (!arg3) {
     SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
@@ -13685,18 +13677,12 @@ SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_GetLodDistances(void * jarg1, v
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_ForceRenderingLod(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IBaseMeshInfo_ForceRenderingLod(void * jarg1, int jarg2) {
   IBaseMeshInfo *arg1 = (IBaseMeshInfo *) 0 ;
   int32 arg2 ;
-  int32 *argp2 ;
   
   arg1 = (IBaseMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   (arg1)->ForceRenderingLod(arg2);
 }
 
@@ -14769,55 +14755,37 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetNumLods(void * jarg1
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetAccessibleLod(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetAccessibleLod(void * jarg1, int jarg2) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
-  int32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   (arg1)->SetAccessibleLod(arg2);
 }
 
 
-SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodDistance(void * jarg1, void * jarg2) {
+SWIGEXPORT float SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodDistance(void * jarg1, int jarg2) {
   float jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
-  int32 *argp2 ;
   float result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   result = (float)(arg1)->GetLodDistance(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodDistance(void * jarg1, void * jarg2, float jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodDistance(void * jarg1, int jarg2, float jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
   float arg3 ;
-  int32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   arg3 = (float)jarg3; 
   (arg1)->SetLodDistance(arg2,arg3);
 }
@@ -14835,39 +14803,27 @@ SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetActiveBonesCount(voi
 }
 
 
-SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodUpdateMult(void * jarg1, void * jarg2) {
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_IAnimMeshInfo_GetLodUpdateMult(void * jarg1, int jarg2) {
   unsigned int jresult ;
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
-  int32 *argp2 ;
   uint32 result;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   result = (uint32)(arg1)->GetLodUpdateMult(arg2);
   jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodUpdateMult(void * jarg1, void * jarg2, unsigned int jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_IAnimMeshInfo_SetLodUpdateMult(void * jarg1, int jarg2, unsigned int jarg3) {
   IAnimMeshInfo *arg1 = (IAnimMeshInfo *) 0 ;
   int32 arg2 ;
   uint32 arg3 ;
-  int32 *argp2 ;
   
   arg1 = (IAnimMeshInfo *)jarg1; 
-  argp2 = (int32 *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null int32", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (int32)jarg2; 
   arg3 = (uint32)jarg3; 
   (arg1)->SetLodUpdateMult(arg2,arg3);
 }
@@ -14926,6 +14882,1480 @@ SWIGEXPORT void SWIGSTDCALL CSharp_delete_IAnimMeshInfo(void * jarg1) {
   
   arg1 = (IAnimMeshInfo *)jarg1; 
   delete arg1;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_delete_IWeather(void * jarg1) {
+  IWeather *arg1 = (IWeather *) 0 ;
+  
+  arg1 = (IWeather *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IWeather_GetSun(void * jarg1) {
+  void * jresult ;
+  IWeather *arg1 = (IWeather *) 0 ;
+  ISun *result = 0 ;
+  
+  arg1 = (IWeather *)jarg1; 
+  result = (ISun *)(arg1)->GetSun();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IWeather_GetAtmosphere(void * jarg1) {
+  void * jresult ;
+  IWeather *arg1 = (IWeather *) 0 ;
+  IAtmosphere *result = 0 ;
+  
+  arg1 = (IWeather *)jarg1; 
+  result = (IAtmosphere *)(arg1)->GetAtmosphere();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IWeather_GetWind(void * jarg1) {
+  void * jresult ;
+  IWeather *arg1 = (IWeather *) 0 ;
+  IWind *result = 0 ;
+  
+  arg1 = (IWeather *)jarg1; 
+  result = (IWind *)(arg1)->GetWind();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IWeather_GetOcean(void * jarg1) {
+  void * jresult ;
+  IWeather *arg1 = (IWeather *) 0 ;
+  IOcean *result = 0 ;
+  
+  arg1 = (IWeather *)jarg1; 
+  result = (IOcean *)(arg1)->GetOcean();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IWeather_SetSSAOAmount(void * jarg1, float jarg2) {
+  IWeather *arg1 = (IWeather *) 0 ;
+  float arg2 ;
+  
+  arg1 = (IWeather *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetSSAOAmount(arg2);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_IWeather_GetSSAOAmount(void * jarg1) {
+  float jresult ;
+  IWeather *arg1 = (IWeather *) 0 ;
+  float result;
+  
+  arg1 = (IWeather *)jarg1; 
+  result = (float)((IWeather const *)arg1)->GetSSAOAmount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ISun_GetDirection(void * jarg1) {
+  void * jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  CVec3 result;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (arg1)->GetDirection();
+  jresult = new CVec3((const CVec3 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ISun_GetPosition(void * jarg1) {
+  void * jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  CVec3 result;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (arg1)->GetPosition();
+  jresult = new CVec3((const CVec3 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ISun_GetIntensity(void * jarg1) {
+  float jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  float result;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (float)(arg1)->GetIntensity();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ISun_GetColor(void * jarg1) {
+  void * jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  CVec4 result;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (arg1)->GetColor();
+  jresult = new CVec4((const CVec4 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ISun_GetColorAndIntensity(void * jarg1) {
+  void * jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  CVec4 result;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (arg1)->GetColorAndIntensity();
+  jresult = new CVec4((const CVec4 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ISun_GetColorWithIntensity(void * jarg1) {
+  void * jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  CVec4 result;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (arg1)->GetColorWithIntensity();
+  jresult = new CVec4((const CVec4 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ISun_GetLMMatrix(void * jarg1) {
+  void * jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  CMatrix44 *result = 0 ;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (CMatrix44 *) &(arg1)->GetLMMatrix();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ISun_SetLMMatrix(void * jarg1, void * jarg2) {
+  ISun *arg1 = (ISun *) 0 ;
+  CMatrix44 *arg2 = 0 ;
+  
+  arg1 = (ISun *)jarg1; 
+  arg2 = (CMatrix44 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CMatrix44 const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetLMMatrix((CMatrix44 const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ISun_SetSunIntensity(void * jarg1, float jarg2) {
+  ISun *arg1 = (ISun *) 0 ;
+  float arg2 ;
+  
+  arg1 = (ISun *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetSunIntensity(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ISun_SetSunThetaPhi(void * jarg1, float jarg2, float jarg3) {
+  ISun *arg1 = (ISun *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  arg1 = (ISun *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->SetSunThetaPhi(arg2,arg3);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ISun_GetSunTheta(void * jarg1) {
+  float jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  float result;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (float)(arg1)->GetSunTheta();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ISun_GetSunPhi(void * jarg1) {
+  float jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  float result;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (float)(arg1)->GetSunPhi();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ISun_SetLight(void * jarg1, void * jarg2) {
+  ISun *arg1 = (ISun *) 0 ;
+  ILight *arg2 = (ILight *) 0 ;
+  
+  arg1 = (ISun *)jarg1; 
+  arg2 = (ILight *)jarg2; 
+  (arg1)->SetLight(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ISun_GetLight(void * jarg1) {
+  void * jresult ;
+  ISun *arg1 = (ISun *) 0 ;
+  ILight *result = 0 ;
+  
+  arg1 = (ISun *)jarg1; 
+  result = (ILight *)(arg1)->GetLight();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IAtmosphere_SetParam(void * jarg1, int jarg2, float jarg3) {
+  IAtmosphere *arg1 = (IAtmosphere *) 0 ;
+  EAtmosphereParams arg2 ;
+  float arg3 ;
+  
+  arg1 = (IAtmosphere *)jarg1; 
+  arg2 = (EAtmosphereParams)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->SetParam(arg2,arg3);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_IAtmosphere_GetParam(void * jarg1, int jarg2) {
+  float jresult ;
+  IAtmosphere *arg1 = (IAtmosphere *) 0 ;
+  EAtmosphereParams arg2 ;
+  float result;
+  
+  arg1 = (IAtmosphere *)jarg1; 
+  arg2 = (EAtmosphereParams)jarg2; 
+  result = (float)(arg1)->GetParam(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IAtmosphere_GetBetaRayleigh(void * jarg1) {
+  void * jresult ;
+  IAtmosphere *arg1 = (IAtmosphere *) 0 ;
+  CVec3 result;
+  
+  arg1 = (IAtmosphere *)jarg1; 
+  result = (arg1)->GetBetaRayleigh();
+  jresult = new CVec3((const CVec3 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IAtmosphere_GetBetaDashRayleigh(void * jarg1) {
+  void * jresult ;
+  IAtmosphere *arg1 = (IAtmosphere *) 0 ;
+  CVec3 result;
+  
+  arg1 = (IAtmosphere *)jarg1; 
+  result = (arg1)->GetBetaDashRayleigh();
+  jresult = new CVec3((const CVec3 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IAtmosphere_GetBetaMie(void * jarg1) {
+  void * jresult ;
+  IAtmosphere *arg1 = (IAtmosphere *) 0 ;
+  CVec3 result;
+  
+  arg1 = (IAtmosphere *)jarg1; 
+  result = (arg1)->GetBetaMie();
+  jresult = new CVec3((const CVec3 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IAtmosphere_GetBetaDashMie(void * jarg1) {
+  void * jresult ;
+  IAtmosphere *arg1 = (IAtmosphere *) 0 ;
+  CVec3 result;
+  
+  arg1 = (IAtmosphere *)jarg1; 
+  result = (arg1)->GetBetaDashMie();
+  jresult = new CVec3((const CVec3 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IWind_GetDirection(void * jarg1) {
+  void * jresult ;
+  IWind *arg1 = (IWind *) 0 ;
+  CVec3 result;
+  
+  arg1 = (IWind *)jarg1; 
+  result = (arg1)->GetDirection();
+  jresult = new CVec3((const CVec3 &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_IWind_GetSpeed(void * jarg1) {
+  float jresult ;
+  IWind *arg1 = (IWind *) 0 ;
+  float result;
+  
+  arg1 = (IWind *)jarg1; 
+  result = (float)(arg1)->GetSpeed();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IWind_SetDirection(void * jarg1, void * jarg2) {
+  IWind *arg1 = (IWind *) 0 ;
+  CVec3 *arg2 = 0 ;
+  
+  arg1 = (IWind *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetDirection(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IWind_SetSpeed(void * jarg1, float jarg2) {
+  IWind *arg1 = (IWind *) 0 ;
+  float arg2 ;
+  
+  arg1 = (IWind *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetSpeed(arg2);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_IOcean_GetWaveDirection(void * jarg1) {
+  float jresult ;
+  IOcean *arg1 = (IOcean *) 0 ;
+  float result;
+  
+  arg1 = (IOcean *)jarg1; 
+  result = (float)(arg1)->GetWaveDirection();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_IOcean_GetWavesSpeed(void * jarg1) {
+  float jresult ;
+  IOcean *arg1 = (IOcean *) 0 ;
+  float result;
+  
+  arg1 = (IOcean *)jarg1; 
+  result = (float)(arg1)->GetWavesSpeed();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_IOcean_GetWavesSize(void * jarg1) {
+  float jresult ;
+  IOcean *arg1 = (IOcean *) 0 ;
+  float result;
+  
+  arg1 = (IOcean *)jarg1; 
+  result = (float)(arg1)->GetWavesSize();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_IOcean_GetWavesAmount(void * jarg1) {
+  float jresult ;
+  IOcean *arg1 = (IOcean *) 0 ;
+  float result;
+  
+  arg1 = (IOcean *)jarg1; 
+  result = (float)(arg1)->GetWavesAmount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_IOcean_GetLevel(void * jarg1) {
+  float jresult ;
+  IOcean *arg1 = (IOcean *) 0 ;
+  float result;
+  
+  arg1 = (IOcean *)jarg1; 
+  result = (float)(arg1)->GetLevel();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IOcean_GetFogColor(void * jarg1) {
+  void * jresult ;
+  IOcean *arg1 = (IOcean *) 0 ;
+  CVec4 *result = 0 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  result = (CVec4 *) &(arg1)->GetFogColor();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IOcean_SetWaveDirection(void * jarg1, float jarg2) {
+  IOcean *arg1 = (IOcean *) 0 ;
+  float arg2 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetWaveDirection(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IOcean_SetWavesSpeed(void * jarg1, float jarg2) {
+  IOcean *arg1 = (IOcean *) 0 ;
+  float arg2 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetWavesSpeed(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IOcean_SetWavesSize(void * jarg1, float jarg2) {
+  IOcean *arg1 = (IOcean *) 0 ;
+  float arg2 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetWavesSize(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IOcean_SetWavesAmount(void * jarg1, float jarg2) {
+  IOcean *arg1 = (IOcean *) 0 ;
+  float arg2 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetWavesAmount(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IOcean_SetLevel(void * jarg1, float jarg2) {
+  IOcean *arg1 = (IOcean *) 0 ;
+  float arg2 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetLevel(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IOcean_SetFogColor(void * jarg1, void * jarg2) {
+  IOcean *arg1 = (IOcean *) 0 ;
+  CVec4 *arg2 = 0 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  arg2 = (CVec4 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec4 const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetFogColor((CVec4 const &)*arg2);
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_IOcean_GetMaterialName(void * jarg1) {
+  char * jresult ;
+  IOcean *arg1 = (IOcean *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  result = (char *)(arg1)->GetMaterialName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IOcean_SetMaterialName(void * jarg1, char * jarg2) {
+  IOcean *arg1 = (IOcean *) 0 ;
+  char *arg2 = (char *) 0 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  arg2 = (char *)jarg2; 
+  (arg1)->SetMaterialName((char const *)arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IOcean_SetReflectionTexName(void * jarg1, char * jarg2) {
+  IOcean *arg1 = (IOcean *) 0 ;
+  char *arg2 = (char *) 0 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  arg2 = (char *)jarg2; 
+  (arg1)->SetReflectionTexName((char const *)arg2);
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_IOcean_GetReflectionTexName(void * jarg1) {
+  char * jresult ;
+  IOcean *arg1 = (IOcean *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (IOcean *)jarg1; 
+  result = (char *)(arg1)->GetReflectionTexName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_LIGHT_POINT_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_LIGHT_SPOT_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_LIGHT_DIRECTIONAL_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_LIGHT_PROJECTION_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_LIGHT_SHADOW_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(0x8);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_LIGHT_AMBIENT_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(0x10);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_IShadowFrustrum_GetShadowMap(void * jarg1) {
+  int jresult ;
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  int result;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  result = (int)((IShadowFrustrum const *)arg1)->GetShadowMap();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_IShadowFrustrum_GetShadowMapSize(void * jarg1) {
+  int jresult ;
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  int result;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  result = (int)((IShadowFrustrum const *)arg1)->GetShadowMapSize();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IShadowFrustrum_SetViewProjMatrices(void * jarg1, void * jarg2, void * jarg3) {
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  CMatrix44 *arg2 = 0 ;
+  CMatrix44 *arg3 = 0 ;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  arg2 = (CMatrix44 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CMatrix44 const & type is null", 0);
+    return ;
+  } 
+  arg3 = (CMatrix44 *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CMatrix44 const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetViewProjMatrices((CMatrix44 const &)*arg2,(CMatrix44 const &)*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IShadowFrustrum_SetNearFar(void * jarg1, float jarg2, float jarg3) {
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->SetNearFar(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IShadowFrustrum_GetNearFar(void * jarg1, void * jarg2, void * jarg3) {
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  float *arg2 = 0 ;
+  float *arg3 = 0 ;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg3 = (float *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  (arg1)->GetNearFar(*arg2,*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_IShadowFrustrum_SetBiasScale(void * jarg1, float jarg2) {
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  float arg2 ;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetBiasScale(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IShadowFrustrum_GetViewMatrix(void * jarg1) {
+  void * jresult ;
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  CMatrix44 *result = 0 ;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  result = (CMatrix44 *) &((IShadowFrustrum const *)arg1)->GetViewMatrix();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IShadowFrustrum_GetProjMatrix(void * jarg1) {
+  void * jresult ;
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  CMatrix44 *result = 0 ;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  result = (CMatrix44 *) &((IShadowFrustrum const *)arg1)->GetProjMatrix();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IShadowFrustrum_GetViewProjMatrix(void * jarg1) {
+  void * jresult ;
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  CMatrix44 *result = 0 ;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  result = (CMatrix44 *) &((IShadowFrustrum const *)arg1)->GetViewProjMatrix();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_IShadowFrustrum_GetParent(void * jarg1) {
+  void * jresult ;
+  IShadowFrustrum *arg1 = (IShadowFrustrum *) 0 ;
+  ILight *result = 0 ;
+  
+  arg1 = (IShadowFrustrum *)jarg1; 
+  result = (ILight *)(arg1)->GetParent();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_InitLight(void * jarg1, int jarg2, float jarg3, float jarg4, float jarg5) {
+  ILight *arg1 = (ILight *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  (arg1)->InitLight(arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetPos(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetPos((CVec3 const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetDirection(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetDirection((CVec3 const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetType(void * jarg1, int jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  int arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->SetType(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetAmbient__SWIG_0(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetAmbient(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetAmbient__SWIG_1(void * jarg1, float jarg2, float jarg3, float jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  (arg1)->SetAmbient(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetSpecular__SWIG_0(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetSpecular(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetSpecular__SWIG_1(void * jarg1, float jarg2, float jarg3, float jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  (arg1)->SetSpecular(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetDiffuse__SWIG_0(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetDiffuse(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetDiffuse__SWIG_1(void * jarg1, float jarg2, float jarg3, float jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  (arg1)->SetDiffuse(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetRange(void * jarg1, float jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetRange(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetTheta(void * jarg1, float jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetTheta(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetPhi(void * jarg1, float jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetPhi(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetFalloff(void * jarg1, float jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetFalloff(arg2);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ILight_GetRange__SWIG_0(void * jarg1) {
+  float jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  float result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (float)((ILight const *)arg1)->GetRange();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ILight_GetTheta__SWIG_0(void * jarg1) {
+  float jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  float result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (float)(arg1)->GetTheta();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ILight_GetPhi__SWIG_0(void * jarg1) {
+  float jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  float result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (float)((ILight const *)arg1)->GetPhi();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ILight_GetFalloff__SWIG_0(void * jarg1) {
+  float jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  float result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (float)(arg1)->GetFalloff();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetAttenuationAll(void * jarg1, float jarg2, float jarg3, float jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  (arg1)->SetAttenuationAll(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ILight_GetPos(void * jarg1) {
+  void * jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *result = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (CVec3 *) &((ILight const *)arg1)->GetPos();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ILight_GetDirection(void * jarg1) {
+  void * jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *result = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (CVec3 *) &((ILight const *)arg1)->GetDirection();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_ILight_GetType(void * jarg1) {
+  int jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  int result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (int)((ILight const *)arg1)->GetType();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetAmbient__SWIG_0(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 & type is null", 0);
+    return ;
+  } 
+  (arg1)->GetAmbient(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetAmbient__SWIG_1(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  float *arg2 = 0 ;
+  float *arg3 = 0 ;
+  float *arg4 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg3 = (float *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg4 = (float *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  (arg1)->GetAmbient(*arg2,*arg3,*arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetSpecular__SWIG_0(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 & type is null", 0);
+    return ;
+  } 
+  ((ILight const *)arg1)->GetSpecular(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetSpecular__SWIG_1(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  float *arg2 = 0 ;
+  float *arg3 = 0 ;
+  float *arg4 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg3 = (float *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg4 = (float *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  ((ILight const *)arg1)->GetSpecular(*arg2,*arg3,*arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetDiffuse__SWIG_0(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  CVec4 *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec4 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec4 & type is null", 0);
+    return ;
+  } 
+  ((ILight const *)arg1)->GetDiffuse(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetDiffuse__SWIG_1(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  float *arg2 = 0 ;
+  float *arg3 = 0 ;
+  float *arg4 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg3 = (float *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg4 = (float *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  ((ILight const *)arg1)->GetDiffuse(*arg2,*arg3,*arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetRange__SWIG_1(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  ((ILight const *)arg1)->GetRange(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetTheta__SWIG_1(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  (arg1)->GetTheta(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetPhi__SWIG_1(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  ((ILight const *)arg1)->GetPhi(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetFalloff__SWIG_1(void * jarg1, void * jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float *arg2 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  (arg1)->GetFalloff(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_GetAttenuationAll(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  float *arg2 = 0 ;
+  float *arg3 = 0 ;
+  float *arg4 = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg3 = (float *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  arg4 = (float *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "float & type is null", 0);
+    return ;
+  } 
+  (arg1)->GetAttenuationAll(*arg2,*arg3,*arg4);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_ILight_GetTexture(void * jarg1) {
+  int jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  int result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (int)((ILight const *)arg1)->GetTexture();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetTexture(void * jarg1, int jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  int arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->SetTexture(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_Update(void * jarg1) {
+  ILight *arg1 = (ILight *) 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  (arg1)->Update();
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ILight_GetShadowsFadeDistance(void * jarg1) {
+  float jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  float result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (float)((ILight const *)arg1)->GetShadowsFadeDistance();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetShadowsFadeDistance(void * jarg1, float jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  float arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetShadowsFadeDistance(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetNumShadowmapCascades(void * jarg1, int jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  int arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->SetNumShadowmapCascades(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetShadowmapSize(void * jarg1, int jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  int arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->SetShadowmapSize(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_CastShadowsState(void * jarg1, unsigned int jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->CastShadowsState(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_ILight_GetMakeShadow(void * jarg1) {
+  unsigned int jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  bool result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (bool)((ILight const *)arg1)->GetMakeShadow();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ILight_AddShadowFrustrum__SWIG_0(void * jarg1, unsigned int jarg2) {
+  void * jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  bool arg2 ;
+  IShadowFrustrum *result = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  result = (IShadowFrustrum *)(arg1)->AddShadowFrustrum(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ILight_AddShadowFrustrum__SWIG_1(void * jarg1) {
+  void * jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  IShadowFrustrum *result = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (IShadowFrustrum *)(arg1)->AddShadowFrustrum();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_ILight_GetNumShadowFrustrums(void * jarg1) {
+  unsigned long jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  size_t result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = ((ILight const *)arg1)->GetNumShadowFrustrums();
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ILight_GetShadowFrustrum(void * jarg1, int jarg2) {
+  void * jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  int arg2 ;
+  IShadowFrustrum *result = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (IShadowFrustrum *)((ILight const *)arg1)->GetShadowFrustrum(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_RemoveShadowFrustrum(void * jarg1, int jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  int arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->RemoveShadowFrustrum(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetCurrentFrustrum(void * jarg1, int jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  int arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->SetCurrentFrustrum(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_ILight_GetCurrentFrustrum(void * jarg1) {
+  void * jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  IShadowFrustrum *result = 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (IShadowFrustrum *)(arg1)->GetCurrentFrustrum();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_SetVisibility(void * jarg1, unsigned int jarg2) {
+  ILight *arg1 = (ILight *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetVisibility(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_ILight_GetVisibility(void * jarg1) {
+  unsigned int jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  bool result;
+  
+  arg1 = (ILight *)jarg1; 
+  result = (bool)(arg1)->GetVisibility();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_ILight_GetRelativeIntesity(void * jarg1, void * jarg2) {
+  float jresult ;
+  ILight *arg1 = (ILight *) 0 ;
+  CVec3 *arg2 = 0 ;
+  float result;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (CVec3 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "CVec3 const & type is null", 0);
+    return 0;
+  } 
+  result = (float)((ILight const *)arg1)->GetRelativeIntesity((CVec3 const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_AddFlare__SWIG_0(void * jarg1, char * jarg2, float jarg3, float jarg4, unsigned int jarg5) {
+  ILight *arg1 = (ILight *) 0 ;
+  char *arg2 = (char *) 0 ;
+  float arg3 ;
+  float arg4 ;
+  uint32 arg5 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  arg5 = (uint32)jarg5; 
+  (arg1)->AddFlare((char const *)arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_AddFlare__SWIG_1(void * jarg1, char * jarg2, float jarg3, float jarg4) {
+  ILight *arg1 = (ILight *) 0 ;
+  char *arg2 = (char *) 0 ;
+  float arg3 ;
+  float arg4 ;
+  
+  arg1 = (ILight *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  (arg1)->AddFlare((char const *)arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_ILight_ResetFlares(void * jarg1) {
+  ILight *arg1 = (ILight *) 0 ;
+  
+  arg1 = (ILight *)jarg1; 
+  (arg1)->ResetFlares();
 }
 
 

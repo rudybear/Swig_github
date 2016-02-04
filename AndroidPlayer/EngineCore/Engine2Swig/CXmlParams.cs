@@ -12,11 +12,11 @@
 public class CXmlParams : IXmlParams {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal CXmlParams(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.CXmlParams_SWIGUpcast(cPtr), cMemoryOwn) {
+  public CXmlParams(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.CXmlParams_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CXmlParams obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(CXmlParams obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 

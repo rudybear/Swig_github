@@ -13,12 +13,12 @@ public class CMatrix44 : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal CMatrix44(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public CMatrix44(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(CMatrix44 obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(CMatrix44 obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 

@@ -13,12 +13,12 @@ public class MeshAnimBakeInfo : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal MeshAnimBakeInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public MeshAnimBakeInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(MeshAnimBakeInfo obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(MeshAnimBakeInfo obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
@@ -43,12 +43,12 @@ public class MeshAnimBakeInfo : global::System.IDisposable {
     private global::System.Runtime.InteropServices.HandleRef swigCPtr;
     protected bool swigCMemOwn;
   
-    internal MeshAnimBakeFrameInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
+    public MeshAnimBakeFrameInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
       swigCMemOwn = cMemoryOwn;
       swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
     }
   
-    internal static global::System.Runtime.InteropServices.HandleRef getCPtr(MeshAnimBakeFrameInfo obj) {
+    public static global::System.Runtime.InteropServices.HandleRef getCPtr(MeshAnimBakeFrameInfo obj) {
       return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
     }
   

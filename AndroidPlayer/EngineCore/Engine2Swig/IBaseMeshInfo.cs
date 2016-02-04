@@ -12,11 +12,11 @@
 public class IBaseMeshInfo : IMaterialInfo {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal IBaseMeshInfo(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.IBaseMeshInfo_SWIGUpcast(cPtr), cMemoryOwn) {
+  public IBaseMeshInfo(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.IBaseMeshInfo_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(IBaseMeshInfo obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(IBaseMeshInfo obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
@@ -136,20 +136,17 @@ public class IBaseMeshInfo : IMaterialInfo {
     return ret;
   }
 
-  public virtual void SetAccessibleLod(SWIGTYPE_p_int32 arg0) {
-    Engine2PINVOKE.IBaseMeshInfo_SetAccessibleLod(swigCPtr, SWIGTYPE_p_int32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void SetAccessibleLod(int arg0) {
+    Engine2PINVOKE.IBaseMeshInfo_SetAccessibleLod(swigCPtr, arg0);
   }
 
-  public virtual float GetLodDistance(SWIGTYPE_p_int32 arg0) {
-    float ret = Engine2PINVOKE.IBaseMeshInfo_GetLodDistance(swigCPtr, SWIGTYPE_p_int32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual float GetLodDistance(int arg0) {
+    float ret = Engine2PINVOKE.IBaseMeshInfo_GetLodDistance(swigCPtr, arg0);
     return ret;
   }
 
-  public virtual void SetLodDistance(SWIGTYPE_p_int32 arg0, float arg1) {
-    Engine2PINVOKE.IBaseMeshInfo_SetLodDistance(swigCPtr, SWIGTYPE_p_int32.getCPtr(arg0), arg1);
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void SetLodDistance(int arg0, float arg1) {
+    Engine2PINVOKE.IBaseMeshInfo_SetLodDistance(swigCPtr, arg0, arg1);
   }
 
   public virtual uint GetVisibleLod() {
@@ -157,19 +154,17 @@ public class IBaseMeshInfo : IMaterialInfo {
     return ret;
   }
 
-  public virtual void SetLodDistances(SWIGTYPE_p_int32 lod, float nearSwitch, float farSwitch) {
-    Engine2PINVOKE.IBaseMeshInfo_SetLodDistances(swigCPtr, SWIGTYPE_p_int32.getCPtr(lod), nearSwitch, farSwitch);
+  public virtual void SetLodDistances(int lod, float nearSwitch, float farSwitch) {
+    Engine2PINVOKE.IBaseMeshInfo_SetLodDistances(swigCPtr, lod, nearSwitch, farSwitch);
+  }
+
+  public virtual void GetLodDistances(int lod, SWIGTYPE_p_float nearSwitch, SWIGTYPE_p_float farSwitch) {
+    Engine2PINVOKE.IBaseMeshInfo_GetLodDistances(swigCPtr, lod, SWIGTYPE_p_float.getCPtr(nearSwitch), SWIGTYPE_p_float.getCPtr(farSwitch));
     if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual void GetLodDistances(SWIGTYPE_p_int32 lod, SWIGTYPE_p_float nearSwitch, SWIGTYPE_p_float farSwitch) {
-    Engine2PINVOKE.IBaseMeshInfo_GetLodDistances(swigCPtr, SWIGTYPE_p_int32.getCPtr(lod), SWIGTYPE_p_float.getCPtr(nearSwitch), SWIGTYPE_p_float.getCPtr(farSwitch));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
-  }
-
-  public virtual void ForceRenderingLod(SWIGTYPE_p_int32 arg0) {
-    Engine2PINVOKE.IBaseMeshInfo_ForceRenderingLod(swigCPtr, SWIGTYPE_p_int32.getCPtr(arg0));
-    if (Engine2PINVOKE.SWIGPendingException.Pending) throw Engine2PINVOKE.SWIGPendingException.Retrieve();
+  public virtual void ForceRenderingLod(int arg0) {
+    Engine2PINVOKE.IBaseMeshInfo_ForceRenderingLod(swigCPtr, arg0);
   }
 
   public virtual bool TestRayIntersectionSubmesh(int num, SWIGTYPE_p_CSegment nRay, CVec3 vecIntersection, CVec3 vecNormal) {

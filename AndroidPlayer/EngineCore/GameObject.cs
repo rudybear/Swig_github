@@ -62,7 +62,7 @@ namespace EngineCore
             matRot.FromYPR(rotation.x, rotation.y, rotation.z);
 
             CMatrix44 mat = matrix.ToCMatrix44();
-            mat.FromPosRot(position.ToCVec3(), matRot);
+            mat.FromPosRotScale(position.ToCVec3(), matRot, scale.ToCVec3());
             matrix.FromCMatrix44(mat);
         }
 
@@ -76,31 +76,46 @@ namespace EngineCore
             //matrix.
         }
 
-        public void SetPosition(CVec3 position)
+        private void SyncMatrixScale()
         {
-            //matrix.SetTranslation(position);
+            needUpdate = true;
+            SyncMatrixRotation();
+            //CMatrix44 mat = matrix.ToCMatrix44();
+            //mat.SetScale(scale.ToCVec3());
+            //matrix.FromCMatrix44(mat);
         }
 
-        CVec3 GetPosition()
-        {
-            return new CVec3();// matrix.GetTranslation();
-        }
+        //public void SetPosition(CVec3 position)
+        //{
+        //    //matrix.SetTranslation(position);
+        //}
+
+        //CVec3 GetPosition()
+        //{
+        //    return new CVec3();// matrix.GetTranslation();
+        //}
+
+        //public void SetScale(CVec3 scale)
+        //{
+
+        //}
+
 
         public float PosX
         {
-            get { return position.x; }
+            get { return position.x;  }
             set { position.x = value; SyncMatrixTranslation(); }
         }
 
         public float PosY
         {
-            get { return position.y; }
+            get { return position.y;  }
             set { position.y = value; SyncMatrixTranslation(); }
         }
 
         public float PosZ
         {
-            get { return position.z; }
+            get { return position.z;  }
             set { position.z = value; SyncMatrixTranslation(); }
         }
 
@@ -120,6 +135,24 @@ namespace EngineCore
         {
             get { return rotation.z; }
             set { rotation.z = value; SyncMatrixRotation(); }
+        }
+
+        public float ScaleX
+        {
+            get { return scale.x; }
+            set { scale.x = value; SyncMatrixScale(); }
+        }
+
+        public float ScaleY
+        {
+            get { return scale.y; }
+            set { scale.y = value; SyncMatrixScale(); }
+        }
+
+        public float ScaleZ
+        {
+            get { return scale.z; }
+            set { scale.z = value; SyncMatrixScale(); }
         }
 
     }

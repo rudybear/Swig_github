@@ -13,12 +13,12 @@ public class SCoreStatistics : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal SCoreStatistics(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public SCoreStatistics(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SCoreStatistics obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(SCoreStatistics obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 

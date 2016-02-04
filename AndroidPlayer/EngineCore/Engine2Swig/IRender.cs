@@ -13,12 +13,12 @@ public class IRender : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal IRender(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public IRender(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(IRender obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(IRender obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 
@@ -306,14 +306,14 @@ public class IRender : global::System.IDisposable {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_ILight AddDynamicLight() {
+  public virtual ILight AddDynamicLight() {
     global::System.IntPtr cPtr = Engine2PINVOKE.IRender_AddDynamicLight(swigCPtr);
-    SWIGTYPE_p_ILight ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_ILight(cPtr, false);
+    ILight ret = (cPtr == global::System.IntPtr.Zero) ? null : new ILight(cPtr, false);
     return ret;
   }
 
-  public virtual void DeleteLight(SWIGTYPE_p_ILight arg0) {
-    Engine2PINVOKE.IRender_DeleteLight(swigCPtr, SWIGTYPE_p_ILight.getCPtr(arg0));
+  public virtual void DeleteLight(ILight arg0) {
+    Engine2PINVOKE.IRender_DeleteLight(swigCPtr, ILight.getCPtr(arg0));
   }
 
   public virtual void SetAmbientLight(int arg0) {

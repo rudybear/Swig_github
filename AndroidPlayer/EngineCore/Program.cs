@@ -292,6 +292,9 @@ namespace EngineCore
             componentsObjects = new RegisteredComponents();
 
             registeredObjects.typeObjects.Add(Type.GetType("EngineCore.UILabel"));//new Type(EngineCore.UILabel));
+            registeredObjects.typeObjects.Add(Type.GetType("EngineCore.BaseMesh"));
+            registeredObjects.typeObjects.Add(Type.GetType("EngineCore.AnimationMesh"));
+
 
             //scene = new BaseObject();
             EngineCore.UILabel label = new EngineCore.UILabel();

@@ -13,12 +13,12 @@ public class IXmlParams : global::System.IDisposable {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
   protected bool swigCMemOwn;
 
-  internal IXmlParams(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  public IXmlParams(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(IXmlParams obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(IXmlParams obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 

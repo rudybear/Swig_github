@@ -12,7 +12,7 @@
 public class SWIGTYPE_p_Engine2__VectorT_CParam_t {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal SWIGTYPE_p_Engine2__VectorT_CParam_t(global::System.IntPtr cPtr, bool futureUse) {
+  public SWIGTYPE_p_Engine2__VectorT_CParam_t(global::System.IntPtr cPtr, bool futureUse) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
@@ -20,7 +20,7 @@ public class SWIGTYPE_p_Engine2__VectorT_CParam_t {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_Engine2__VectorT_CParam_t obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(SWIGTYPE_p_Engine2__VectorT_CParam_t obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 }

@@ -12,11 +12,11 @@
 public class IRainAreaInfo : IMeshInfo {
   private global::System.Runtime.InteropServices.HandleRef swigCPtr;
 
-  internal IRainAreaInfo(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.IRainAreaInfo_SWIGUpcast(cPtr), cMemoryOwn) {
+  public IRainAreaInfo(global::System.IntPtr cPtr, bool cMemoryOwn) : base(Engine2PINVOKE.IRainAreaInfo_SWIGUpcast(cPtr), cMemoryOwn) {
     swigCPtr = new global::System.Runtime.InteropServices.HandleRef(this, cPtr);
   }
 
-  internal static global::System.Runtime.InteropServices.HandleRef getCPtr(IRainAreaInfo obj) {
+  public static global::System.Runtime.InteropServices.HandleRef getCPtr(IRainAreaInfo obj) {
     return (obj == null) ? new global::System.Runtime.InteropServices.HandleRef(null, global::System.IntPtr.Zero) : obj.swigCPtr;
   }
 

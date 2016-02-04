@@ -2707,6 +2707,12 @@ class Engine2PINVOKE {
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_EngineDecalInfo_m_fBoxLength_get")]
   public static extern float EngineDecalInfo_m_fBoxLength_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_EngineDecalInfo_m_fClipExtension_set")]
+  public static extern void EngineDecalInfo_m_fClipExtension_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_EngineDecalInfo_m_fClipExtension_get")]
+  public static extern float EngineDecalInfo_m_fClipExtension_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_EngineDecalInfo_m_nSortPriority_set")]
   public static extern void EngineDecalInfo_m_nSortPriority_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
@@ -3263,25 +3269,25 @@ class Engine2PINVOKE {
   public static extern uint IBaseMeshInfo_GetNumLods(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_SetAccessibleLod")]
-  public static extern void IBaseMeshInfo_SetAccessibleLod(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IBaseMeshInfo_SetAccessibleLod(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetLodDistance")]
-  public static extern float IBaseMeshInfo_GetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IBaseMeshInfo_GetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_SetLodDistance")]
-  public static extern void IBaseMeshInfo_SetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+  public static extern void IBaseMeshInfo_SetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetVisibleLod")]
   public static extern uint IBaseMeshInfo_GetVisibleLod(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_SetLodDistances")]
-  public static extern void IBaseMeshInfo_SetLodDistances(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4);
+  public static extern void IBaseMeshInfo_SetLodDistances(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, float jarg4);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_GetLodDistances")]
-  public static extern void IBaseMeshInfo_GetLodDistances(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+  public static extern void IBaseMeshInfo_GetLodDistances(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_ForceRenderingLod")]
-  public static extern void IBaseMeshInfo_ForceRenderingLod(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IBaseMeshInfo_ForceRenderingLod(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IBaseMeshInfo_TestRayIntersectionSubmesh")]
   public static extern bool IBaseMeshInfo_TestRayIntersectionSubmesh(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
@@ -3524,22 +3530,22 @@ class Engine2PINVOKE {
   public static extern uint IAnimMeshInfo_GetNumLods(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetAccessibleLod")]
-  public static extern void IAnimMeshInfo_SetAccessibleLod(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void IAnimMeshInfo_SetAccessibleLod(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetLodDistance")]
-  public static extern float IAnimMeshInfo_GetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern float IAnimMeshInfo_GetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetLodDistance")]
-  public static extern void IAnimMeshInfo_SetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+  public static extern void IAnimMeshInfo_SetLodDistance(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetActiveBonesCount")]
   public static extern uint IAnimMeshInfo_GetActiveBonesCount(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_GetLodUpdateMult")]
-  public static extern uint IAnimMeshInfo_GetLodUpdateMult(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern uint IAnimMeshInfo_GetLodUpdateMult(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_SetLodUpdateMult")]
-  public static extern void IAnimMeshInfo_SetLodUpdateMult(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, uint jarg3);
+  public static extern void IAnimMeshInfo_SetLodUpdateMult(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, uint jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAnimMeshInfo_TestRayIntersectionSubmesh")]
   public static extern bool IAnimMeshInfo_TestRayIntersectionSubmesh(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6);
@@ -3549,6 +3555,360 @@ class Engine2PINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_IAnimMeshInfo")]
   public static extern void delete_IAnimMeshInfo(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_delete_IWeather")]
+  public static extern void delete_IWeather(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWeather_GetSun")]
+  public static extern global::System.IntPtr IWeather_GetSun(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWeather_GetAtmosphere")]
+  public static extern global::System.IntPtr IWeather_GetAtmosphere(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWeather_GetWind")]
+  public static extern global::System.IntPtr IWeather_GetWind(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWeather_GetOcean")]
+  public static extern global::System.IntPtr IWeather_GetOcean(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWeather_SetSSAOAmount")]
+  public static extern void IWeather_SetSSAOAmount(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWeather_GetSSAOAmount")]
+  public static extern float IWeather_GetSSAOAmount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetDirection")]
+  public static extern global::System.IntPtr ISun_GetDirection(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetPosition")]
+  public static extern global::System.IntPtr ISun_GetPosition(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetIntensity")]
+  public static extern float ISun_GetIntensity(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetColor")]
+  public static extern global::System.IntPtr ISun_GetColor(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetColorAndIntensity")]
+  public static extern global::System.IntPtr ISun_GetColorAndIntensity(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetColorWithIntensity")]
+  public static extern global::System.IntPtr ISun_GetColorWithIntensity(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetLMMatrix")]
+  public static extern global::System.IntPtr ISun_GetLMMatrix(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_SetLMMatrix")]
+  public static extern void ISun_SetLMMatrix(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_SetSunIntensity")]
+  public static extern void ISun_SetSunIntensity(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_SetSunThetaPhi")]
+  public static extern void ISun_SetSunThetaPhi(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetSunTheta")]
+  public static extern float ISun_GetSunTheta(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetSunPhi")]
+  public static extern float ISun_GetSunPhi(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_SetLight")]
+  public static extern void ISun_SetLight(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ISun_GetLight")]
+  public static extern global::System.IntPtr ISun_GetLight(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAtmosphere_SetParam")]
+  public static extern void IAtmosphere_SetParam(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAtmosphere_GetParam")]
+  public static extern float IAtmosphere_GetParam(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAtmosphere_GetBetaRayleigh")]
+  public static extern global::System.IntPtr IAtmosphere_GetBetaRayleigh(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAtmosphere_GetBetaDashRayleigh")]
+  public static extern global::System.IntPtr IAtmosphere_GetBetaDashRayleigh(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAtmosphere_GetBetaMie")]
+  public static extern global::System.IntPtr IAtmosphere_GetBetaMie(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IAtmosphere_GetBetaDashMie")]
+  public static extern global::System.IntPtr IAtmosphere_GetBetaDashMie(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWind_GetDirection")]
+  public static extern global::System.IntPtr IWind_GetDirection(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWind_GetSpeed")]
+  public static extern float IWind_GetSpeed(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWind_SetDirection")]
+  public static extern void IWind_SetDirection(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IWind_SetSpeed")]
+  public static extern void IWind_SetSpeed(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_GetWaveDirection")]
+  public static extern float IOcean_GetWaveDirection(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_GetWavesSpeed")]
+  public static extern float IOcean_GetWavesSpeed(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_GetWavesSize")]
+  public static extern float IOcean_GetWavesSize(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_GetWavesAmount")]
+  public static extern float IOcean_GetWavesAmount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_GetLevel")]
+  public static extern float IOcean_GetLevel(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_GetFogColor")]
+  public static extern global::System.IntPtr IOcean_GetFogColor(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_SetWaveDirection")]
+  public static extern void IOcean_SetWaveDirection(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_SetWavesSpeed")]
+  public static extern void IOcean_SetWavesSpeed(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_SetWavesSize")]
+  public static extern void IOcean_SetWavesSize(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_SetWavesAmount")]
+  public static extern void IOcean_SetWavesAmount(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_SetLevel")]
+  public static extern void IOcean_SetLevel(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_SetFogColor")]
+  public static extern void IOcean_SetFogColor(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_GetMaterialName")]
+  public static extern string IOcean_GetMaterialName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_SetMaterialName")]
+  public static extern void IOcean_SetMaterialName(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_SetReflectionTexName")]
+  public static extern void IOcean_SetReflectionTexName(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IOcean_GetReflectionTexName")]
+  public static extern string IOcean_GetReflectionTexName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_LIGHT_POINT_get")]
+  public static extern int LIGHT_POINT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_LIGHT_SPOT_get")]
+  public static extern int LIGHT_SPOT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_LIGHT_DIRECTIONAL_get")]
+  public static extern int LIGHT_DIRECTIONAL_get();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_LIGHT_PROJECTION_get")]
+  public static extern int LIGHT_PROJECTION_get();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_LIGHT_SHADOW_get")]
+  public static extern int LIGHT_SHADOW_get();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_LIGHT_AMBIENT_get")]
+  public static extern int LIGHT_AMBIENT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_GetShadowMap")]
+  public static extern int IShadowFrustrum_GetShadowMap(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_GetShadowMapSize")]
+  public static extern int IShadowFrustrum_GetShadowMapSize(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_SetViewProjMatrices")]
+  public static extern void IShadowFrustrum_SetViewProjMatrices(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_SetNearFar")]
+  public static extern void IShadowFrustrum_SetNearFar(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_GetNearFar")]
+  public static extern void IShadowFrustrum_GetNearFar(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_SetBiasScale")]
+  public static extern void IShadowFrustrum_SetBiasScale(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_GetViewMatrix")]
+  public static extern global::System.IntPtr IShadowFrustrum_GetViewMatrix(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_GetProjMatrix")]
+  public static extern global::System.IntPtr IShadowFrustrum_GetProjMatrix(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_GetViewProjMatrix")]
+  public static extern global::System.IntPtr IShadowFrustrum_GetViewProjMatrix(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_IShadowFrustrum_GetParent")]
+  public static extern global::System.IntPtr IShadowFrustrum_GetParent(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_InitLight")]
+  public static extern void ILight_InitLight(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetPos")]
+  public static extern void ILight_SetPos(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetDirection")]
+  public static extern void ILight_SetDirection(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetType")]
+  public static extern void ILight_SetType(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetAmbient__SWIG_0")]
+  public static extern void ILight_SetAmbient__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetAmbient__SWIG_1")]
+  public static extern void ILight_SetAmbient__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetSpecular__SWIG_0")]
+  public static extern void ILight_SetSpecular__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetSpecular__SWIG_1")]
+  public static extern void ILight_SetSpecular__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetDiffuse__SWIG_0")]
+  public static extern void ILight_SetDiffuse__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetDiffuse__SWIG_1")]
+  public static extern void ILight_SetDiffuse__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetRange")]
+  public static extern void ILight_SetRange(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetTheta")]
+  public static extern void ILight_SetTheta(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetPhi")]
+  public static extern void ILight_SetPhi(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetFalloff")]
+  public static extern void ILight_SetFalloff(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetRange__SWIG_0")]
+  public static extern float ILight_GetRange__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetTheta__SWIG_0")]
+  public static extern float ILight_GetTheta__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetPhi__SWIG_0")]
+  public static extern float ILight_GetPhi__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetFalloff__SWIG_0")]
+  public static extern float ILight_GetFalloff__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetAttenuationAll")]
+  public static extern void ILight_SetAttenuationAll(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetPos")]
+  public static extern global::System.IntPtr ILight_GetPos(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetDirection")]
+  public static extern global::System.IntPtr ILight_GetDirection(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetType")]
+  public static extern int ILight_GetType(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetAmbient__SWIG_0")]
+  public static extern void ILight_GetAmbient__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetAmbient__SWIG_1")]
+  public static extern void ILight_GetAmbient__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetSpecular__SWIG_0")]
+  public static extern void ILight_GetSpecular__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetSpecular__SWIG_1")]
+  public static extern void ILight_GetSpecular__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetDiffuse__SWIG_0")]
+  public static extern void ILight_GetDiffuse__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetDiffuse__SWIG_1")]
+  public static extern void ILight_GetDiffuse__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetRange__SWIG_1")]
+  public static extern void ILight_GetRange__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetTheta__SWIG_1")]
+  public static extern void ILight_GetTheta__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetPhi__SWIG_1")]
+  public static extern void ILight_GetPhi__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetFalloff__SWIG_1")]
+  public static extern void ILight_GetFalloff__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetAttenuationAll")]
+  public static extern void ILight_GetAttenuationAll(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetTexture")]
+  public static extern int ILight_GetTexture(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetTexture")]
+  public static extern void ILight_SetTexture(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_Update")]
+  public static extern void ILight_Update(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetShadowsFadeDistance")]
+  public static extern float ILight_GetShadowsFadeDistance(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetShadowsFadeDistance")]
+  public static extern void ILight_SetShadowsFadeDistance(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetNumShadowmapCascades")]
+  public static extern void ILight_SetNumShadowmapCascades(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetShadowmapSize")]
+  public static extern void ILight_SetShadowmapSize(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_CastShadowsState")]
+  public static extern void ILight_CastShadowsState(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetMakeShadow")]
+  public static extern bool ILight_GetMakeShadow(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_AddShadowFrustrum__SWIG_0")]
+  public static extern global::System.IntPtr ILight_AddShadowFrustrum__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_AddShadowFrustrum__SWIG_1")]
+  public static extern global::System.IntPtr ILight_AddShadowFrustrum__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetNumShadowFrustrums")]
+  public static extern uint ILight_GetNumShadowFrustrums(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetShadowFrustrum")]
+  public static extern global::System.IntPtr ILight_GetShadowFrustrum(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_RemoveShadowFrustrum")]
+  public static extern void ILight_RemoveShadowFrustrum(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetCurrentFrustrum")]
+  public static extern void ILight_SetCurrentFrustrum(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetCurrentFrustrum")]
+  public static extern global::System.IntPtr ILight_GetCurrentFrustrum(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_SetVisibility")]
+  public static extern void ILight_SetVisibility(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetVisibility")]
+  public static extern bool ILight_GetVisibility(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_GetRelativeIntesity")]
+  public static extern float ILight_GetRelativeIntesity(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_AddFlare__SWIG_0")]
+  public static extern void ILight_AddFlare__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, float jarg3, float jarg4, uint jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_AddFlare__SWIG_1")]
+  public static extern void ILight_AddFlare__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_ILight_ResetFlares")]
+  public static extern void ILight_ResetFlares(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("Engine2", EntryPoint="CSharp_CVec2_x_set")]
   public static extern void CVec2_x_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
