@@ -15,7 +15,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimationMesh.cs" />
     <Compile Include="BaseComponent.cs" />
     <Compile Include="BaseMesh.cs" />
     <Compile Include="BaseObject.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Engine2Swig\CXmlParam.cs" />
     <Compile Include="Engine2Swig\CXmlParams.cs" />
     <Compile Include="Engine2Swig\CXmlVector.cs" />
+    <Compile Include="Engine2Swig\EAtmosphereParams.cs" />
     <Compile Include="Engine2Swig\EBloomParam.cs" />
     <Compile Include="Engine2Swig\eDebugMode.cs" />
     <Compile Include="Engine2Swig\eDecalType.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="Engine2Swig\GameModImport.cs" />
     <Compile Include="Engine2Swig\I2DRenderObject.cs" />
     <Compile Include="Engine2Swig\IAnimMeshInfo.cs" />
+    <Compile Include="Engine2Swig\IAtmosphere.cs" />
     <Compile Include="Engine2Swig\IBaseMeshInfo.cs" />
     <Compile Include="Engine2Swig\IChangesSubscription.cs" />
     <Compile Include="Engine2Swig\IConfigFile.cs" />
@@ -102,6 +105,7 @@
     <Compile Include="Engine2Swig\IGameMod.cs" />
     <Compile Include="Engine2Swig\IGUIRenderObject.cs" />
     <Compile Include="Engine2Swig\IIndoorMeshInfo.cs" />
+    <Compile Include="Engine2Swig\ILight.cs" />
     <Compile Include="Engine2Swig\ILoadingProfilerManager.cs" />
     <Compile Include="Engine2Swig\ILogListener.cs" />
     <Compile Include="Engine2Swig\ILogManager.cs" />
@@ -110,6 +114,7 @@
     <Compile Include="Engine2Swig\IMeshInfo.cs" />
     <Compile Include="Engine2Swig\IMeshInfoFriend.cs" />
     <Compile Include="Engine2Swig\INodeModifier.cs" />
+    <Compile Include="Engine2Swig\IOcean.cs" />
     <Compile Include="Engine2Swig\IPerformanceProfilerManager.cs" />
     <Compile Include="Engine2Swig\IPortal.cs" />
     <Compile Include="Engine2Swig\IProfilerListener.cs" />
@@ -117,9 +122,13 @@
     <Compile Include="Engine2Swig\IRender.cs" />
     <Compile Include="Engine2Swig\IScene.cs" />
     <Compile Include="Engine2Swig\ISceneGraph.cs" />
+    <Compile Include="Engine2Swig\IShadowFrustrum.cs" />
     <Compile Include="Engine2Swig\IStatisticsManager.cs" />
+    <Compile Include="Engine2Swig\ISun.cs" />
     <Compile Include="Engine2Swig\IVisArea.cs" />
     <Compile Include="Engine2Swig\IVisAreaTree.cs" />
+    <Compile Include="Engine2Swig\IWeather.cs" />
+    <Compile Include="Engine2Swig\IWind.cs" />
     <Compile Include="Engine2Swig\IWindow.cs" />
     <Compile Include="Engine2Swig\IWindowListener.cs" />
     <Compile Include="Engine2Swig\IXmlParams.cs" />
