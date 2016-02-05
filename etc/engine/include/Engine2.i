@@ -14,6 +14,8 @@ typedef int BOOL;
 typedef int DWORD;
 typedef float FLOAT;
 typedef float CFLOAT;
+typedef unsigned int uint32;
+typedef int int32;
 
 %include "public/Core/ICore.h"
 %include "Public/Core/IGameMod.h"
@@ -23,6 +25,8 @@ typedef float CFLOAT;
 %include "Public/Render/IGUIRenderObject.h"
 %include "public/Core/IMeshInfo.h"
 %include "public/Core/IAnimatedMesh.h"
+%include "public/Core/IWeatherSystem.h"
+%include "public/Render/ILight.h"
 
 %rename(add_assign) CVec2::operator+=;
 %rename(add_assign) CVec3::operator+=;

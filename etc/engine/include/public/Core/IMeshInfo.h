@@ -16,9 +16,8 @@ class IMeshFactory;
 
 typedef CSmartPtr<ICullObject> ICullObjectPtr;
 
-// Error states 
+// Error states
 #define MESHNOTCREATED -1
-
 
 // Render flags
 // Object cast shadows
@@ -60,7 +59,7 @@ typedef CSmartPtr<ICullObject> ICullObjectPtr;
 class IMeshArray;
 
 struct CollisionInfo {
-	CollisionInfo() : m_iRequestedTextureLayer(0), m_bUseLOD(true), m_bGetTextureCoordinates(false)  {}
+	CollisionInfo() : m_iRequestedTextureLayer(0), m_bUseLOD(true), m_bGetTextureCoordinates(false) {}
 	CVec3 m_vecObjectIntersection;
 	CVec3 m_vecIntersection;
 	CVec3 m_vecNormal;
@@ -76,14 +75,11 @@ struct CollisionInfo {
 	Engine2::Vector<CVec3> m_vecAllNormals;
 };
 
-
 //! Class for node modification
 class INodeModifier {
-
 	// Actual node modification
 	virtual void Update(IMeshInfo *) = 0;
 };
-
 
 //class INodeAnimation() {
 //
@@ -95,31 +91,31 @@ enum eDecalType
 	eUseMeshes
 };
 
-
 struct EngineDecalInfo
 {
-	eDecalType            m_eDecalType;
-	uint32								m_nDecalID;
-	IMeshInfo*						m_pDecalOwner;
-	CVec3									m_vDecalOffset;							// Decal offset below the ground
-	CVec3                 m_vPos;											// Decal position (world coordinates)
-	CVec3                 m_vNormal;									// Decal/face normal
-	float									m_fWidth;										// Decal size
-	float									m_fHeight;									// Decal size
-	float									m_fLifeTime;								// Decal life time (in seconds)
-	Engine2::String				m_szMaterialName;						// Material name
-	float									m_fAngle;										// Angle of rotation
-	float									m_fDotAcceptThreshold;	// Angle cos to check when accept triangle
-	CVec3                 m_vHitDirection;						// Direction from weapon/player position to decal position (bullet direction)
-	unsigned int          m_nGroupId;                 // Used for multi-component decals
+	eDecalType m_eDecalType;
+	uint32 m_nDecalID;
+	IMeshInfo* m_pDecalOwner;
+	CVec3 m_vDecalOffset; // Decal offset below the ground
+	CVec3 m_vPos; // Decal position (world coordinates)
+	CVec3 m_vNormal; // Decal/face normal
+	float m_fWidth; // Decal size
+	float m_fHeight; // Decal size
+	float m_fLifeTime; // Decal life time (in seconds)
+	Engine2::String m_szMaterialName; // Material name
+	float m_fAngle; // Angle of rotation
+	float m_fDotAcceptThreshold; // Angle cos to check when accept triangle
+	CVec3 m_vHitDirection; // Direction from weapon/player position to decal position (bullet direction)
+	unsigned int m_nGroupId; // Used for multi-component decals
 	Engine2::Vector<IMeshInfo*> m_vecFoundedColliders;
-	CVec3                 m_vFoundedIntersection;
-	float                 m_fBoxWidth; // box extension
-	float                 m_fBoxHeight; // box extension
-	float                 m_fBoxLength; // box extension
-	uint8									m_nSortPriority;
-	uint8                 m_bTrustedCollision;
-	uint8                 m_bUseBBoxCollision;
+	CVec3 m_vFoundedIntersection;
+	float m_fBoxWidth; // box extension
+	float m_fBoxHeight; // box extension
+	float m_fBoxLength; // box extension
+	float m_fClipExtension; // decal clip extension bounds  for animated mesh
+	uint8 m_nSortPriority;
+	uint8 m_bTrustedCollision;
+	uint8 m_bUseBBoxCollision;
 
 	FORCEINLINE EngineDecalInfo()
 	{
@@ -136,9 +132,9 @@ struct EngineDecalInfo
 		m_bTrustedCollision = false;
 		m_bUseBBoxCollision = false;
 		m_fDotAcceptThreshold = 0;
+		m_fClipExtension = 1.1f;
 	}
 };
-
 
 class IDecalInfo
 {
@@ -146,14 +142,12 @@ public:
 	virtual ~IDecalInfo() {};
 };
 
-
 class IDecalMeshAccepter
 {
 public:
 	virtual ~IDecalMeshAccepter() {}
 	virtual bool AcceptDecal(IDecalInfo *) = 0;
 };
-
 
 enum eDebugMode {
 	eNoDebugMode = 0,
@@ -202,7 +196,7 @@ public:
 		return false;
 	}
 	virtual HRESULT InitMeshInfo(const CXmlElement * paraminfo) = 0;
-	BOOL IsVisible(void){ return m_bInVisibleList; };
+	BOOL IsVisible(void) { return m_bInVisibleList; };
 	virtual void SetVisibleState(bool state) = 0;
 	ICullObject * GetCullObject() { return m_pMesh; }
 	virtual IMeshInfo * Copy() = 0;
@@ -305,15 +299,14 @@ public:
 		return m_vBrightness;
 	}
 
-
-	//protected: 
+	//protected:
 
 	virtual void OnPositionChanged(const CVec3& newPos) = 0;
 	virtual void OnBBoxChanged(const CAABBox& newBox) = 0;
 
 	virtual void SetLightInfo(CLightArray * array, int group) {}
 
-	bool IsCopy() const  { return m_bCopy; }
+	bool IsCopy() const { return m_bCopy; }
 public:
 	IMeshInfo* GetNext() const { return m_pNext; }
 	IMeshInfo* GetPrev() const { return m_pPrev; }
@@ -342,7 +335,7 @@ protected:
 	bool m_bCopy;
 	//bool m_bSelfDraw;
 	virtual ICullObject * CreateObject(void) = 0;
-	virtual ~IMeshInfo(void){}
+	virtual ~IMeshInfo(void) {}
 	virtual void Delete() { delete this; }
 	//! Конструктор защищенный, ибо нефиг.
 	IMeshInfo(void)
@@ -365,7 +358,6 @@ protected:
 	}
 };
 
-
 /*
 *@}
 */
@@ -384,7 +376,6 @@ struct XRefInfo {
 	Engine2::String m_sName;
 	Engine2::String m_sFileName;
 };
-
 
 class IXRefInfoMesh {
 public:
@@ -420,10 +411,6 @@ public:
 	virtual bool AddVisibleMaterialParamPtr(uint32 mat, CParam* param) { return false; };
 };
 
-
-
-
-
 // Indoor mesh info
 // Empty yet. To be improved
 class IIndoorMeshInfo : public IMeshInfo, public IXRefInfoMesh
@@ -454,10 +441,9 @@ public:
 	virtual bool GetSubmeshPositions(int num, CVec3 *) = 0;
 	// make a system copy of normals, pointer should be allocated
 	virtual bool GetSubmeshNormals(int num, CVec3 *) = 0;
-	// make a copy of indices 
+	// make a copy of indices
 	virtual bool GetSubmeshIndices(int num, short int *) = 0;
 };
-
 
 class IMeshInfoFriend
 {
@@ -476,5 +462,4 @@ public:
 
 	virtual void SetDropSpeed(float speedMin, float speedMax) = 0;
 	virtual void GetDropSpeed(float& speedMin, float& speedMax) = 0;
-
 };
