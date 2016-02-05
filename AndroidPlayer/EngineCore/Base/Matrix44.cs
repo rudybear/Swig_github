@@ -9,10 +9,18 @@ namespace EngineCore.Base
     {
         public float _11, _12, _13, _14, _21, _22, _23, _24, _31, _32, _33, _34, _41, _42, _43, _44;
 
+        [NonSerialized()]
+        public CMatrix44 cMat44;
         public CMatrix44 ToCMatrix44()
         {
-            return new CMatrix44(_11, _12, _13, _14, _21, _22, _23, _24, _31, _32, _33, _34, _41, _42, _43, _44);
+            if (cMat44 == null)
+            {
+                cMat44 = new CMatrix44(_11, _12, _13, _14, _21, _22, _23, _24, _31, _32, _33, _34, _41, _42, _43, _44);
+            }
+
+            return cMat44;
         }
+
 
         public void SetIdentity()
         {

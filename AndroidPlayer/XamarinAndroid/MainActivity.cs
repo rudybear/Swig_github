@@ -448,16 +448,20 @@ namespace XamarinAndroid
 
                     float angle = ((float)Math.Atan2(x1, z1) + rotAngle);// * 180 / 3.14f;
 
-                    fish.m_model.PosX = x;
-                    fish.m_model.PosY = h;
-                    fish.m_model.PosZ = z;
-                    fish.m_model.RotX = angle + 3.1415f;
+                    //fish.m_model.PosX = x;
+                    //fish.m_model.PosY = h;
+                    //fish.m_model.PosZ = z;
+                    //fish.m_model.RotX = angle + 3.1415f;
 
-                    fish.m_shadowModel.PosX = x;
-                    fish.m_shadowModel.PosY = -19.90f;
-                    fish.m_shadowModel.PosZ = z;
+                    fish.m_model.SetYPRPos(angle + 3.1415f, 0, 0, x, h, z);
 
-                    fish.m_shadowModel.RotX = angle + 3.1415f;
+                    //fish.m_shadowModel.PosX = x;
+                    //fish.m_shadowModel.PosY = -19.90f;
+                    //fish.m_shadowModel.PosZ = z;
+
+                    //fish.m_shadowModel.RotX = angle + 3.1415f;
+
+                    fish.m_shadowModel.SetYPRPos(angle + 3.1415f, 0, 0, x, -19.90f, z);
 
                     //fish.m_shadowModel.SetPos(x, -19.90f, z);
 

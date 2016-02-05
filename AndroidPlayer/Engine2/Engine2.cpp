@@ -253,23 +253,33 @@ static void engine_draw_frame(struct engine* engine) {
 #if !EMPTY_TEST
 	if (g_engine && g_engine->app && g_engine->app->activity && g_engine->app->activity->vm)
 	{
-
-		JNIEnv *pEnv = g_engine->app->activity->env;
-		jint res = g_engine->app->activity->vm->AttachCurrentThread(&pEnv, NULL);
-
-		//LOGI("engine_draw_frame 1");
-		if (res == JNI_OK && pEnv)
+		static jmethodID senEnable = 0;
+		if (!senEnable)
 		{
-			//LOGI("engine_draw_frame 3");
+			JNIEnv *pEnv = g_engine->app->activity->env;
+			jint res = g_engine->app->activity->vm->AttachCurrentThread(&pEnv, NULL);
+
+			//LOGI("engine_draw_frame 1");
+			if (res == JNI_OK && pEnv)
+			{
+				//LOGI("engine_draw_frame 3");
+				jobject activityObject = g_engine->app->activity->clazz;
+				jclass  activityClass = pEnv->GetObjectClass(activityObject);
+
+				jmethodID senEnable = pEnv->GetMethodID(activityClass, "FrameEngine", "()V");
+				pEnv->CallVoidMethod(activityObject, senEnable);
+				//LOGI("engine_draw_frame 4");
+				pEnv->DeleteLocalRef(activityClass);
+
+				//g_engine->app->activity->vm->DetachCurrentThread();
+			}
+
+		}
+		else
+		{
+			JNIEnv *pEnv = g_engine->app->activity->env;
 			jobject activityObject = g_engine->app->activity->clazz;
-			jclass  activityClass = pEnv->GetObjectClass(activityObject);
-
-			jmethodID senEnable = pEnv->GetMethodID(activityClass, "FrameEngine", "()V");
 			pEnv->CallVoidMethod(activityObject, senEnable);
-			//LOGI("engine_draw_frame 4");
-			pEnv->DeleteLocalRef(activityClass);
-
-			g_engine->app->activity->vm->DetachCurrentThread();
 		}
 	}
 
